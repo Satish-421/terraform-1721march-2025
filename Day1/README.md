@@ -57,6 +57,7 @@
 - containers are not Operating System
 - containers are just application process not a OS
 - containers don't even has their own dedicated hardwares or Operating System kernel
+- all the containers that runs on a system shares the underlying HOST OS Kernel and Hardware resources
 - contaners have some similartity to a virtual machine
   - just like VMs, containers are also allocated with Ip address
   - just like VMs, containers has its own file systems
