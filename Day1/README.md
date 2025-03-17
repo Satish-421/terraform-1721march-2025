@@ -314,6 +314,7 @@ cd terraform-1721march-2025
 cd ~/terraform-1721march-2025
 git pull
 cd Day1/CustomDockerImages/ubuntu
+cat Dockerfile
 ssh-keygen
 cp ~/.ssh/id_ed25519.pub authorized_keys
 docker build -t tektutor/ubuntu-ansible-node:latest .
