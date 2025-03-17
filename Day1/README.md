@@ -400,6 +400,15 @@ exit
 
 
 ## Lab - Writing an Ansible static inventory file
+In the below command, 
+<pre>
+i - inventory flag
+inventory - inventory file name
+all - all the machines listed under all group in the inventory file
+m - module flag
+ping - is the module name (ping.py script - ansible module )
+</pre>
+
 ```
 cd ~/terraform-1721march-2025
 git pull
