@@ -100,7 +100,7 @@
   - some application and its dependent libraries/frameworks, etc.,
   - supports file systems
   - some shell bash or sh
-  - optional package manager
+  - optional package managerpu
     - apt/apt-get package manager in case of ubuntu:latest docker image
     - yum/dnf/rpm package managers are supported in case of rhel:latest or rocky-linux:latest
 </pre>
@@ -309,26 +309,116 @@ git clone https://github.com/tektutor/terraform-1721march-2025
 cd terraform-1721march-2025
 ```
 
+## Lab - Installing SSH Server in RPS Ubuntu Lab machine
+```
+sudo apt install -y net-tools openssh-server tree curl iputils-ping
+```
+
 ## Lab - Building an Ubuntu Custom Docker Image to use it as an ansible node
 ```
 cd ~/terraform-1721march-2025
 git pull
 cd Day1/CustomDockerImages/ubuntu
+cat Dockerfile
 ssh-keygen
-cp ~/id_ed25519.pub authorized_keys
+cp ~/.ssh/id_ed25519.pub authorized_keys
 docker build -t tektutor/ubuntu-ansible-node:latest .
+docker images
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2abba6ec-d6e6-49a4-b2a4-2e1adc28e014)
 ![image](https://github.com/user-attachments/assets/d17e0e19-133d-46f5-803d-3db4530e8cdf)
+![image](https://github.com/user-attachments/assets/62f8ef81-dd05-4b65-99af-c61b1764132c)
+![image](https://github.com/user-attachments/assets/eafb7656-bcc0-4da0-ba5a-7727e34338f5)
+
+Troubleshooting, the docker rate pull limit reached error. Those who are getting this error, alone can follow the below instructions
+Run this on the terminal
+```
+docker login
+```
+
+Then the docker login url will be displayed, copy/paste the url in some web browser on the lab machine and paste the code shown in the terminal. You need to login with the below credentials
+<pre>
+username - alchemysolutions003@gmail.com
+password - Alchemy@321
+</pre>
+
+Once you successfully, logged in it show, successfully logged in as shown belo
+![image](https://github.com/user-attachments/assets/9d6db808-d34a-4a37-b198-881e577cd5f3)
+![image](https://github.com/user-attachments/assets/488c6481-8df7-4cff-a765-0418662f8558)
+
+## Lab - Creating couple of containers using our custom docker ansible node image
+
+Let's create two container using our custom ubuntu ansible node docker image
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
+```
+
+Listing the running containers
+```
+docker ps
+```
+Expected output
+![image](https://github.com/user-attachments/assets/04518456-09b1-4583-9b5b-7c5e0b8a022e)
+
+
+## Lab - Check if you are able to SSH into the ubuntu1 and ubuntu2 containers
+```
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
+![image](https://github.com/user-attachments/assets/262e1b41-a604-4f6a-ad68-33e644f8de78)
+![image](https://github.com/user-attachments/assets/67873d05-add3-4f0f-96a1-99a60fbe27eb)
+
+Troubleshooting, permission denied error. You need to delete the image
+```
+docker rm -f ubuntu1 ubuntu2
+docker rmi tektutor/ubuntu-ansible-node:latest
+cd ~/terraform-1721march-2025
+git pull
+cd Day1/CustomDockerImages/ubuntu
+cp ~/.ssh/id_ed25519.pub authorized_keys
+docker build -t tektutor/ubuntu-ansible-node:latest .
+docker images
+
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
+docker ps
+
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
 
 ## Lab - Writing an Ansible static inventory file
+In the below command, 
+<pre>
+i - inventory flag
+inventory - inventory file name
+all - all the machines listed under all group in the inventory file
+m - module flag
+ping - is the module name (ping.py script - ansible module )
+</pre>
+
 ```
 cd ~/terraform-1721march-2025
 git pull
 cd Day1/ansible
 cat inventory
+ansible -i inventory all -m ping
+ansible -i inventory ubuntu1 -m ping
+ansible -i inventory ubuntu2 -m ping
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/b11114ec-7ac5-4488-8d77-948459100591)
+![image](https://github.com/user-attachments/assets/66d5a2ae-2258-4d66-8363-157f074338d1)
