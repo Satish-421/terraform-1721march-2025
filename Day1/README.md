@@ -167,3 +167,57 @@
   - SaltStack or Salt
   - Ansible
 </pre>
+
+
+## Info - Puppet Configuration Management Tool Overview
+<pre>
+- is developed and maintained by a company called Perforce
+- comes in 2 flavours
+  - Puppet Community edition ( opensource )
+  - Puppet Enterprise ( Paid version for commercial use )
+- follows Client/Server architecture
+- follows PULL based architecture
+- each machine with OS that must be managed by Puppet should have a proprietary tool running called Puppet Agent
+- Domain Specific Language (DSL) is the language used to automate the configuration management activities in declarative style
+- DSL used by Puppet is Puppet Configuration Language ( Proprietary Language )
+- learning curve is steep
+- installation is complex
+</pre>
+https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
+
+## Info - Chef Configuration Management Tool Overview
+<pre>
+- developed and mantained by a company called ProgressChef
+- follows client/architecture architecutre
+- the chefs nodes ( servers managed by Chef ) must have a proprietary agent installed in them called Chef Agent
+- DSL used is Ruby ( scripting language )
+- learning curve is very steep as it comes more than 15 or more tools
+- installation is complex
+</pre>
+
+## Info - Ansible Configuration Management tool overview
+<pre>
+- Ansible is developed in Python by Michael Deehan ( former employee of Red Hat )
+- Michael Deehan was an architect at Red Hat, he had a configuration management tool project idea, for some reason Red Hat had put that idea on shelf
+- Michael Deehan had quit Red Hat and started a company called Ansible Inc and developed Ansible core as an opensource project
+- When Ansible core came into the industry, already many companies were either using Puppet/Chef
+- follows a very simple agent-less architecture, not a client/server architecture, stand-alone tool
+- follows a PUSH based architecture
+- Ansible nodes
+  - the machines managed by Ansible are called Ansible nodes
+  - this could a physical server with some OS
+  - this could a virtual machine running in your private datacenter
+  - this could a virtual machine running on some public cloud like AWS/Azure/GCP/Digital Ocean, etc.,
+  - could be Network switch/router
+- Ansible Controller Machine(ACM)
+  - is the machine where Ansible is installed ( this could be your laptop/desktop - your work machine )
+  - it must be Linux OS ( Unix or Mac - officially only Linux machine can be an ACM )
+- Ansible Nodes software dependencies
+  - Unix/Linux/Mac
+    - Python and SSH Server must be pre-installed/enabled/configured
+    - any unix/linux/mac server OS by default comes with Python and SSH Server pre-installed
+  - Windows Server
+    - PowerShell and WinRm must be pre-installed/enabled/configured
+    - any Windows Server, by default comes with Powershell and WinRM pre-installed
+  
+</pre>
