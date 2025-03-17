@@ -422,3 +422,59 @@ ansible -i inventory ubuntu2 -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/b11114ec-7ac5-4488-8d77-948459100591)
 ![image](https://github.com/user-attachments/assets/66d5a2ae-2258-4d66-8363-157f074338d1)
+
+## Lab - Collecting ansible facts using ansible module setup
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day1/ansible
+ansible -i inventory ubuntu1 -m setup
+```
+Expected output
+![image](https://github.com/user-attachments/assets/6bbae6e5-ba04-4987-95b1-ce2c735fea4a)
+![image](https://github.com/user-attachments/assets/52b59a3e-ecde-4222-ab60-d37d1efa7beb)
+![image](https://github.com/user-attachments/assets/d749ed4f-0d49-404c-a3f3-2deeb206bb35)
+
+## Lab - Finding the list of all ansible modules supported by your ansible installed on the lab machine
+```
+ansible-doc -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/26024970-7950-4f95-a4ed-fbcc5a7ac396)
+![image](https://github.com/user-attachments/assets/16eb9a18-4429-4dee-a22c-562b048cffd3)
+
+
+Finding number of modules supported by ansible
+```
+ansible-doc -l | wc 
+```
+
+## Info - Imperative vs Declarative language
+<pre>
+Imperative Programming Language
+- They are powerful languages
+- They are ideal for application development, not ideal for automation
+- Assume I wanted to automate installing Weblogic latest version in all my Linux servers
+- You need to write code for
+  - What - I wanted to automate installing Weblogic latest version in all my Linux servers
+  - How - We need to write code in Python to automate our requirement
+- Examples
+  - C/C++, Java, Dot Net, Python, Ruby 
+Declarative Language
+- Ansible Playbook is a declarative code
+- You just need to mention what you wish to do
+- the language will take care of how to do it
+</pre>
+
+## Lab - Writing our first ansible playbook
+```
+cd ~/terraform1721march-2025
+git pull
+cd Day1/ansible
+cat ping-playbook.yml
+ansible-playbook -i inventory ping-playbook
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3d2dff23-3b0e-46d2-afc9-a21f3b02e7e0)
