@@ -434,3 +434,18 @@ Expected output
 ![image](https://github.com/user-attachments/assets/6bbae6e5-ba04-4987-95b1-ce2c735fea4a)
 ![image](https://github.com/user-attachments/assets/52b59a3e-ecde-4222-ab60-d37d1efa7beb)
 ![image](https://github.com/user-attachments/assets/d749ed4f-0d49-404c-a3f3-2deeb206bb35)
+
+## Lab - Finding the list of all ansible modules supported by your ansible installed on the lab machine
+```
+ansible-doc -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/26024970-7950-4f95-a4ed-fbcc5a7ac396)
+![image](https://github.com/user-attachments/assets/16eb9a18-4429-4dee-a22c-562b048cffd3)
+
+
+Finding number of modules supported by ansible
+```
+ansible-doc -l | wc 
+```
