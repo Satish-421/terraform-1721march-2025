@@ -149,3 +149,21 @@
 
 ## Info - Docker High Level Architecture
 ![Docker](DockerHighLevelArchitecture.png)
+
+
+## Info - Configuration Management Tools
+<pre>
+- helps us automate system administrative activities
+- assume you have some server with certain OS pre-installed in it ( already provisioned machine )
+  - OS could be Windows/Mac/Linux/Unix/Network Switch/Router
+  - ansible or any configuration management tool can help you in automating the configuration management activities
+  - can install/uninstall/upgrade/downgrade softwares
+  - can manage users on an existing Windows/Linux/Unix machines
+  - reboot a machine
+  - install software patches or service packs in Windows server
+- examples
+  - Puppet
+  - Chef
+  - SaltStack or Salt
+  - Ansible
+</pre>
