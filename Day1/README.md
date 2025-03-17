@@ -291,3 +291,44 @@ ansible --version
 Expected output
 ![image](https://github.com/user-attachments/assets/f9a42da0-810d-4cd3-9878-f58a11d491c4)
 
+## Info - Ansible inventory
+<pre>
+- has connection details to ansible nodes
+- it is a text file
+- winrm connection details in case the nodes happens to be a Windows server
+- ssh connnection details in case the nodes happens to be a Unix/Linux/Mac Server
+- there are two types
+  1. Static inventory ( text file with usually no extenstion - recommended names are hosts or inventory )
+  2. Dynamic Inventory ( Python script )
+</pre>
+
+## Lab - Cloning Terraform Training GitHub Repository ( Ubuntu - RPS Cloud machine )
+```
+cd ~/
+git clone https://github.com/tektutor/terraform-1721march-2025
+cd terraform-1721march-2025
+```
+
+## Lab - Building an Ubuntu Custom Docker Image to use it as an ansible node
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day1/CustomDockerImages/ubuntu
+ssh-keygen
+cp ~/id_ed25519.pub authorized_keys
+docker build -t tektutor/ubuntu-ansible-node:latest .
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2abba6ec-d6e6-49a4-b2a4-2e1adc28e014)
+![image](https://github.com/user-attachments/assets/d17e0e19-133d-46f5-803d-3db4530e8cdf)
+
+## Lab - Writing an Ansible static inventory file
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day1/ansible
+cat inventory
+```
+
+Expected output
