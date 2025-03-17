@@ -43,5 +43,7 @@
   - Storage
   - Virtual Network Card(s)
   - Virtual Graphics Cards(s)
-  
 </pre>
+
+## Info - Hypervisor - High Level Architecture
+![Hypevisor](HypervisorHighLevelArchitecture.png)
