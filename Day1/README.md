@@ -309,6 +309,11 @@ git clone https://github.com/tektutor/terraform-1721march-2025
 cd terraform-1721march-2025
 ```
 
+## Lab - Installing SSH Server in RPS Ubuntu Lab machine
+```
+sudo apt install -y net-tools openssh-server tree curl iputils-ping
+```
+
 ## Lab - Building an Ubuntu Custom Docker Image to use it as an ansible node
 ```
 cd ~/terraform-1721march-2025
