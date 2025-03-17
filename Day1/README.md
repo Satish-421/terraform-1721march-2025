@@ -222,8 +222,16 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
   - Playbooks - declarative automation script is written in YAML format, hence python knowledge is not required to automate
   - installing ansible and learning ansible is easier compared to other configuration management tools
 - comes in 3 flavours
-  1. Ansible Core ( open source and supports only Linux Command Line Interface )
-  2. Ansible AWX ( developed on top of Ansible Core, supports Webconsole, opensource )
+  1. Ansible Core 
+     - open source and supports only Linux Command Line Interface
+     - no support available
+     - no role-based access ( lacks user management )
+     - no GUI
+
+  2. Ansible AWX 
+    -  developed on top of Ansible Core, supports Webconsole, opensource 
+    - no support available
+  
   3. Red Hat Ansible Automation Platform ( a.k.a in the past as Ansible Tower - Enterprise product requires license )
      - developed on top of opensource AWX
      - supports only webconsole
