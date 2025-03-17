@@ -37,6 +37,7 @@
       - Oracle VirtualBox ( Windows, Linux & Mac )
       - Microsoft Hyper-V ( Windows )
 - each Guest OS is installed in a Virtual Machine (VM)
+- each Guest OS is a fully functional Operating System with their own hardware and dedicated OS Kernel, etc
 - for each VM, we must allocated dedicated hardware resources, hence it is considered a heavy weight virtualization technology
   - CPU Cores
   - RAM
@@ -47,3 +48,22 @@
 
 ## Info - Hypervisor - High Level Architecture
 ![Hypevisor](HypervisorHighLevelArchitecture.png)
+
+## Container Technology
+<pre>
+- Containerization - is an application virtualization technology
+- light-weight virtualization technology
+- each container, represents one application or application component
+- containers are not Operating System
+- containers are just application process not a OS
+- containers don't even has their own dedicated hardwares or Operating System kernel
+- contaners have some similartity to a virtual machine
+  - just like VMs, containers are also allocated with Ip address
+  - just like VMs, containers has its own file systems
+  - just like VMs, containers has their own network stack ( 7 OSI Layers )
+  - just like VMs, containers has their own port range ( 0 - 65535 )
+</pre>
+
+## Info - Container Runtime
+
+## Infor - Container Engine
