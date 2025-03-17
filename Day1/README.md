@@ -473,6 +473,7 @@ Declarative Language
 cd ~/terraform1721march-2025
 git pull
 cd Day1/ansible
+cat inventory
 cat ping-playbook.yml
 ansible-playbook -i inventory ping-playbook
 ```
