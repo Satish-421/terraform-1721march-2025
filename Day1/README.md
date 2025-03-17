@@ -1,6 +1,6 @@
 # Day 1
 
-## Kindly share your first day training feedback here
+## Kindly share your first day training feedback here ( Do this from your RPS Cloud machine web browser )
 <pre>
 https://survey.zohopublic.com/zs/vtklB3
 </pre>  
