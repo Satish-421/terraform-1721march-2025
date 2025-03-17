@@ -405,6 +405,8 @@ cd ~/terraform-1721march-2025
 git pull
 cd Day1/ansible
 cat inventory
+ansible -i inventory all -m ping
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/b11114ec-7ac5-4488-8d77-948459100591)
