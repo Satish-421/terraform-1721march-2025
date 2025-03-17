@@ -422,3 +422,15 @@ ansible -i inventory ubuntu2 -m ping
 Expected output
 ![image](https://github.com/user-attachments/assets/b11114ec-7ac5-4488-8d77-948459100591)
 ![image](https://github.com/user-attachments/assets/66d5a2ae-2258-4d66-8363-157f074338d1)
+
+## Lab - Collecting ansible facts using ansible module setup
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day1/ansible
+ansible -i inventory ubuntu1 -m setup
+```
+Expected output
+![image](https://github.com/user-attachments/assets/6bbae6e5-ba04-4987-95b1-ce2c735fea4a)
+![image](https://github.com/user-attachments/assets/52b59a3e-ecde-4222-ab60-d37d1efa7beb)
+![image](https://github.com/user-attachments/assets/d749ed4f-0d49-404c-a3f3-2deeb206bb35)
