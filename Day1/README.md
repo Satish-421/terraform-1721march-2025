@@ -428,6 +428,7 @@ Expected output
 cd ~/terraform-1721march-2025
 git pull
 cd Day1/ansible
+cat inventory
 ansible -i inventory ubuntu1 -m setup
 ```
 Expected output
