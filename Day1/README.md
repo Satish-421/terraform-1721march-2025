@@ -135,3 +135,17 @@
      - is a website powered by a Server ( JFrog Artifactory or Sonatype Nexus or something similar )
      - has a collection of many container images
 </pre>
+
+## Info - Docker Container Engine
+<pre>
+- is developed in Go language by Docker Inc company
+- comes in 2 flavours
+  1. Docker Community Edition - Docker CE ( opensource )
+  2. Docker Enterprise Edition - Docker EE ( paid commercial tool )
+- follows client/server architecture
+  - docker client is a utility name docker
+  - docker server runs a linux/windows service ( dockerd - daemon )
+</pre>
+
+## Info - Docker High Level Architecture
+![Docker](DockerHighLevelArchitecture.png)
