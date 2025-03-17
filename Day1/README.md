@@ -325,7 +325,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/2abba6ec-d6e6-49a4-b2a4-2e1adc28e014)
 ![image](https://github.com/user-attachments/assets/d17e0e19-133d-46f5-803d-3db4530e8cdf)
 ![image](https://github.com/user-attachments/assets/62f8ef81-dd05-4b65-99af-c61b1764132c)
-![image](https://github.com/user-attachments/assets/5f218c5a-16e8-44a9-9a50-098e72bd58ee)
+![image](https://github.com/user-attachments/assets/eafb7656-bcc0-4da0-ba5a-7727e34338f5)
 
 ## Lab - Writing an Ansible static inventory file
 ```
