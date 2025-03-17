@@ -223,6 +223,7 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
   - Playbooks - declarative automation script is written in YAML format, hence python knowledge is not required to automate
   - installing ansible and learning ansible is easier compared to other configuration management tools
 - comes in 3 flavours
+
   1. Ansible Core 
      - open source and supports only Linux Command Line Interface
      - no support available
@@ -237,4 +238,19 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
      - developed on top of opensource AWX
      - supports only webconsole
      - Red Hat gives world-wide support
+</pre>
+
+
+## Info - Ansible Modules
+<pre>
+- When we install ansible, it installs many Ansible modules 
+- ansible modules are
+  - python scripts that helps automating one thing in unix/linux/mac
+  - powershell scripts that helps automating one thing in Windows
+- Examples
+  - If you wish to copy a file from local machine to ansible node, there is a ready-made module called copy 
+  - If you wish to create a folder in the anisble node, there is a ready-made module called file
+  - If you wish to install softwares in Debian Linux, you have an apt module 
+  - If you wish to install softwares in Red Hat Linux family, you have a module called yum 
+- normally ansibles comes with almost 8300+ modules, if you find a scenario where those 8300 existing ansible modules can't automate something, that is the only scenario you have to develop your own custom ansible module, in that scenario one is expected to have python or powershell knowledge
 </pre>
