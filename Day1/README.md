@@ -332,6 +332,21 @@ Expected output
 ![image](https://github.com/user-attachments/assets/62f8ef81-dd05-4b65-99af-c61b1764132c)
 ![image](https://github.com/user-attachments/assets/eafb7656-bcc0-4da0-ba5a-7727e34338f5)
 
+Troubleshooting, the docker rate pull limit reached error. Those who are getting this error, alone can follow the below instructions
+Run this on the terminal
+```
+docker login
+```
+
+Then the docker login url will be displayed, copy/paste the url in some web browser on the lab machine and paste the code shown in the terminal. You need to login with the below credentials
+<pre>
+username - alchemysolutions003@gmail.com
+password - Alchemy@321
+</pre>
+
+Once you successfully, logged in it show, successfully logged in as shown belo
+![image](https://github.com/user-attachments/assets/9d6db808-d34a-4a37-b198-881e577cd5f3)
+
 ## Lab - Creating couple of containers using our custom docker ansible node image
 
 Let's create two container using our custom ubuntu ansible node docker image
