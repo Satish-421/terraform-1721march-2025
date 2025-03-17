@@ -260,5 +260,15 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
 - is the declarative automation code we writing in Ansible to perform configuration management
 - is an YAML file ( superset of JSON - JavaScript Object Notation )
 - it invokes one to many ansible modules to perform the automation
-  
 </pre>
+
+## Lab - Checking docker version
+```
+docker --version
+docker info
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/944c7d29-3217-4951-863f-46ff62f0232a)
+![image](https://github.com/user-attachments/assets/9145954f-0fb2-439c-9b96-06b865129404)
+
