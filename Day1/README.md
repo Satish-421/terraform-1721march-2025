@@ -483,3 +483,17 @@ Expected output
 ![image](https://github.com/user-attachments/assets/3d2dff23-3b0e-46d2-afc9-a21f3b02e7e0)
 ![image](https://github.com/user-attachments/assets/089a8026-4b88-4fff-a3c0-aada3c61fba1)
 ![image](https://github.com/user-attachments/assets/6b182fed-a3a8-481e-a2bb-bf99cbf9378b)
+
+## Lab - Installing visual studio code using ansible playbook
+```
+cd ~/terraform1721march-2025
+git pull
+cd Day1/ansible
+cat inventory
+cat install-visual-studio-code-playbook.yml
+ansible-playbook -i inventory install-visual-studio-code-playbook.yml -b --ask-become-pass
+code .
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f2866783-893a-4828-b2dd-491479e85d25)
