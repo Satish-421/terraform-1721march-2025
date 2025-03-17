@@ -119,3 +119,19 @@
 - When we install Docker for Mac on any Mac machine, it installs a thin-linux layer that has the Linux kernel
 - When a linux containerized application runs on Mac, it is still running on top of Linux kernel on a Mac machine
 </pre>
+
+## Info - Image Registry
+<pre>
+- is a server that manages/maintains multiple container images
+- there are 3 types of Image Registries
+  1. Local Image Registry
+     - it is folder under the home directory of a user
+     - has a collection of many container images
+  2. Private Image Registry
+     - is a server
+     - has a collection of many container images
+     - can be setup using JFrog Artifactory or Sonatype Nexus
+  3. Remote Registry
+     - is a website powered by a Server ( JFrog Artifactory or Sonatype Nexus or something similar )
+     - has a collection of many container images
+</pre>
