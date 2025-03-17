@@ -346,6 +346,7 @@ password - Alchemy@321
 
 Once you successfully, logged in it show, successfully logged in as shown belo
 ![image](https://github.com/user-attachments/assets/9d6db808-d34a-4a37-b198-881e577cd5f3)
+![image](https://github.com/user-attachments/assets/488c6481-8df7-4cff-a765-0418662f8558)
 
 ## Lab - Creating couple of containers using our custom docker ansible node image
 
