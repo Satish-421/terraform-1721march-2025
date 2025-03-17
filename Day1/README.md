@@ -466,3 +466,15 @@ Declarative Language
 - You just need to mention what you wish to do
 - the language will take care of how to do it
 </pre>
+
+## Lab - Writing our first ansible playbook
+```
+cd ~/terraform1721march-2025
+git pull
+cd Day1/ansible
+cat ping-playbook.yml
+ansible-playbook -i inventory ping-playbook
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3d2dff23-3b0e-46d2-afc9-a21f3b02e7e0)
