@@ -265,6 +265,14 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
 ## Info - Ansible High-Level Architecture
 ![Ansible](AnsibleHighLevelArchitecture.png)
 
+## Demo - Installing Ansible Core in Ubuntu Linux
+```
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
+
 ## Lab - Checking docker version
 ```
 docker --version
