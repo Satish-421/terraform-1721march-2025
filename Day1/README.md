@@ -100,7 +100,7 @@
   - some application and its dependent libraries/frameworks, etc.,
   - supports file systems
   - some shell bash or sh
-  - optional package manager
+  - optional package managerpu
     - apt/apt-get package manager in case of ubuntu:latest docker image
     - yum/dnf/rpm package managers are supported in case of rhel:latest or rocky-linux:latest
 </pre>
@@ -322,6 +322,7 @@ docker build -t tektutor/ubuntu-ansible-node:latest .
 Expected output
 ![image](https://github.com/user-attachments/assets/2abba6ec-d6e6-49a4-b2a4-2e1adc28e014)
 ![image](https://github.com/user-attachments/assets/d17e0e19-133d-46f5-803d-3db4530e8cdf)
+![image](https://github.com/user-attachments/assets/62f8ef81-dd05-4b65-99af-c61b1764132c)
 
 ## Lab - Writing an Ansible static inventory file
 ```
