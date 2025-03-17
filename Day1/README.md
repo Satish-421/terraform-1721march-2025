@@ -449,3 +449,20 @@ Finding number of modules supported by ansible
 ```
 ansible-doc -l | wc 
 ```
+
+## Info - Imperative vs Declarative language
+<pre>
+Imperative Programming Language
+- They are powerful languages
+- They are ideal for application development, not ideal for automation
+- Assume I wanted to automate installing Weblogic latest version in all my Linux servers
+- You need to write code for
+  - What - I wanted to automate installing Weblogic latest version in all my Linux servers
+  - How - We need to write code in Python to automate our requirement
+- Examples
+  - C/C++, Java, Dot Net, Python, Ruby 
+Declarative Language
+- Ansible Playbook is a declarative code
+- You just need to mention what you wish to do
+- the language will take care of how to do it
+</pre>
