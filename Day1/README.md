@@ -219,5 +219,13 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
   - Windows Server
     - PowerShell and WinRm must be pre-installed/enabled/configured
     - any Windows Server, by default comes with Powershell and WinRM pre-installed
-  
+  - Playbooks - declarative automation script is written in YAML format, hence python knowledge is not required to automate
+  - installing ansible and learning ansible is easier compared to other configuration management tools
+- comes in 3 flavours
+  1. Ansible Core ( open source and supports only Linux Command Line Interface )
+  2. Ansible AWX ( developed on top of Ansible Core, supports Webconsole, opensource )
+  3. Red Hat Ansible Automation Platform ( a.k.a in the past as Ansible Tower - Enterprise product requires license )
+     - developed on top of opensource AWX
+     - supports only webconsole
+     - Red Hat gives world-wide support
 </pre>
