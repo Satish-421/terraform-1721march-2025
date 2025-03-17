@@ -254,3 +254,11 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
   - If you wish to install softwares in Red Hat Linux family, you have a module called yum 
 - normally ansibles comes with almost 8300+ modules, if you find a scenario where those 8300 existing ansible modules can't automate something, that is the only scenario you have to develop your own custom ansible module, in that scenario one is expected to have python or powershell knowledge
 </pre>
+
+## Info - Ansible Playbook
+<pre>
+- is the declarative automation code we writing in Ansible to perform configuration management
+- is an YAML file ( superset of JSON - JavaScript Object Notation )
+- it invokes one to many ansible modules to perform the automation
+  
+</pre>
