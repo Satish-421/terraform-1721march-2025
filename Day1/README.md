@@ -327,6 +327,23 @@ Expected output
 ![image](https://github.com/user-attachments/assets/62f8ef81-dd05-4b65-99af-c61b1764132c)
 ![image](https://github.com/user-attachments/assets/eafb7656-bcc0-4da0-ba5a-7727e34338f5)
 
+## Lab - Creating couple of containers using our custom docker ansible node image
+
+Let's create two container using our custom ubuntu ansible node docker image
+```
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
+```
+
+Listing the running containers
+```
+docker ps
+```
+Expected output
+![image](https://github.com/user-attachments/assets/04518456-09b1-4583-9b5b-7c5e0b8a022e)
+
+
+
 ## Lab - Writing an Ansible static inventory file
 ```
 cd ~/terraform-1721march-2025
