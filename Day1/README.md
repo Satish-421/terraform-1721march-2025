@@ -1,1 +1,47 @@
 # Day 1
+
+## Info - Dual booting or multi-booting
+<pre>
+- Boot loader system software utilities that is installed in Hard Disk - Master Boot Record(MBR)
+- Master Boot Record is Sector 0, Byte 0 in the hard disk which is just 512 bytes
+- Boot Loader software normally has to fit within the 512 bytes, it gets installed in MBR
+- When the system is booted, after the BIOS POSt is completed, the BIOS instructs the CPU to run the Boot Loader
+- The Boot Loader utility searches the hard disk looking for Operating System installed in it, if the number of OS is more than one, it prepares a menu and presents the menu for us to choose the OS we wish to boot into
+- Only one OS can be active at any point of time
+- Examples
+  - LILO ( Linux Loader - legacy boot loader that was used in older Linux distributions )
+  - GRUB - almost all Linux distributions
+  - BootCamp ( to support dual boot with Mac OS-X or Windows )
+</pre>  
+
+## Info - Hypervisor
+<pre>
+- virtualization technology
+- with virtualization, we can run many OS side by side on the same machine ( laptop, desktop, workstation or Server )
+- many OS can be actively run at the same time on the same machine
+- two types of Hypervisors
+  - Type 1 
+    - Bare Metal Hypervisors
+    - Doesn't require a Host OS to install the Hypervisor software
+    - Which is used in Servers & Workstations
+    - examples
+      - VMWare vSphere/vCenter
+      - KVM 
+  - Type 2
+    - is used in laptops/desktops/workstations
+    - requires Host OS ( Windows, Mac, Linux )
+    - examples
+      - VMWare Workstation ( Windows & Linux )
+      - VMWare Fusion ( Mac OS-X )
+      - Parallels ( Mac OS-X )
+      - Oracle VirtualBox ( Windows, Linux & Mac )
+      - Microsoft Hyper-V ( Windows )
+- each Guest OS is installed in a Virtual Machine (VM)
+- for each VM, we must allocated dedicated hardware resources, hence it is considered a heavy weight virtualization technology
+  - CPU Cores
+  - RAM
+  - Storage
+  - Virtual Network Card(s)
+  - Virtual Graphics Cards(s)
+  
+</pre>
