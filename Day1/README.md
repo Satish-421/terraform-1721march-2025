@@ -283,3 +283,11 @@ Expected output
 ![image](https://github.com/user-attachments/assets/944c7d29-3217-4951-863f-46ff62f0232a)
 ![image](https://github.com/user-attachments/assets/9145954f-0fb2-439c-9b96-06b865129404)
 
+## Lab - Checking ansible core version
+```
+ansible --version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f9a42da0-810d-4cd3-9878-f58a11d491c4)
+
