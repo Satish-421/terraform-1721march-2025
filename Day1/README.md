@@ -1,4 +1,9 @@
-![image](https://github.com/user-attachments/assets/93fe1980-87d6-414c-b115-2501b4c89356)# Day 1
+# Day 1
+
+## Kindly share your first day training feedback here
+<pre>
+https://survey.zohopublic.com/zs/vtklB3
+</pre>  
 
 ## Info - Dual booting or multi-booting
 <pre>
