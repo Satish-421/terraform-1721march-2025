@@ -1,0 +1,5 @@
+- name: Install visual studio code
+  hosts: localhost
+  tasks:
+  - name: Install Visual Studio code in local machine
+    shell: snap install code --classic
