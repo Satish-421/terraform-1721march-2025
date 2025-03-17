@@ -482,3 +482,4 @@ ansible-playbook -i inventory ping-playbook.yml -vvvv
 Expected output
 ![image](https://github.com/user-attachments/assets/3d2dff23-3b0e-46d2-afc9-a21f3b02e7e0)
 ![image](https://github.com/user-attachments/assets/089a8026-4b88-4fff-a3c0-aada3c61fba1)
+![image](https://github.com/user-attachments/assets/6b182fed-a3a8-481e-a2bb-bf99cbf9378b)
