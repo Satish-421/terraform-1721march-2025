@@ -317,12 +317,14 @@ cd Day1/CustomDockerImages/ubuntu
 ssh-keygen
 cp ~/.ssh/id_ed25519.pub authorized_keys
 docker build -t tektutor/ubuntu-ansible-node:latest .
+docker images
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2abba6ec-d6e6-49a4-b2a4-2e1adc28e014)
 ![image](https://github.com/user-attachments/assets/d17e0e19-133d-46f5-803d-3db4530e8cdf)
 ![image](https://github.com/user-attachments/assets/62f8ef81-dd05-4b65-99af-c61b1764132c)
+![image](https://github.com/user-attachments/assets/5f218c5a-16e8-44a9-9a50-098e72bd58ee)
 
 ## Lab - Writing an Ansible static inventory file
 ```
