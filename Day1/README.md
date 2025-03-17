@@ -95,6 +95,14 @@
 <pre>
 - is a blueprint of a container
 - it is similar to Windows.iso OS images, with single Windows12.iso we can install Windows 12 on multiple machines, same way with Container image we can creates multiple container instances
+- Container Images does'nt represent OS
+- container Images normally has
+  - some application and its dependent libraries/frameworks, etc.,
+  - supports file systems
+  - some shell bash or sh
+  - optional package manager
+    - apt/apt-get package manager in case of ubuntu:latest docker image
+    - yum/dnf/rpm package managers are supported in case of rhel:latest or rocky-linux:latest
 </pre>
 
 ## Info - Containers
