@@ -262,6 +262,9 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
 - it invokes one to many ansible modules to perform the automation
 </pre>
 
+## Info - Ansible High-Level Architecture
+![Ansible](AnsibleHighLevelArchitecture.png)
+
 ## Lab - Checking docker version
 ```
 docker --version
