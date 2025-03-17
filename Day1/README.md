@@ -364,6 +364,18 @@ Expected output
 ![image](https://github.com/user-attachments/assets/04518456-09b1-4583-9b5b-7c5e0b8a022e)
 
 
+## Lab - Check if you are able to SSH into the ubuntu1 and ubuntu2 containers
+```
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
+![image](https://github.com/user-attachments/assets/262e1b41-a604-4f6a-ad68-33e644f8de78)
+![image](https://github.com/user-attachments/assets/67873d05-add3-4f0f-96a1-99a60fbe27eb)
+
 
 ## Lab - Writing an Ansible static inventory file
 ```
