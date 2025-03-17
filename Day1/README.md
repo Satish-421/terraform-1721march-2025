@@ -376,6 +376,28 @@ exit
 ![image](https://github.com/user-attachments/assets/262e1b41-a604-4f6a-ad68-33e644f8de78)
 ![image](https://github.com/user-attachments/assets/67873d05-add3-4f0f-96a1-99a60fbe27eb)
 
+Troubleshooting, permission denied error. You need to delete the image
+```
+docker rm -f ubuntu1 ubuntu2
+docker rmi tektutor/ubuntu-ansible-node:latest
+cd ~/terraform-1721march-2025
+git pull
+cd Day1/CustomDockerImages/ubuntu
+cp ~/.ssh/id_ed25519.pub authorized_keys
+docker build -t tektutor/ubuntu-ansible-node:latest .
+docker images
+
+docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest
+docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest
+docker ps
+
+ssh -p 2001 root@localhost
+exit
+
+ssh -p 2002 root@localhost
+exit
+```
+
 
 ## Lab - Writing an Ansible static inventory file
 ```
