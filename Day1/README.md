@@ -111,3 +111,11 @@
 - container represents an application 
 - all the tools and sofwares installed in the container image are available in every container that is created out of the container image
 </pre>
+
+## Info - How Linux containerized applications run in Windows/Mac?
+<pre>
+- When we install Docker for Windows on any Windows OS, it installs a thin-linux layer that has the Linux kernel
+- When a linux containerized application runs on Windows, it is still running on top of Linux kernel on a Windows machine
+- When we install Docker for Mac on any Mac machine, it installs a thin-linux layer that has the Linux kernel
+- When a linux containerized application runs on Mac, it is still running on top of Linux kernel on a Mac machine
+</pre>
