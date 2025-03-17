@@ -203,6 +203,7 @@ https://blog.nashtechglobal.com/what-is-puppet-and-its-architecture/
 - When Ansible core came into the industry, already many companies were either using Puppet/Chef
 - follows a very simple agent-less architecture, not a client/server architecture, stand-alone tool
 - follows a PUSH based architecture
+- DSL used is YAML
 - Ansible nodes
   - the machines managed by Ansible are called Ansible nodes
   - this could a physical server with some OS
