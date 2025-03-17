@@ -90,3 +90,16 @@
   - Docker is a Container Engine that depends on containerd which internally depends on runC Container Runtime
   - Podman is a Container Engine that depends on CRI-O container runtime
 </pre>
+
+## Info - Container Images
+<pre>
+- is a blueprint of a container
+- it is similar to Windows.iso OS images, with single Windows12.iso we can install Windows 12 on multiple machines, same way with Container image we can creates multiple container instances
+</pre>
+
+## Info - Containers
+<pre>
+- is an instance of a container image
+- container represents an application 
+- all the tools and sofwares installed in the container image are available in every container that is created out of the container image
+</pre>
