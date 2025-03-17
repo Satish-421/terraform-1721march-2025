@@ -63,8 +63,30 @@
   - just like VMs, containers has its own file systems
   - just like VMs, containers has their own network stack ( 7 OSI Layers )
   - just like VMs, containers has their own port range ( 0 - 65535 )
+- Linux Kernel container related features
+  - Namespace and
+    - helps isolating one container from other containers
+  - Control Groups (CGroups)
+    - helps applying resource quota restrictions for each container
+      - how many cpu one container can use at the max
+      - how much RAM one container can use at the max
 </pre>
 
 ## Info - Container Runtime
+<pre>
+- is a low-level software that manages container images and containers
+- is not so user-friendly, hence normally no end-users use it directly
+- examples
+  - runC
+  - CRI-O 
+</pre>
 
-## Infor - Container Engine
+## Info - Container Engine
+<pre>
+- is a high-level software that manages container images and containers
+- provides user-friendly command to manage images and containers, even without low-level linux kernel knowledge one can manages manages and container with the help of container engine
+- container engines internally makes use of Container Runtime to manage images and containers
+- examples
+  - Docker is a Container Engine that depends on containerd which internally depends on runC Container Runtime
+  - Podman is a Container Engine that depends on CRI-O container runtime
+</pre>
