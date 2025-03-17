@@ -1,4 +1,4 @@
-# Day 1
+![image](https://github.com/user-attachments/assets/93fe1980-87d6-414c-b115-2501b4c89356)# Day 1
 
 ## Info - Dual booting or multi-booting
 <pre>
@@ -475,8 +475,10 @@ git pull
 cd Day1/ansible
 cat inventory
 cat ping-playbook.yml
-ansible-playbook -i inventory ping-playbook
+ansible-playbook -i inventory ping-playbook.yml
+ansible-playbook -i inventory ping-playbook.yml -vvvv
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/3d2dff23-3b0e-46d2-afc9-a21f3b02e7e0)
+![image](https://github.com/user-attachments/assets/089a8026-4b88-4fff-a3c0-aada3c61fba1)
