@@ -232,3 +232,20 @@ ansible-galaxy
   - used to download,install reusable roles from galaxy.ansible.com website
   - also can be to develop a custom ansible role
 </pre>
+
+## Lab - Ansible role to install nginx in Ubuntu and Rocky Linux distributions
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/nginx-role
+ansible-galaxy init nginx
+tree nginx
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/5e6ae941-4249-42ab-95f9-80d94e979c9f)
+![image](https://github.com/user-attachments/assets/3dd93560-f2b6-41fb-8500-7d92ba3455d2)
+![image](https://github.com/user-attachments/assets/e0ff355d-80c8-43a7-814a-e2fab1c33acf)
+![image](https://github.com/user-attachments/assets/c33d2955-6eb9-4f2a-8301-5d48f8ae2008)
+
