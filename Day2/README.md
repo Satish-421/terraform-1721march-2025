@@ -139,4 +139,6 @@ Expected output
 - When the ANSIBLE_CONFIG environment is undefined, ansible or ansible-playbook will search for the ansible.cfg in the current directory, if it finds it will stop searching and it will use the ansible.cfg from the current directory
 - in case, the ansible.cfg is not present in the current, ansible will try to locate a file name .ansible.cfg from home directory of the user, if it finds it will stop searching elsewhere and starts using the .ansible.cfg file
 - if the home directory of the user doesn't have the file, ansible will finally try to locate at /etc/ansible/ansible.cfg file, it that is also missing, it will give up
+
+- whichever place ansible.cfg file is located first, it will use it and stops searching for ansible.cfg elsewhere
 </pre>
