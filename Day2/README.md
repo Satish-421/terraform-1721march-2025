@@ -275,3 +275,39 @@ Expected output
 <pre>
 https://docs.ansible.com/ansible/latest/reference_appendices/general_precedence.html  
 </pre>
+
+## Lab - Suppressing ansible warnings
+```
+export ANSIBLE_PYTHON_INTERPRETER=auto_silent
+
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/dynamic-inventory
+
+ansible all -m ping
+```
+
+## Lab - Ansible vault 
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/vault
+cat playbook.yml
+ansible-vault create mysql-login-credentials.yml
+cat mysql-login-credentials.yml
+ansible-vault view mysql-login-credentials.yml
+cat mysql-login-credentials.yml
+ansible-vault edit mysql-login-credentials.yml
+cat mysql-login-credentials.yml
+ansible-vault decrypt mysql-login-credentials.yml
+cat mysql-login-credentials.yml
+
+ansible-vault encrypt mysql-login-credentials.yml
+cat mysql-login-credentials.yml
+
+
+ansible-playbook playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a8efe142-32bc-4b7f-9ee3-6be568746568)
