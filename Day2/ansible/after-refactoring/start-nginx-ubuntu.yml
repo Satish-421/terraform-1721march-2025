@@ -1,0 +1,4 @@
+- name: Start the nginx service in Ubuntu ansible node
+  when: ( ansible_distribution == "Ubuntu" and ansible_os_family == "Debian" )
+  service: name=nginx state=started
+

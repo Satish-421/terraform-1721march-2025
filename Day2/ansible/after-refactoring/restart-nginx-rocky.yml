@@ -1,0 +1,2 @@
+- name: Restart the nginx service in Rocky ansible node
+  shell: nginx -s stop && nginx

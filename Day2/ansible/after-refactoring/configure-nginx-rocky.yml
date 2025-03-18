@@ -1,0 +1,2 @@
+- name: Configure nginx web server to serve web pages from our custom folder in Rocky ansible node
+  copy: src=nginx.conf dest=/etc/nginx/nginx.conf

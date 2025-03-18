@@ -1,0 +1,2 @@
+- name: Restart the nginx service to apply the config changes in Ubuntu ansible node
+  service: name=nginx state=restarted

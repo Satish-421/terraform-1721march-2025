@@ -1,0 +1,2 @@
+- name: Configure nginx web server to serve web pages from our custom folder in Ubuntu ansible node
+  copy: src=default dest=/etc/nginx/sites-available/default

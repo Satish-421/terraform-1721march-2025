@@ -1,0 +1,5 @@
+- name: Create the custom web root folder 
+  file: path=/var/html mode=0777 state=directory
+
+- name: Deploy custom web page
+  copy: src=index.html dest=/var/html/index.html
