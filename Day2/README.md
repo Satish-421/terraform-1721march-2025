@@ -275,3 +275,14 @@ Expected output
 <pre>
 https://docs.ansible.com/ansible/latest/reference_appendices/general_precedence.html  
 </pre>
+
+## Lab - Suppressing ansible warnings
+```
+export ANSIBLE_PYTHON_INTERPRETER=auto_silent
+
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/dynamic-inventory
+
+ansible all -m ping
+```
