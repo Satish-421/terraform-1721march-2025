@@ -1,0 +1,1000 @@
+ 1400  cd BOOT-INF/
+ 1401  ls
+ 1402  cd classes/
+ 1403  ls
+ 1404  cd org/tektutor/
+ 1405  ls
+ 1406  ls -l
+ 1407  cd ..
+ 1408  js
+ 1409  ls
+ 1410  java org.tektutor.Main
+ 1411  clearorg.tektutor.Main
+ 1412  cd ..
+ 1413  ls
+ 1414  cd ..
+ 1415  ls
+ 1416  cd ~/openshift-march-2025/
+ 1417  ls
+ 1418  clear
+ 1419  ls
+ 1420  cd Day9
+ 1421  ls
+ 1422  cd ~
+ 1423  ls
+ 1424  cd hello-microservice/
+ 1425  ls
+ 1426  cd target/
+ 1427  ls
+ 1428  java -jar ./hello-1.0.0.jar 
+ 1429  cd ..
+ 1430  rm -rf target/
+ 1431  ls
+ 1432  mvn package
+ 1433  cd target/
+ 1434  ls
+ 1435  java -jar ./hello-1.0.0.jar 
+ 1436  clear
+ 1437  cd ..
+ 1438  ls
+ 1439  vim pom.xml 
+ 1440  vim op
+ 1441  cat Dockerfile 
+ 1442  mvn clean package
+ 1443  cd target/
+ 1444  ls
+ 1445  cd ..
+ 1446  ls
+ 1447  mvn clean package
+ 1448  vim pom.xml 
+ 1449  cd target/
+ 1450  ls
+ 1451  java -jar ./hello-1.0.0.jar 
+ 1452  ls
+ 1453  cd ..
+ 1454  ls
+ 1455  vim Dockerfile 
+ 1456  set -o vi
+ 1457  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1458  vim Dockerfile 
+ 1459  clear
+ 1460  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1461  vim pom.xml 
+ 1462  vim Dockerfile 
+ 1463  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1464  vim Dockerfile 
+ 1465  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1466  vim Dockerfile 
+ 1467  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1468  ls
+ 1469  mkdir tmp
+ 1470  cp Dockerfile tmp
+ 1471  cd tmp/
+ 1472  ls
+ 1473  vim Dockerfile 
+ 1474  docker build -t tektutor/maven:latest .
+ 1475  docker images
+ 1476  docker run -dit --name c1 --hostname c1 tektutor/maven:latest bash
+ 1477  docker rm -f c1
+ 1478  docker run -dit --name c1 --hostname c1 tektutor/maven:latest bash
+ 1479  docker exec -it c1 bash
+ 1480  mvn --version
+ 1481  cd ..
+ 1482  ls
+ 1483  vim Dockerfile 
+ 1484  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1485  vim Dockerfile 
+ 1486  docker exec -it c1 bash
+ 1487  vim Dockerfile 
+ 1488  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1489  vim pom.xml 
+ 1490  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1491  vim pom.xml 
+ 1492  vim pom.xml +40
+ 1493  vim pom.xml 
+ 1494  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1495  docker images
+ 1496  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1497  docker ps
+ 1498  docker rm -f c1
+ 1499  docker ps -a
+ 1500  docker logs c2
+ 1501  ls
+ 1502  cd target/
+ 1503  ls
+ 1504  java -jar -cp=hello-1.0.0.jar org.tektutor.Main
+ 1505  java -cp=hello-1.0.0.jar org.tektutor.Main
+ 1506  java -cp hello-1.0.0.jar org.tektutor.Main
+ 1507  ls
+ 1508  cd classes/
+ 1509  ls
+ 1510  tree
+ 1511  java --classpath=../hello-1.0.0.jar org.tektutor.Main
+ 1512  java --classpath ../hello-1.0.0.jar org.tektutor.Main
+ 1513  ls
+ 1514  cd ..
+ 1515  ls
+ 1516  java -cp hello-1.0.0.jar org.tektutor.Main
+ 1517  java
+ 1518  java -jar ./hello-1.0.0.jar 
+ 1519  cd ..
+ 1520  ls
+ 1521  vim Dockerfile 
+ 1522  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1523  clear
+ 1524  /build
+ 1525  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1526  vim Dockerfile 
+ 1527  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1528  docker images
+ 1529  docker rm -f $(docker ps -aq)
+ 1530  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1531  docker ps
+ 1532  docker ps -a
+ 1533  docker logs c2
+ 1534  ls
+ 1535  cd target/
+ 1536  ls
+ 1537  java -cp hello-1.0.0.jar org.tektutor.Main
+ 1538  java -cp=./hello-1.0.0.jar org.tektutor.Main
+ 1539  java -cp hello-1.0.0.jar org.tektutor.Main
+ 1540  java
+ 1541  ls
+ 1542  cd ..
+ 1543  ls
+ 1544  vim pom.xml 
+ 1545  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1546  docker rm -f $(docker ps -aq)
+ 1547  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1548  docker rm -f $(docker ps -aq)
+ 1549  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1550  docker ps
+ 1551  docker ps -a
+ 1552  docker logs c2
+ 1553  vim Dockerfile 
+ 1554  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1555  vim Dockerfile 
+ 1556  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1557  docker rm -f $(docker ps -aq)
+ 1558  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1559  docker ps
+ 1560  docker ps -a
+ 1561  docker logs c2
+ 1562  vim Dockerfile 
+ 1563  docker rm -f $(docker ps -aq)
+ 1564  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1565  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1566  docker ps
+ 1567  docker ps -a
+ 1568  docker logs c2
+ 1569  vim Dockerfile 
+ 1570  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1571  docker rm -f $(docker ps -aq)
+ 1572  docker run -d --name c2 --hostname c2 tektutor/spring-hello-ms:1.0 
+ 1573  docker ps -a
+ 1574  docker logs c2
+ 1575  docker exec -it c2 bash
+ 1576  ls
+ 1577  docker rm -f c2
+ 1578  docker run -dit --name c1 --hostname c1 tektutor/spring-hello-ms:1.0 bash
+ 1579  docker ps
+ 1580  docker e
+ 1581  docker exec -it c1 bash
+ 1582  ls
+ 1583  vim Dockerfile 
+ 1584  ls
+ 1585  cd target/
+ 1586  ls
+ 1587  java -jar ./hello-1.0.0.jar 
+ 1588  docker exec -it c1 bash
+ 1589  docker cp hello-1.0.0.jar c1:/home/jboss/app1.jar
+ 1590  docker exec -it c1 bash
+ 1591  cd ..
+ 1592  ls
+ 1593  vim Dockerfile 
+ 1594  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1595  docker rm -f c1
+ 1596  docker run -dit --name c1 --hostname c1 tektutor/spring-hello-ms:1.0 bash
+ 1597  docker ps
+ 1598  docker rm -f c1
+ 1599  docker run -d --name c1 --hostname c1 tektutor/spring-hello-ms:1.0 
+ 1600  docker ps
+ 1601  docker ps -a
+ 1602  docker logs c1
+ 1603  vim Dockerfile 
+ 1604  ls
+ 1605  mvn clean package
+ 1606  ls
+ 1607  cd t
+ 1608  cd target/
+ 1609  ls
+ 1610  java -jar ./hello-1.0.0.jar 
+ 1611  clear
+ 1612  cd ..
+ 1613  ls
+ 1614  vim Dockerfile 
+ 1615  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1616  rm m2
+ 1617  ls
+ 1618  rm -rf m2
+ 1619  ls
+ 1620  cp -R ~/.m2 m2
+ 1621  ls
+ 1622  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1623  dcoker images
+ 1624  celar
+ 1625  docker images
+ 1626  docker rm -f c1
+ 1627  docker rm -f c2
+ 1628  docker run -d --name c1 --hostname c1 tektutor/spring-hello-ms:1.0 
+ 1629  docker logs
+ 1630  docker os
+ 1631  docker ps
+ 1632  ls
+ 1633  vim Dockerfile 
+ 1634  docker ps
+ 1635  curl http://172.17.0.2:8080
+ 1636  docker rm -f c1
+ 1637  vim Dockerfile 
+ 1638  docker images
+ 1639  docker rmi c5525985c99d ec22b510a9a3 0e5c304703bb 685fb3b5f461 0c01e86535e3 2947b967b5d1 03eb8eecd62b 2d46e864a0d8 155b46250bb8 befcfc34b545 c1c1b5e798a9
+ 1640  docker images
+ 1641  docker rmi 5dac20c35721
+ 1642  celar
+ 1643  clear
+ 1644  ls
+ 1645  clear
+ 1646  ls
+ 1647  rm -rf m2
+ 1648  mvn clean package
+ 1649  cp -R ~/.m2 m2
+ 1650  ls
+ 1651  docker build -t tektutor/spring-hello-ms:1.0 .
+ 1652  docker images
+ 1653  docker rm -f c1
+ 1654  docker run -d --name c1 --hostname c1 tektutor/spring-hello-ms:1.0 
+ 1655  docker ps
+ 1656  curl http://172.17.0.2:8080
+ 1657  docker rm -f c1
+ 1658  ls
+ 1659  vim Dockerfile 
+ 1660  clear
+ 1661  docker images
+ 1662  docker tag tektutor/spring-hello-ms:1.0 tektutor/spring-hello-ms:latest
+ 1663  docker login
+ 1664  docker push tektutor/spring-hello-ms:latest
+ 1665  clear
+ 1666  ls
+ 1667  rm -rf tmp/
+ 1668  ls
+ 1669  rm -rf target/
+ 1670  ls
+ 1671  docker images
+ 1672  clear
+ 1673  ls
+ 1674  vim hello-deploy.yml
+ 1675  vim hello-svc.yml
+ 1676  vim hello-route.yml
+ 1677  ls
+ 1678  cd ..
+ 1679  ls
+ 1680  cp hello-microservice/ openshift-march-2025/Day9
+ 1681  cp -R hello-microservice/ openshift-march-2025/Day9
+ 1682  cd openshift-march-2025/
+ 1683  cd Day9
+ 1684  ls
+ 1685  rm -rf SpringBootMicroservice/
+ 1686  ls
+ 1687  cd ..
+ 1688  git add *
+ 1689  cd Day9
+ 1690  ls
+ 1691  cd hello-microservice/
+ 1692  ls
+ 1693  rm -rf .git
+ 1694  cd ..
+ 1695  git add *
+ 1696  git status
+ 1697  git commit -m "Added Day9 lab exercises"
+ 1698  git pull
+ 1699  git push
+ 1700  celar
+ 1701  ls
+ 1702  cd Day9
+ 1703  ls
+ 1704  cd hello-microservice/
+ 1705  ls
+ 1706  ls -lha .git
+ 1707  ls -lha
+ 1708  cd ..
+ 1709  git add * --all .
+ 1710  git status
+ 1711  ls
+ 1712  cd Day9
+ 1713  kls
+ 1714  clear
+ 1715  ls
+ 1716  mv hello-microservice/ hello
+ 1717  ls
+ 1718  cd ..
+ 1719  git add * 
+ 1720  git status
+ 1721  ls
+ 1722  cd Day9
+ 1723  ls
+ 1724  cd hello/
+ 1725  ls
+ 1726  cd m2
+ 1727  ls
+ 1728  rm -rf repository/
+ 1729  ls
+ 1730  cd ..
+ 1731  ls
+ 1732  cd ..
+ 1733  git add *
+ 1734  git status
+ 1735  git commit -m "Added DAy9 lab exercises"
+ 1736  git pull
+ 1737  git push
+ 1738  # Good Morning all !
+ 1739  # Let's wait for sometime while others are joining ...
+ 1740  clear
+ 1741  ls
+ 1742  cd tekton-march-2025/
+ 1743  ls
+ 1744  git pull
+ 1745  clear
+ 1746  ls
+ 1747  cd Day10
+ 1748  ls
+ 1749  cp tekton-trigger-github-webhook/first-pipeline.yml .
+ 1750  ls
+ 1751  mv first-pipeline.yml first-pipeline-when.yml 
+ 1752  vim first-pipeline-when.yml 
+ 1753  oc apply -f first-pipeline-when.yml 
+ 1754  cd ..
+ 1755  git add *
+ 1756  git commit -m "Added Day10 lab exercises"
+ 1757  git pull
+ 1758  git push
+ 1759  cd Day10
+ 1760  ls
+ 1761  gi tpull
+ 1762  clear
+ 1763  git pull
+ 1764  ls
+ 1765  cp first-pipeline.yml first-pipeline-finally-with-results.yml
+ 1766  cp first-pipeline-when.yml first-pipeline-finally-with-results.yml
+ 1767  vim first-pipeline-finally-with-results.yml 
+ 1768  cd ..
+ 1769  git add *
+ 1770  git commit -m "Added example to demonstrate finally with results in pipeline"
+ 1771  git pull
+ 1772  git push
+ 1773  celar
+ 1774  ls
+ 1775  cd Day10
+ 1776  ls
+ 1777  cp ../Day8/tekton/first-tekton-task.yml .
+ 1778  ls
+ 1779  vim first-tekton-taskrun.yml
+ 1780  oc apply -f first-tekton-task
+ 1781  cd ..
+ 1782  git add *
+ 1783  git commit -m "Added debug examples
+ 1784  "
+ 1785  git pull
+ 1786  git push
+ 1787  clear
+ 1788  cd ~/
+ 1789  cd openshift-march-2025/
+ 1790  git pull
+ 1791  clear
+ 1792  # Good afternoon all !
+ 1793  # Let's wait somewhile while others are joining ...
+ 1794  clear
+ 1795  cd openshift-march-2025/
+ 1796  cp -R Day9/hello Day10
+ 1797  cd Day10
+ 1798  ls
+ 1799  cd ..
+ 1800  git add *
+ 1801  git commit -m "Added Day10 lab exercises"
+ 1802  git pull
+ 1803  git push
+ 1804  cd Day10/hello/
+ 1805  vim Dockerfile 
+ 1806  cd ../..g
+ 1807  cd ../..
+ 1808  git add *
+ 1809  git commit -m "Removed m2 folder copy from Dockerfile"
+ 1810  git pull
+ 1811  git push
+ 1812  clear
+ 1813  docker ps -a
+ 1814  ifconfig
+ 1815  echo br-68ad02920509 > network.txt
+ 1816  echo br-dcbffefbe776 >> network.txt
+ 1817  cat network.txt 
+ 1818  echo crc >> network.txt
+ 1819  echo docker0 >> network.txt
+ 1820  echo enp0s31f6 >> network.txt
+ 1821  echo enp2s0 >> network.txt
+ 1822  echo virbr0 >> network.txt
+ 1823  echo wlp3s0 >> network.txt
+ 1824  cat network.txt 
+ 1825  clear
+ 1826  docker run -dit --name c1 --hostname c1 ubuntu:latest /bin/bash
+ 1827  docker ps
+ 1828  ifconfig
+ 1829  docker ps
+ 1830  docker inspect c1 | grep IPA
+ 1831  docker network ls
+ 1832  docker network inspect bridge
+ 1833  docker run -dit --name c2 --hostname c2 ubuntu:latest /bin/bash
+ 1834  docker network inspect bridge
+ 1835  docker exec -it c1 bash
+ 1836  # Good Morning all !
+ 1837  # Let's wait for sometime while  others are joining ..
+ 1838  # 
+ 1839  # While you are waiting, kindly check if you are able to access your lab machine
+ 1840  git clone https://github.com/tektutor/terraform-1721march-2025.git
+ 1841  cd terraform-1721march-2025/
+ 1842  mkdir Day1 Day2 Day3 Day4 Day5
+ 1843  echo "# Day 1" > Day1/README.md 
+ 1844  echo "# Day 2" > Day2/README.md 
+ 1845  echo "# Day 3" > Day3/README.md 
+ 1846  echo "# Day 4" > Day4/README.md 
+ 1847  echo "# Day 5" > Day5/README.md 
+ 1848  git 
+ 1849  git config --user.email "mail2jegan@gmail.com"
+ 1850  git config --global user.email "mail2jegan@gmail.com"
+ 1851  git config --global user.name "Jeganathan Swaminathan"
+ 1852  git config --list
+ 1853  git status
+ 1854  git add *
+ 1855  git commit -m "Initial commit"
+ 1856  git status
+ 1857  git push
+ 1858  clear
+ 1859  git pull
+ 1860  clear
+ 1861  cd Day1/ansible
+ 1862  cd Day1/
+ 1863  mkdir ansible
+ 1864  cd ansible/
+ 1865  s
+ 1866  clear
+ 1867  vim inventory
+ 1868  cd ..
+ 1869  ls
+ 1870  mkdir -p CustomDockerImage/ubuntu
+ 1871  vm CustomDockerImage CustomDockerImages
+ 1872  mv CustomDockerImage CustomDockerImages
+ 1873  ls
+ 1874  cd CustomDockerImages/
+ 1875  ls
+ 1876  cd ubuntu/
+ 1877  vim Dockerfile
+ 1878  clear
+ 1879  cat Dockerfile 
+ 1880  ssh-keygen
+ 1881  cd ..
+ 1882  git add *
+ 1883  git commit -m "Added Day1 lab examples"
+ 1884  git pull
+ 1885  git config pull.rebase false
+ 1886  git pull
+ 1887  git push
+ 1888  clear
+ 1889  cd Day1/CustomDockerImages/ubuntu/
+ 1890  ls
+ 1891  ssh-keygen
+ 1892  cp ~/.ssh/id_ed25519.pub authorized_keys
+ 1893  ls
+ 1894  docker images
+ 1895  docker rmi tektutor/ubuntu-ansible-node:latest 
+ 1896  docker rmi tektutor/rock
+ 1897  docker rmi tektutor/rocky-ansible-node:latest 
+ 1898  docker images
+ 1899  docker rmi 47cc95f3865b 3b03b9da9a55
+ 1900  clear
+ 1901  ls
+ 1902  docker build -t tektutor/ubuntu-ansible:latest .
+ 1903  docker images
+ 1904  clear
+ 1905  docker images
+ 1906  docker rmi tektutor/ubuntu-ansible:latest 
+ 1907  clear
+ 1908  build
+ 1909  clear
+ 1910  set -o vi
+ 1911  docker build -t tektutor/ubuntu-ansible-node:latest .
+ 1912  docker images
+ 1913  clear
+ 1914  docker images
+ 1915  clear
+ 1916  docker images | grep tektutor/ubuntu
+ 1917  docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest 
+ 1918  docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest 
+ 1919  docker ps
+ 1920  # Let's ssh into ubuntu1 container
+ 1921  ssh -p 2001 root@localhost
+ 1922  ssh -p 2002 root@localhost
+ 1923  clear
+ 1924  echo "" > ~/.ssh/known_hosts
+ 1925  clear
+ 1926  docker ps
+ 1927  ssh -p 2001 root@localhost
+ 1928  ssh -p 2002 root@localhost
+ 1929  clear
+ 1930  cd ..
+ 1931  ls
+ 1932  cd ansible/
+ 1933  ls
+ 1934  vim inventory 
+ 1935  ls
+ 1936  # Ansible ad-hoc command to ping the ansible nodes
+ 1937  cat inventory 
+ 1938  ansible -i inventory all -m ping
+ 1939  ansible -i inventory ubuntu1 -m ping
+ 1940  ansible -i inventory ubuntu2 -m ping
+ 1941  cd ../..
+ 1942  git add *
+ 1943  git commit -m "Added Day1 lab exercises"
+ 1944  rm Day1/CustomDockerImages/ubuntu/authorized_keys
+ 1945  git add *
+ 1946  git commit -m "added day1 lab exercises"
+ 1947  git pull
+ 1948  git push
+ 1949  clar
+ 1950  clear
+ 1951  ls
+ 1952  cd Day1
+ 1953  ls
+ 1954  ansible -i ansible/inventory all -m ping
+ 1955  cat ansible/inventory 
+ 1956  ansible -i ansible/inventory ubuntu1 -m setup
+ 1957  clear
+ 1958  ansible-doc -l
+ 1959  clear
+ 1960  ansible-doc -l | wc
+ 1961  ansible-doc -l 
+ 1962  ansible-doc win_ping
+ 1963  ansible-doc apt
+ 1964  clear
+ 1965  ansible --version
+ 1966  vim /usr/lib/python3/dist-packages/ansible/modules/ping.py 
+ 1967  vim /usr/lib/python3/dist-packages/ansible/modules/copy.py 
+ 1968  celar
+ 1969  clear
+ 1970  cd ansible/
+ 1971  ls
+ 1972  vim ping-playbook.yml
+ 1973  cat ping-playbook.yml 
+ 1974  clear
+ 1975  ls
+ 1976  cat inventory 
+ 1977  cat ping-playbook.yml 
+ 1978  ansible-playbook -i inventory ping-playbook.yml 
+ 1979  cd ../..
+ 1980  git add *
+ 1981  git commit -m "Added Day1 lab exercises"
+ 1982  git pull
+ 1983  git push
+ 1984  cd Day1/ansible/
+ 1985  ls
+ 1986  ansible-playbook -i inventory ping-playbook.yml -vvvv
+ 1987  clear
+ 1988  cd ../..
+ 1989  ansible-playbook -i Day1/ansible/inventory Day1/ansible/ping-playbook.yml 
+ 1990  cd Day1/ansible/
+ 1991  ls
+ 1992  vim install-visual-studio-code-playbook.yml
+ 1993  cd ..
+ 1994  git add *
+ 1995  git commit -m "Added Day1 lab exercises"
+ 1996  git pull
+ 1997  git push
+ 1998  uname -a
+ 1999  service nginx status
+ 2000  ansible-doc shell
+ 2001  clear
+ 2002  sudo apt update
+ 2003  sudo vim /etc/apt/sources.list
+ 2004  sudo -i
+ 2005  clear
+ 2006  ls
+ 2007  vim install-nginx-playbook.yml 
+ 2008  curl http://localhost:8001
+ 2009  curl http://localhost:8002
+ 2010  docker ps
+ 2011  clear
+ 2012  vim index.html
+ 2013  vim install-nginx-playbook.yml 
+ 2014  docker exec -it ubuntu1 bash
+ 2015  docker cp ubuntu1:/etc/nginx/sites-available/default .
+ 2016  ls
+ 2017  vim default 
+ 2018  vim install-nginx-playbook.yml 
+ 2019  ansible-doc file
+ 2020  vim install-nginx-playbook.yml 
+ 2021  ansible-doc apt
+ 2022  vim install-nginx-playbook.yml 
+ 2023  clear
+ 2024  cat install-nginx-playbook.yml 
+ 2025  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2026  curl http://localhost:8001
+ 2027  curl http://localhost:8002
+ 2028  vim install-nginx-playbook.yml 
+ 2029  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2030  vim install-nginx-playbook.yml 
+ 2031  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2032  vim install-nginx-playbook.yml 
+ 2033  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2034  vim install-nginx-playbook.yml 
+ 2035  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2036  vim install-nginx-playbook.yml +29
+ 2037  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2038  vim install-nginx-playbook.yml +29
+ 2039  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2040  vim install-nginx-playbook.yml +29
+ 2041  ansible-doc -l | grep aws
+ 2042  ansible-doc -l | grep print
+ 2043  ansible-doc apt
+ 2044  cd ../..
+ 2045  git add *
+ 2046  git commit -m "Added Day2 lab exercises"
+ 2047  git pull
+ 2048  git push
+ 2049  cd Day2/ansible/
+ 2050  clear
+ 2051  ls
+ 2052  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2053  vim install-nginx-playbook.yml 
+ 2054  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2055  clear
+ 2056  ssh -p 2001 root@localhost
+ 2057  vim install-nginx-playbook.yml 
+ 2058  git pull
+ 2059  git add *
+ 2060  git commit -m "Added Day2 lab exercises"
+ 2061  git pull
+ 2062  cd ..
+ 2063  ls
+ 2064  cd ..
+ 2065  ls
+ 2066  cd Day2
+ 2067  ls
+ 2068  vim README.md 
+ 2069  clear
+ 2070  ls
+ 2071  cd ansible/
+ 2072  ls
+ 2073  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 2074  cd ..
+ 2075  ls
+ 2076  cp -R ../Day1/CustomDockerImages/ .
+ 2077  cd CustomDockerImages/
+ 2078  clear
+ 2079  ls
+ 2080  mkdir rocky
+ 2081  cd rocky/
+ 2082  ls
+ 2083  vim Dockerfile
+ 2084  vim sshd_config
+ 2085  vim sudoers
+ 2086  ls
+ 2087  vim Dockerfile 
+ 2088  cp ~/.ssh/id_ed25519.pub authorized_keys
+ 2089  ls
+ 2090  docker build -t tektutor/rocky-ansible-node:latest .
+ 2091  docker iamges
+ 2092  clear
+ 2093  docker images
+ 2094  docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:latest 
+ 2095  docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/rocky-ansible-node:latest 
+ 2096  docker ps
+ 2097  ssh -p 2003 root@localhost
+ 2098  ssh -p 2004 root@localhost
+ 2099  rm authorized_keys 
+ 2100  clear
+ 2101  cd ..
+ 2102  git add *
+ 2103  git commit -m "Added Day2 lab exercises"
+ 2104  git pull
+ 2105  git push
+ 2106  cd Day2/ansible/
+ 2107  clear
+ 2108  ls
+ 2109  echo "" > ~/.ssh/known_hosts
+ 2110  clear
+ 2111  ansible -i hosts all -m ping
+ 2112  vim ansible.cfg
+ 2113  ansible all -m ping
+ 2114  cat ansible.cfg 
+ 2115  ansible all -m ping
+ 2116  ansible-playbook install-nginx-playbook.yml 
+ 2117  clear
+ 2118  ls
+ 2119  vim hosts
+ 2120  ansible all -m ping
+ 2121  cat hosts
+ 2122  clear
+ 2123  cat hosts
+ 2124  ansible all -m ping
+ 2125  cd ../..
+ 2126  git add *
+ 2127  git commit -m "Added Day2 lab exercises"
+ 2128  git pull
+ 2129  git push
+ 2130  clear
+ 2131  cd Day2/ansible/
+ 2132  ls
+ 2133  ansible-playbook install-nginx-playbook.yml 
+ 2134  vim install-nginx-playbook.yml 
+ 2135  ansible-playbook install-nginx-playbook.yml 
+ 2136  ssh -p 2003 root@localhost
+ 2137  vim install-nginx-playbook.yml 
+ 2138  ansible-playbook install-nginx-playbook.yml 
+ 2139  vim install-nginx-playbook.yml 
+ 2140  ansible-playbook install-nginx-playbook.yml 
+ 2141  ssh -p 2003 root@localhost
+ 2142  docker cp rocky1:/etc/nginx/nginx.conf
+ 2143  docker cp rocky1:/etc/nginx/nginx.conf .
+ 2144  vim nginx.conf 
+ 2145  ls
+ 2146  vim install-nginx-playbook.yml 
+ 2147  ls
+ 2148  rm 1
+ 2149  clear
+ 2150  vim install-nginx-playbook.yml 
+ 2151  ansible-playbook install-nginx-playbook.yml 
+ 2152  curl http://localhost:8001
+ 2153  curl http://localhost:8002
+ 2154  curl http://localhost:8003
+ 2155  curl http://localhost:8004
+ 2156  cd ../..
+ 2157  git add *
+ 2158  git commit -m "Added Day2 lab exercises"
+ 2159  git pull
+ 2160  git push
+ 2161  clear
+ 2162  cd Day2/ansible/
+ 2163  ls
+ 2164  ansible ubuntu1 -m setup | grep ansible_distribution
+ 2165  ansible rocky1 -m setup | grep ansible_distribution
+ 2166  ansible rocky1 -m setup | grep ansible_os_family
+ 2167  ansible ubuntu1 -m setup | grep ansible_os_family
+ 2168  ansible ubuntu1 -m setup 
+ 2169  ls
+ 2170  vim install-nginx-playbook.yml 
+ 2171  ls
+ 2172  mkdir after-refactoring
+ 2173  cp * after-refactoring/
+ 2174  ls
+ 2175  cd after-refactoring/
+ 2176  ls
+ 2177  vim install-nginx-playbook.yml 
+ 2178  cp configure-nginx-ubunt.yml configure-nginx-ubuntu.yml 
+ 2179  vim install-nginx-playbook.yml 
+ 2180  ls
+ 2181  clear
+ 2182  vim install-nginx-playbook.yml 
+ 2183  ls
+ 2184  ls -l
+ 2185  rm configure-nginx-ubunt.yml 
+ 2186  ls
+ 2187  vim configure-nginx-ubuntu.yml 
+ 2188  clear
+ 2189  ls -l
+ 2190  ansible-playbook install-nginx-playbook.yml 
+ 2191  vim install-nginx-playbook.yml 
+ 2192  ansible-playbook install-nginx-playbook.yml 
+ 2193  vim install-nginx-playbook.yml 
+ 2194  ansible-playbook install-nginx-playbook.yml 
+ 2195  vim install-nginx-playbook.yml 
+ 2196  ansible-playbook install-nginx-playbook.yml 
+ 2197  curl http://localhost:8001
+ 2198  curl http://localhost:8002
+ 2199  curl http://localhost:8003
+ 2200  curl http://localhost:8004
+ 2201  cd ..
+ 2202  git add *
+ 2203  git commit -m "Added Day2 lab exercises"
+ 2204  git pull
+ 2205  git push
+ 2206  cd Day2
+ 2207  cd ansible/
+ 2208  l;s
+ 2209  clear
+ 2210  vim install-nginx-playbook.yml 
+ 2211  cd after-refactoring/
+ 2212  ls
+ 2213  vim install-nginx-playbook.yml 
+ 2214  ansible ubuntu1 -m setup | grep ansible_distribution
+ 2215  ls -l install-nginx-ubuntu.yml 
+ 2216  cat install-nginx-playbook.yml | grep ubuntu
+ 2217  cat install-nginx-playbook.yml
+ 2218  clear
+ 2219  cd ..
+ 2220  mkdir nginx-role
+ 2221  cd nginx-role/
+ 2222  ansible-galaxy create nginx
+ 2223  clear
+ 2224  ansible-galaxy init nginx
+ 2225  tree nginx/
+ 2226  # Defaults and vars has variables
+ 2227  # files folder has files used by copy ansible modules
+ 2228  # templates folder has files used by template ansible module
+ 2229  # handlers folder that has restart, start service, related code
+ 2230  # meta - documentation folder
+ 2231  # tasks - will have code that normally we write in a playbook
+ 2232  # tests folder has a test inventory and playbook that demonstrates invoking role
+ 2233  cp ../default nginx/files/
+ 2234  cp ../nginx.conf nginx/files/
+ 2235  cp ../index.html nginx/templates/
+ 2236  cp ../*.yml nginx/tasks
+ 2237  tree nginx/
+ 2238  ls
+ 2239  cd nginx/
+ 2240  ls
+ 2241  cd tasks/
+ 2242  ls
+ 2243  rm install-nginx-playbook.yml 
+ 2244  cd ..
+ 2245  cp ../after-refactoring/*.yml nginx/tasks/
+ 2246  ls
+ 2247  cd nginx/tasks/
+ 2248  ls
+ 2249  vim install-nginx-playbook.yml 
+ 2250  rm install-nginx-playbook.yml 
+ 2251  ls
+ 2252  cat main.yml 
+ 2253  cd ..
+ 2254  ls
+ 2255  cd defaults/
+ 2256  ls
+ 2257  vim main.yml 
+ 2258  cd ..
+ 2259  cd vars
+ 2260  vim main.yml 
+ 2261  cd ../meta/
+ 2262  ls
+ 2263  vim main.yml 
+ 2264  ls
+ 2265  cd ..
+ 2266  ls
+ 2267  cd templates/
+ 2268  ls
+ 2269  mv index.html index.html.j2
+ 2270  vim index.html.j2 
+ 2271  cd ..
+ 2272  cd tasks/
+ 2273  ls
+ 2274  vim common-nginx-tasks.yml 
+ 2275  cd ..
+ 2276  ls
+ 2277  cd tasks/
+ 2278  ls
+ 2279  mv restart-nginx-* ../handlers/
+ 2280  vim main.yml 
+ 2281  cd ..
+ 2282  ls
+ 2283  cd handlers/
+ 2284  ls
+ 2285  vim main.yml 
+ 2286  cd ..
+ 2287  clear
+ 2288  ls
+ 2289  cd ..
+ 2290  ls
+ 2291  cp ../hosts .
+ 2292  cp ../ansible.cfg .
+ 2293  ls
+ 2294  vim install-nginx-playbook.yml
+ 2295  ls
+ 2296  cat install-nginx-playbook.yml 
+ 2297  ansible-playbook install-nginx-playbook.yml 
+ 2298  ls
+ 2299  mkdir weblogic
+ 2300  ls
+ 2301  rm -rf weblogic/
+ 2302  ls
+ 2303  cd nginx/
+ 2304  ls
+ 2305  cd tests/
+ 2306  ls
+ 2307  cat inventory 
+ 2308  cat test.yml 
+ 2309  cd ..
+ 2310  rm -rf tests/
+ 2311  ls
+ 2312  cd ..
+ 2313  ls
+ 2314  cd ..
+ 2315  ls
+ 2316  mkdir dynamic-inventory
+ 2317  cd ..
+ 2318  git status
+ 2319  git add *
+ 2320  git commit -m "Added ansible role in Day2 lab exercises"
+ 2321  git pull
+ 2322  git push
+ 2323  cd Day2
+ 2324  clear
+ 2325  ls
+ 2326  cd ansible/
+ 2327  ls
+ 2328  cd dynamic-inventory/
+ 2329  ls
+ 2330  vim inventory.py
+ 2331  ls
+ 2332  vim inventory.py 
+ 2333  cd ..
+ 2334  ls
+ 2335  ansible all -m ping
+ 2336  set -o vi
+ 2337  docker run -d --name rocky3 --hostname rocky3 -p 2005:22 -p 8005:80 tektutor/rocky-ansible-node:latest 
+ 2338  docker ps
+ 2339  ansible all -m ping
+ 2340  cd ..
+ 2341  ls
+ 2342  cd ansible/
+ 2343  ls
+ 2344  cd dynamic-inventory/
+ 2345  ls
+ 2346  chmod +x ./inventory.py 
+ 2347  clear
+ 2348  ls
+ 2349  ./inventory.py 
+ 2350  vim inventory.py 
+ 2351  ./inventory.py 
+ 2352  docker stop rocky3
+ 2353  ./inventory.py 
+ 2354  docker start rocky3
+ 2355  ./inventory.py 
+ 2356  clear
+ 2357  ls
+ 2358  cp ../ansible.cfg .
+ 2359  vim ansible.cfg 
+ 2360  cat ansible.cfg 
+ 2361  ansible all -m ping
+ 2362  ls
+ 2363  vim inventory.py 
+ 2364  docker ps -q
+ 2365  ./inventory.py 
+ 2366  vim inventory.py 
+ 2367  docker ps
+ 2368  docker port ubuntu1
+ 2369  docker port 22 ubuntu1 
+ 2370  docker port ubuntu1 22
+ 2371  vim inventory.py 
+ 2372  set -o vi
+ 2373  docker run -d --name rocky4 --hostname rocky4 tektutor/rocky-ansible-node:latest 
+ 2374  docker ps
+ 2375  docker port rocky4 22
+ 2376  vim inventory.py 
+ 2377  ./inventory.py 
+ 2378  cd ..
+ 2379  git add *
+ 2380  git commit -m "Added dynamic inventory to Day2"
+ 2381  git pull
+ 2382  git push
+ 2383  CLEAR
+ 2384  clear
+ 2385  cd Day2/ansible/dynamic-inventory/
+ 2386  docker ps
+ 2387  docker rm -f rocky3 rocky4
+ 2388  clear
+ 2389  docker ps
+ 2390  ./inventory.py 
+ 2391  docker ps
+ 2392  ansible all -m ping
+ 2393  cat ansible.cfg 
+ 2394  docker stop ubuntu2
+ 2395  ansible all -m ping
+ 2396  docker start ubuntu2
+ 2397  ansible all -m ping
+ 2398  history
+ 2399  history > command_history.txt
