@@ -1,0 +1,4 @@
+- name: This playbook depends on nginx role to install nginx in ubuntu and rocky linux distributions
+  hosts: all
+  roles:
+  - nginx

@@ -1,0 +1,4 @@
+---
+# vars file for nginx
+config_mgr_tool: ansible
+provisioner_tool: docker
