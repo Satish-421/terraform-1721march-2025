@@ -249,3 +249,29 @@ Expected output
 ![image](https://github.com/user-attachments/assets/e0ff355d-80c8-43a7-814a-e2fab1c33acf)
 ![image](https://github.com/user-attachments/assets/c33d2955-6eb9-4f2a-8301-5d48f8ae2008)
 
+## Lab - Ansible Dynamic Inventory
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/dynamic-inventory
+docker ps
+./inventory.py
+cat ansible.cfg
+ansible all -m ping
+docker stop ubuntu2
+ansible all -m ping
+docker start ubuntu2
+ansible all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3cef1ea8-389a-4aac-9a51-1552b0ca1d76)
+![image](https://github.com/user-attachments/assets/b7ac50ae-5c90-403e-bfff-484acb25c11e)
+![image](https://github.com/user-attachments/assets/4945770c-8e53-4104-bfeb-e43a158715d5)
+![image](https://github.com/user-attachments/assets/d485f268-e93d-4dc2-9a10-e45f140605d9)
+![image](https://github.com/user-attachments/assets/462a571c-36c7-4756-abcf-df0893fde2f2)
+
+## Info - Ansible variable precedence
+<pre>
+https://docs.ansible.com/ansible/latest/reference_appendices/general_precedence.html  
+</pre>
