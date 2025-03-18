@@ -120,7 +120,7 @@ docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/roc
 docker ps
 ```
 
-Let's SSH into rocky1 and see if it is allowing to login without asking for password
+Let's SSH into rocky1,rocky2 and see if it is allowing to login without asking for password
 ```
 ssh -p 2003 root@localhost
 exit
@@ -170,3 +170,40 @@ Expected output
 ![image](https://github.com/user-attachments/assets/cc5904f5-ff82-4536-b0a5-d17038e44ad6)
 ![image](https://github.com/user-attachments/assets/f58e843e-6855-40c6-9497-45a6eef94e1a)
 ![image](https://github.com/user-attachments/assets/70a7cbdc-b544-4d85-b0ae-c9185ad7800f)
+
+## Info - Ansible facts
+<pre>
+- Ansible setup module is implicitly called as the very first task in every play in a playbook
+- setup module collects loads of facts(meta-data) about the ansible node like 
+  - what is the OS distribution, OS distribution version, python version installed, hardware details, etc., in case of unix/linux/mac
+- what is the Windows OS, Window OS version, powershell version installed, hardware details, etc., in case of windows servers  
+- we can use the facts to perform conditional installation via playbook
+</pre>
+
+
+## Info - Clean code practices and design principles
+<pre>
+- SOLID Design Principles
+- S - Single Responsibility Principle (SRP)
+- O - Open Closed Principle (OCP)
+- L - Liskov Substituion Principle (LSP)
+- I - Interface Seggregation 
+- D - Dependency Injection or Dependency Inversion or Inversion of Control (IOC)
+</pre>
+
+As per Open Closed Principle, a good design will be open for extension without modifying existing code.
+
+For example, let's say we wanted to add support for Fedora linux in the install-nginx-playbook.yml. Is it possible to add support to Fedora linux without modifying existing install-nginx-playbook.yml?
+
+## Lab - Running the refactored install nginx ansible playbook
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/after-refactoring
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f8c9a7a6-3fe2-4a46-a433-9311e220803d)
+![image](https://github.com/user-attachments/assets/90a38089-dbb6-492f-ba37-59b9f14c70aa)
+![image](https://github.com/user-attachments/assets/ff6a36d4-ba89-47f9-abf6-e15954e9bd09)
