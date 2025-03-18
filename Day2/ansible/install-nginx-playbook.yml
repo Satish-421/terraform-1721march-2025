@@ -27,7 +27,7 @@
     - "http://localhost:8002"
   tasks:
   - name: Access the web page
-    shell: "curlasdfsd {{item}}"
+    shell: "curl {{item}}"
     with_list: "{{urls}}"
     register: output
 
