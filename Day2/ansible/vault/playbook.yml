@@ -1,0 +1,6 @@
+- name: Demonstrates accessing ansible vault protected information in a secured way
+  hosts: localhost
+  vars_files:
+  - mysql-login-credentials.yml
+  tasks:
+  - debug: msg="Username = {{username}}, Password = {{password}}"
