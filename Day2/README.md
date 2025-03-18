@@ -1,5 +1,28 @@
 # Day 2
 
+## Info - Linux Distributions
+<pre>
+- Linux Operating System is distributed by many organizations
+- Each Linux OS belongs to different Linux OS Family
+- Each Linux Distribution
+- Examples
+  - Ubuntu - is a Linux distribution that belongs to Debian Linux Family
+  - Fedora - is a Linux distribution that belongs to Red Hat Linux Family
+  - Rocky Linux - is a Linux distribution that belongs to Red Hat Linux Family
+  - Kali Linux - is a Linux distribution that belongs to Debian Linux Family
+  - Red Hat Enterprise Linux(RHEL) - is a Linux distribution that belongs to to Red Hat Linux Family
+- Each Linux Family supports different Package Managers
+- Package Manager
+  - is a tool that helps us install/uninstall/upgrade softwares in Linux
+  - Ubuntu supports a package manager called apt/apt-get
+  - Fedora supports package managers called dnf,yum,rpm
+  - RHEL supports package managers dnf,yum,rpm, etc.,
+- Linux Repository Servers
+  - Each Linux Distribution company maintains a Server that has test,stable softwares for every version of Linux distribution
+  - We need to update the repository url, and then we can install any linux software from the repository
+  - Package Managers will be using the repository configuration files to find the repository url
+</pre>  
+
 ## Lab - Understanding host and group variables in ansible inventory file
 <pre>
 - whatever variables are unique to an ansible node are called as host variable
