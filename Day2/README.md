@@ -72,7 +72,7 @@ curl http://172.17.0.3:80
 ```
 Let's check if the nginx server is up and running using ansible ad-hoc command
 ```
-ansible -i hosts -m shell -a "service nginx status"
+ansible -i hosts all -m shell -a "service nginx status"
 ```
 ![image](https://github.com/user-attachments/assets/eb06b7d6-3c48-49f9-8b33-6f4e6c230e0f)
 ![image](https://github.com/user-attachments/assets/3e42472f-b836-4522-8a55-1c0bf086d9e9)
