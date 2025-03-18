@@ -207,3 +207,28 @@ Expected output
 ![image](https://github.com/user-attachments/assets/f8c9a7a6-3fe2-4a46-a433-9311e220803d)
 ![image](https://github.com/user-attachments/assets/90a38089-dbb6-492f-ba37-59b9f14c70aa)
 ![image](https://github.com/user-attachments/assets/ff6a36d4-ba89-47f9-abf6-e15954e9bd09)
+
+## Info - Ansible Role
+<pre>
+- is a reusable code that can invoked from any ansible playbooks
+- ansible role follows certain folder structure and best practices
+- ansible roles can't executed independently
+- ansible roles can only be accessed from ansible playbooks
+- imagine ansible role like Dynamic Link Library, just like functions in DLL can't be executed directly ansible roles can't be executed directlry
+- just like DLL functions can be invoked from application after loading the dll, from ansible playbook we can invoke ansible roles
+- each ansible role will focus on one software
+- For example
+  - for installing nginx in ubuntu, rocky, fedora, rhel, suse we could write one role
+  - for installing and configuring weblogic in multiple OS we could develop an ansible role
+  - these ansible roles can later be accessed from any ansible playbooks
+</pre>  
+
+## Info - Ansible utilities
+<pre>
+ansible-doc - used to get help about any ansible module
+ansible - to run ansible ad-hoc command
+ansible-playbook - used to execute ansible playbooks
+ansible-galaxy 
+  - used to download,install reusable roles from galaxy.ansible.com website
+  - also can be to develop a custom ansible role
+</pre>
