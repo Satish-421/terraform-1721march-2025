@@ -132,3 +132,11 @@ exit
 Expected output
 ![image](https://github.com/user-attachments/assets/c54e3fa7-0015-4e79-836a-24f31937abbb)
 ![image](https://github.com/user-attachments/assets/3fdbf589-0d6e-492b-9414-fd1d8bc8bed9)
+
+## Info - Ansible configuration file
+<pre>
+- we can export the ANSIBLE_CONFIG environment variable to point the location and file name of ansible configuration file
+- When the ANSIBLE_CONFIG environment is undefined, ansible or ansible-playbook will search for the ansible.cfg in the current directory, if it finds it will stop searching and it will use the ansible.cfg from the current directory
+- in case, the ansible.cfg is not present in the current, ansible will try to locate a file name .ansible.cfg from home directory of the user, if it finds it will stop searching elsewhere and starts using the .ansible.cfg file
+- if the home directory of the user doesn't have the file, ansible will finally try to locate at /etc/ansible/ansible.cfg file, it that is also missing, it will give up
+</pre>
