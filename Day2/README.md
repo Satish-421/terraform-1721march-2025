@@ -270,3 +270,8 @@ Expected output
 ![image](https://github.com/user-attachments/assets/4945770c-8e53-4104-bfeb-e43a158715d5)
 ![image](https://github.com/user-attachments/assets/d485f268-e93d-4dc2-9a10-e45f140605d9)
 ![image](https://github.com/user-attachments/assets/462a571c-36c7-4756-abcf-df0893fde2f2)
+
+## Info - Ansible variable precedence
+<pre>
+https://docs.ansible.com/ansible/latest/reference_appendices/general_precedence.html  
+</pre>
