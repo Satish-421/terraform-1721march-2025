@@ -8,6 +8,14 @@
 - ansible_host, ansible_private_key_file, ansible_user are called group variables in this inventory
 </pre>
 
+Make sure the ubuntu1 and ubuntu2 containers are running
+```
+docker ps -a
+docker start ubuntu1 ubuntu2
+docker ps
+```
+
+Now you may proceed
 ```
 cd ~/terraform-1721march-2025
 git pull
@@ -15,6 +23,8 @@ cd Day2/ansible
 cat hosts
 ansible -i hosts all -m ping
 ```
+
+
 
 Expected output
 ![image](https://github.com/user-attachments/assets/9ff10406-dc29-45d4-a696-84f4bac08854)
