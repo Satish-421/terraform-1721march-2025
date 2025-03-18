@@ -142,3 +142,16 @@ Expected output
 
 - whichever place ansible.cfg file is located first, it will use it and stops searching for ansible.cfg elsewhere
 </pre>
+
+## Lab - Adding rocky container details in the hosts file
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible
+cat ansible.cfg
+cat hosts
+ansible all -m ping
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f90a9761-51f5-40c8-9c2c-bde3ecdc51ab)
