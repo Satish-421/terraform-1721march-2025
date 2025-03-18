@@ -179,3 +179,18 @@ Expected output
 - what is the Windows OS, Window OS version, powershell version installed, hardware details, etc., in case of windows servers  
 - we can use the facts to perform conditional installation via playbook
 </pre>
+
+
+## Info - Clean code practices and design principles
+<pre>
+- SOLID Design Principles
+- S - Single Responsibility Principle (SRP)
+- O - Open Closed Principle (OCP)
+- L - Liskov Substituion Principle (LSP)
+- I - Interface Seggregation 
+- D - Dependency Injection or Dependency Inversion or Inversion of Control (IOC)
+</pre>
+
+As per Open Closed Principle, a good design will be open for extension without modifying existing code.
+
+For example, let's say we wanted to add support for Fedora linux in the install-nginx-playbook.yml. Is it possible to add support to Fedora linux without modifying existing install-nginx-playbook.yml?
