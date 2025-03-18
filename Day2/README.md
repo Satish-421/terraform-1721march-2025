@@ -194,3 +194,16 @@ Expected output
 As per Open Closed Principle, a good design will be open for extension without modifying existing code.
 
 For example, let's say we wanted to add support for Fedora linux in the install-nginx-playbook.yml. Is it possible to add support to Fedora linux without modifying existing install-nginx-playbook.yml?
+
+## Lab - Running the refactored install nginx ansible playbook
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible/after-refactoring
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/f8c9a7a6-3fe2-4a46-a433-9311e220803d)
+![image](https://github.com/user-attachments/assets/90a38089-dbb6-492f-ba37-59b9f14c70aa)
+![image](https://github.com/user-attachments/assets/ff6a36d4-ba89-47f9-abf6-e15954e9bd09)
