@@ -155,3 +155,18 @@ ansible all -m ping
 
 Expected output
 ![image](https://github.com/user-attachments/assets/f90a9761-51f5-40c8-9c2c-bde3ecdc51ab)
+
+
+## Lab - Installing nginx via playbook on Ubuntu and Rocky linux servers
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/ansible
+ansible-playbook install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/31aaa6a5-0daf-4d59-a23e-9ccedb1390b5)
+![image](https://github.com/user-attachments/assets/cc5904f5-ff82-4536-b0a5-d17038e44ad6)
+![image](https://github.com/user-attachments/assets/f58e843e-6855-40c6-9497-45a6eef94e1a)
+![image](https://github.com/user-attachments/assets/70a7cbdc-b544-4d85-b0ae-c9185ad7800f)
