@@ -75,3 +75,14 @@ Let's check if the nginx server is up and running using ansible ad-hoc command
 ansible -i hosts -m shell -a "service nginx status"
 ```
 ![image](https://github.com/user-attachments/assets/eb06b7d6-3c48-49f9-8b33-6f4e6c230e0f)
+![image](https://github.com/user-attachments/assets/3e42472f-b836-4522-8a55-1c0bf086d9e9)
+![image](https://github.com/user-attachments/assets/7b5b25aa-4a88-4d6f-ba09-e78fdafec832)
+
+Let's test the web page response
+```
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/a140c2a6-e40a-4fa9-8f7a-66b66b7af93c)
