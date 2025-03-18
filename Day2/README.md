@@ -120,7 +120,7 @@ docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/roc
 docker ps
 ```
 
-Let's SSH into rocky1 and see if it is allowing to login without asking for password
+Let's SSH into rocky1,rocky2 and see if it is allowing to login without asking for password
 ```
 ssh -p 2003 root@localhost
 exit
