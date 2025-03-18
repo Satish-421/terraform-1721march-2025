@@ -72,7 +72,7 @@ curl http://172.17.0.3:80
 ```
 Let's check if the nginx server is up and running using ansible ad-hoc command
 ```
-ansible -i hosts -m shell -a "service nginx status"
+ansible -i hosts all -m shell -a "service nginx status"
 ```
 ![image](https://github.com/user-attachments/assets/eb06b7d6-3c48-49f9-8b33-6f4e6c230e0f)
 ![image](https://github.com/user-attachments/assets/3e42472f-b836-4522-8a55-1c0bf086d9e9)
@@ -92,3 +92,43 @@ Expected output
 ![image](https://github.com/user-attachments/assets/f5801875-b1a6-43fa-956b-54e907b9a5ba)
 ![image](https://github.com/user-attachments/assets/8897d511-0caf-4d21-9916-27af923ce303)
 ![image](https://github.com/user-attachments/assets/695316de-062b-4c29-b14e-a1435a85755c)
+![image](https://github.com/user-attachments/assets/6302e29d-e903-4665-b7ec-6d2311d2602e)
+![image](https://github.com/user-attachments/assets/5c4045d7-860d-467b-8675-1da2dda02d41)
+![image](https://github.com/user-attachments/assets/fa6fcd31-d9da-448b-a756-953f9c1b0bab)
+
+## Lab - Building a Custom Rocky Linux Ansible Node Image
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day2/CustomDockerImages/rocky
+cp ~/.ssh/id_ed25519.pub authorized_keys
+ls -l
+docker build -t tektutor/rocky-ansible-node:latest .
+docker images
+rm authorized_keys
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/469e0f66-1d3d-4d2b-823b-8161b5ba9778)
+![image](https://github.com/user-attachments/assets/7392fe27-a150-48a9-8b46-255537457c78)
+![image](https://github.com/user-attachments/assets/f80a0db5-0489-4e48-955d-6722327bf976)
+
+## Lab - Let's create couple of rocky linux ansible node containers
+```
+docker run -d --name rocky1 --hostname rocky1 -p 2003:22 -p 8003:80 tektutor/rocky-ansible-node:latest
+docker run -d --name rocky2 --hostname rocky2 -p 2004:22 -p 8004:80 tektutor/rocky-ansible-node:latest
+docker ps
+```
+
+Let's SSH into rocky1 and see if it is allowing to login without asking for password
+```
+ssh -p 2003 root@localhost
+exit
+
+ssh -p 2004 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/c54e3fa7-0015-4e79-836a-24f31937abbb)
+![image](https://github.com/user-attachments/assets/3fdbf589-0d6e-492b-9414-fd1d8bc8bed9)
