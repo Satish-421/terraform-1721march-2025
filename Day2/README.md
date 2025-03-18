@@ -170,3 +170,12 @@ Expected output
 ![image](https://github.com/user-attachments/assets/cc5904f5-ff82-4536-b0a5-d17038e44ad6)
 ![image](https://github.com/user-attachments/assets/f58e843e-6855-40c6-9497-45a6eef94e1a)
 ![image](https://github.com/user-attachments/assets/70a7cbdc-b544-4d85-b0ae-c9185ad7800f)
+
+## Info - Ansible facts
+<pre>
+- Ansible setup module is implicitly called as the very first task in every play in a playbook
+- setup module collects loads of facts(meta-data) about the ansible node like 
+  - what is the OS distribution, OS distribution version, python version installed, hardware details, etc., in case of unix/linux/mac
+- what is the Windows OS, Window OS version, powershell version installed, hardware details, etc., in case of windows servers  
+- we can use the facts to perform conditional installation via playbook
+</pre>
