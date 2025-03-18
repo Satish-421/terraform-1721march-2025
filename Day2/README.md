@@ -86,3 +86,6 @@ curl http://localhost:8002
 
 Expected output
 ![image](https://github.com/user-attachments/assets/a140c2a6-e40a-4fa9-8f7a-66b66b7af93c)
+![image](https://github.com/user-attachments/assets/39ef2320-95c9-4ac5-863c-b2d28adf6c3e)
+![image](https://github.com/user-attachments/assets/f24f025d-0205-4d8d-b2b4-4dd6218a5883)
+![image](https://github.com/user-attachments/assets/f62d7738-9971-4422-8bee-7fedd01e8c82)
