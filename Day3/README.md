@@ -19,8 +19,10 @@
 minikube status
 minikube start
 minikube status
+kubectl get nodes
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/310342c7-b2e8-4edd-aa4e-3d5b15fb60ea)
+![image](https://github.com/user-attachments/assets/befcda35-93a5-4a92-ab74-8773102bc9d5)
 
