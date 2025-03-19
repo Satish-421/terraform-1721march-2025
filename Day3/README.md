@@ -241,4 +241,13 @@ tower-cli job launch --job-template=9
   - equivalent to C/C++ in terms of performance
 </pre>
 
+## Lab - Checking if go is installed in your lab machine
+```
+go version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/638a308f-8af1-4697-994f-ecbc03ff46d7)
+
+
 
