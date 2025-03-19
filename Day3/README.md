@@ -602,4 +602,4 @@ go run ./slice.go
 Expected output
 ![image](https://github.com/user-attachments/assets/89ef4601-b314-4f4e-b9b9-4d864c377316)
 ![image](https://github.com/user-attachments/assets/d17a0873-2049-4db7-92a2-155d11b9901d)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/5de5008b-371d-4934-a3d1-2cd9f72fc4f3)
