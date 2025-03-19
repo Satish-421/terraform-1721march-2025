@@ -788,3 +788,4 @@ go run ./main.go
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/b915ef2e-e34f-4376-a50c-3247c3ab4694)
