@@ -205,6 +205,8 @@ tower-cli config username admin
 tower-cli config password your-admin-password
 tower-cli config verify_ssl false
 tower-cli project list
+tower-cli job list
+tower-cli job launch --job-template=9
 ```
 
 
