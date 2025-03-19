@@ -49,4 +49,6 @@ username - admin
 password - 
 </pre>
 ![image](https://github.com/user-attachments/assets/910b3144-e59c-459a-8c5b-26788553153c)
+![image](https://github.com/user-attachments/assets/fb6b39b7-9752-4ce6-83b7-45ba185e7afa)
+![image](https://github.com/user-attachments/assets/06607ea3-0fbf-4dfa-8cd4-0f4e78af0221)
 
