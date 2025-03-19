@@ -48,4 +48,5 @@ Login credentials for AWX is
 username - admin
 password - 
 </pre>
+![image](https://github.com/user-attachments/assets/910b3144-e59c-459a-8c5b-26788553153c)
 
