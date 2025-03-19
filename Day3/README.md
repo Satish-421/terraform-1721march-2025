@@ -150,3 +150,38 @@ Click "Launch"
 ![image](https://github.com/user-attachments/assets/35459970-67de-42c0-a049-5985fbaaab97)
 ![image](https://github.com/user-attachments/assets/5dcd6fa0-78fb-45cc-abbb-8c6f10f1c751)
 
+## Lab - Creating a Job Template to invoke Ansible Playbook
+Navigate to your Ansible Automation Platform Dashboard page
+![image](https://github.com/user-attachments/assets/256e8757-4e9b-4cb2-b8ab-8343e2a73dd1)
+
+On the Resources menu, click "Templates" to create a Job Template 
+![image](https://github.com/user-attachments/assets/48e06b81-27ad-4121-bdb4-0b00a3dd3ccc)
+
+Click "Add"
+![image](https://github.com/user-attachments/assets/31f8b13f-c94c-4856-bcd2-caf79c79519d)
+Select "Add Job Template"
+![image](https://github.com/user-attachments/assets/ef9ee9da-02fb-4279-93f1-fdf50d9810f6)
+
+![image](https://github.com/user-attachments/assets/b7ff8578-0ee8-4420-b5fc-2b7ef5474f52)
+![image](https://github.com/user-attachments/assets/c2a7146f-6c29-4bb6-91d8-94f66c625559)
+![image](https://github.com/user-attachments/assets/8852d272-b637-4cc9-89b5-d86cdc61dd21)
+![image](https://github.com/user-attachments/assets/888939f8-d351-475f-a51a-f725d0f6a6aa)
+![image](https://github.com/user-attachments/assets/8f5b0334-1bf5-4690-8577-b589904c9147)
+![image](https://github.com/user-attachments/assets/977dda8c-1496-4a16-b89f-56d17e58130f)
+![image](https://github.com/user-attachments/assets/f4438d57-2cc0-4d7b-bea3-cdde67b4359f)
+
+![image](https://github.com/user-attachments/assets/d33159ef-1eb6-475e-9858-77a5ccc9a3ca)
+Click "Save"
+![image](https://github.com/user-attachments/assets/739330d0-717a-4ad6-9d08-a1281b3b69a2)
+![image](https://github.com/user-attachments/assets/a7ef8b36-9a94-4156-8246-0773bce3d1ac)
+Click "Launch" to run the playbook
+
+![image](https://github.com/user-attachments/assets/b2793f94-4872-4184-8706-64f181711bf1)
+
+![image](https://github.com/user-attachments/assets/098bf9d1-77b5-4724-bd7a-0aeddff6f977)
+
+![image](https://github.com/user-attachments/assets/f940905f-5bb8-4f3d-868e-fe3d59373adb)
+
+
+
+
