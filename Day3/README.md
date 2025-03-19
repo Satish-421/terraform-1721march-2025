@@ -26,3 +26,17 @@ Expected output
 ![image](https://github.com/user-attachments/assets/310342c7-b2e8-4edd-aa4e-3d5b15fb60ea)
 ![image](https://github.com/user-attachments/assets/befcda35-93a5-4a92-ab74-8773102bc9d5)
 
+Launching AWX - opensource Ansible Automation Platform
+```
+minikube service awx-demo-service --url -n ansible-awx
+```
+
+You can launch the AWX webconsole using the url shown by the above command in the Ubuntu RPS cloud machine
+<pre>
+http://192.168.49.2:31225
+</pre>
+
+To retrieve the AWX password ( save the password in a file to avoid typing this lengthy command each time )
+```
+kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
+```
