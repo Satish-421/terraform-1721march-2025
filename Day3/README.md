@@ -613,6 +613,8 @@ import "fmt"
 
 func main() {
 
+	//Declares a map with string type key and string type value
+	//key and values can be of different types as well
 	toolsPath := map[string]string{
 		"java_home": "/usr/lib/jdk-11",
 		"mvn_home":  "/usr/share/maven",
@@ -633,7 +635,8 @@ func main() {
 	delete(toolsPath, "go_home")
 	fmt.Println(toolsPath)
 
-}	
+}
+
 </pre>
 
 Run it
