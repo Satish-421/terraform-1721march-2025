@@ -331,3 +331,41 @@ Expected output
 ![image](https://github.com/user-attachments/assets/554f1e7c-072b-4365-98e3-fbf8fc3e2753)
 ![image](https://github.com/user-attachments/assets/899c6331-d298-425b-bfad-8619661d3408)
 
+## Lab - Switch case
+
+Create a file named switch-case.go with the below content
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	var direction string //declares a variable named direction of type string
+
+	//Valid values are east, west, north, south
+	fmt.Print("Enter some direction :")
+	fmt.Scanln(&direction)
+
+	switch direction {
+	case "east":
+		fmt.Println("You entered direction ", direction)
+	case "west":
+		fmt.Println("You entered direction ", direction)
+	case "north":
+		fmt.Println("You entered direction ", direction)
+	case "south":
+		fmt.Println("You entered direction ", direction)
+	default:
+		fmt.Println("Invalid direction, possible values are east, west,north,south")
+	}
+}	
+</pre>
+
+Run it
+```
+go run ./switch-case.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/088a54df-4c31-4bc7-9014-f392bb5a396e)
