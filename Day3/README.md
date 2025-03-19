@@ -35,8 +35,17 @@ You can launch the AWX webconsole using the url shown by the above command in th
 <pre>
 http://192.168.49.2:31225
 </pre>
+![image](https://github.com/user-attachments/assets/70d5fb5d-62fb-4321-b5c4-e5c2792b0c51)
+
 
 To retrieve the AWX password ( save the password in a file to avoid typing this lengthy command each time )
 ```
 kubectl get secret awx-demo-admin-password -o jsonpath="{.data.password}" -n ansible-awx | base64 --decode; echo
 ```
+
+Login credentials for AWX is
+<pre>
+username - admin
+password - 
+</pre>
+
