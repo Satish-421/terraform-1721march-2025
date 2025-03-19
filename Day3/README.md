@@ -209,6 +209,11 @@ tower-cli job list
 tower-cli job launch --job-template=9
 ```
 
+## Demo - Installing Visual Studio Code in Lab machine
+```
+sudo snap install code --classic
+```
+
 ## Info - Go Programming Language Overview
 <pre>
 - is a programming language developed in C by Google
@@ -303,6 +308,12 @@ func main() {
 	fmt.Println()
 }  
 </pre>
+
+Note
+<pre>
+- In the above code at line 	
+</pre>
+
 
 You can run the application as shown below
 ```
