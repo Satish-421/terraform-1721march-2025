@@ -109,4 +109,5 @@ Click "myinventory", "hosts"
 ![image](https://github.com/user-attachments/assets/7a3f3d56-30d2-432c-b5ef-9bd6e88b1785)
 ![image](https://github.com/user-attachments/assets/b989c1ad-c146-4df4-80e1-53e2c240843a)
 ![image](https://github.com/user-attachments/assets/d7ba0b8d-5800-429b-acf1-eb13b5a283e5)
+![Uploading image.png…]()
 
