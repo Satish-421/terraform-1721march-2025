@@ -603,3 +603,43 @@ Expected output
 ![image](https://github.com/user-attachments/assets/89ef4601-b314-4f4e-b9b9-4d864c377316)
 ![image](https://github.com/user-attachments/assets/d17a0873-2049-4db7-92a2-155d11b9901d)
 ![image](https://github.com/user-attachments/assets/5de5008b-371d-4934-a3d1-2cd9f72fc4f3)
+
+## Lab - Golang map
+Create a file named map.go
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	toolsPath := map[string]string{
+		"java_home": "/usr/lib/jdk-11",
+		"mvn_home":  "/usr/share/maven",
+	}
+
+	//Given a key, map will be able to retrieve the value
+	fmt.Println("Java Home Directory : ", toolsPath["java_home"])
+
+	//add a key,value pair into an existing map
+	toolsPath["go_home"] = "/usr/go"
+
+	//iterating a map and printing its values
+	for key, value := range toolsPath {
+		fmt.Println(key, value)
+	}
+
+	//delete a key-value pair from an existing map
+	delete(toolsPath, "go_home")
+	fmt.Println(toolsPath)
+
+}	
+</pre>
+
+Run it
+```
+go run ./map.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/4522a2ab-d99a-407d-860f-28be577351d1)
