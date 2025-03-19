@@ -764,7 +764,7 @@ cat go.mod
 go mod tidy
 ```
 
-Let's create a main.go 
+Let's create a main.go under the tektutor folder
 <pre>
 package main
 
