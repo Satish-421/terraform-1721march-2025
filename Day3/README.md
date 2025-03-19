@@ -372,3 +372,56 @@ go run ./switch-case.go
 Expected output
 ![image](https://github.com/user-attachments/assets/088a54df-4c31-4bc7-9014-f392bb5a396e)
 ![image](https://github.com/user-attachments/assets/987edab4-59bb-4b38-b40b-03abb3d5e4a1)
+
+## Lab - Array
+
+Create a file named arrays.go with the below content
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	//We have declared an array of integers of size 5
+	//So we can store upto 5 integer values into this array
+	//golang array size if fixed
+	//array index starts from 0
+	//array index range is 0 to 4, total 5 values
+	var arr[5] int
+
+	//let's assign some values into the array
+	arr[0] = 10
+	arr[1] = 20
+	arr[2] = 30
+	arr[3] = 40
+	arr[4] = 50
+
+	//arr[5] = 60 This will report array index out of bounds error
+
+	fmt.Println( "Array elements are ...")
+	fmt.Println(arr)
+
+	count := len(arr)
+	fmt.Println("Length of array :", count )
+
+	//Modifying values stored in an array
+	arr[3] = 25
+
+	fmt.Println("Array elements are ...")
+	for i := 0; i < count; i++ {
+		fmt.Printf("%d\t", arr[i] )
+	}
+	fmt.Println()
+}	
+</pre>
+
+
+Run the application
+```
+go run ./arrays.go
+```
+Expected output
+![image](https://github.com/user-attachments/assets/4563b63f-1e1a-4cff-abd1-4027c44b6bfd)
+
+
