@@ -148,5 +148,5 @@ Click "Next"
 ![image](https://github.com/user-attachments/assets/d72dc32d-e518-4404-b1a3-ab94ac28e1ef)
 Click "Launch"
 ![image](https://github.com/user-attachments/assets/35459970-67de-42c0-a049-5985fbaaab97)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/5dcd6fa0-78fb-45cc-abbb-8c6f10f1c751)
 
