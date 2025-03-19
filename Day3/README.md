@@ -646,3 +646,41 @@ go run ./map.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/4522a2ab-d99a-407d-860f-28be577351d1)
+
+
+## Lab - Golang struct
+
+Create a file named struct.go
+<pre>
+package main
+
+import "fmt"
+
+// User-defined data type
+type Rectangle struct {
+	length int
+	width  int
+}
+
+func (rect Rectangle) Area() int {
+	area := rect.length * rect.width
+	return area
+}
+
+func main() {
+	rectangle := Rectangle{
+		length: 100,
+		width:  200,
+	}
+
+	fmt.Printf("Area of rectange : %d\n", rectangle.Area())
+}	
+</pre>
+
+Run it
+```
+go run ./struct.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/b5cef32e-81b2-49b6-9262-6010afd9a687)
