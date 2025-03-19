@@ -719,3 +719,72 @@ go run userinputs.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6f427437-6257-4a7c-9095-f2e3407d415e)
+
+## Lab - Golang modules
+
+In this exercise, we will be creating two custom go modules,  namely hello and tektutor. Hence create two folder at the same level namely hello and tektutor ash shown below
+```
+cd ~/golang-practices
+mkdir hello tektutor
+cd hello
+go mod init tektutor.org/hello
+cat go.mod
+go mod tidy
+```
+Expected output
+![image](https://github.com/user-attachments/assets/b1fe38c0-8b0f-4395-ac2e-a26801b4d253)
+
+Note
+<pre>
+- In the above commands, the go mod init command creates a go.mod file that captures all your hello module package dependencies.	
+- go mod init must be executed only when you are trying to create new module(reusable code with many .go files and reusable functions)
+- go mod tidy command, will refer the go.mod file and downloads all your module dependencies (if any)
+- each golang modules has one to many golang packages
+</pre>
+
+
+Let's create file named hello.go under the hello folder as shown below
+<pre>
+package hello
+
+import "fmt"
+
+// Whichever function starts with upper alone will be exported(made accessible outside this hello module)
+func SayHello(name string) string {
+	message := fmt.Sprintf("Hello, %v !", name)
+	return message
+}	
+</pre>
+
+Let's step out of the hello folder and get into tektutor folder
+```
+cd ../tektutor
+go mod init tektutor.org/tektutor
+cat go.mod
+go mod tidy
+```
+
+Let's create a main.go 
+<pre>
+package main
+
+import (
+   "fmt"
+   "tektutor.org/hello"
+)
+
+func main() {
+	msg := hello.SayHello("Golang")
+	fmt.Println(msg)
+}
+</pre>
+
+Now let's run the below command under tektutor folder
+```
+go mod tidy
+go mod edit --replace tektutor.org/hello=../hello
+go mod tidy
+go run ./main.go
+```
+
+Expected output
