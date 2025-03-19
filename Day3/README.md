@@ -311,7 +311,9 @@ func main() {
 
 Note
 <pre>
-- In the above code at line 	
+- In the above code at line number 3, we are trying to import a packaged called fmt
+- the fmt package has input/output functions like Print, Println, Printf, ScanF, etc.,
+- In order to use any functions from package fmt, we must first import it
 </pre>
 
 
