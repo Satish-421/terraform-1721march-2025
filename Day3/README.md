@@ -73,4 +73,33 @@ Click "Save"
 ![image](https://github.com/user-attachments/assets/2f9f42f3-ff4c-455a-ba9c-4aa2c2bce3f3)
 ![image](https://github.com/user-attachments/assets/85e9b257-048c-4dea-ad77-302d6e9ecc8a)
 
+## Lab - Creating an Inventory in Ansible Automation Platform
+Navigate to your Ansible Automation Platform Dashboard page
+![image](https://github.com/user-attachments/assets/23c4d27e-190c-49a5-9b82-29956b572b87)
+
+Under Resources menu, select "Inventories"
+![image](https://github.com/user-attachments/assets/b19a8acf-a079-4dd6-a387-d1a6c69589a5)
+Click "Add" to create an Inventory
+![image](https://github.com/user-attachments/assets/232c3bd3-617c-4908-96cf-538bd3cf81c2)
+Select "Add Inventory"
+![image](https://github.com/user-attachments/assets/b2361f4e-ccf9-438f-ba4e-235dbb5bee7c)
+![image](https://github.com/user-attachments/assets/6c8c0acd-bdce-45c9-b9cb-a8654aaa72d3)
+Give a name for your inventory
+![image](https://github.com/user-attachments/assets/f51cddfa-d894-46ac-86ef-c8e9d8d65744)
+Click "Save" button
+![image](https://github.com/user-attachments/assets/d36f49d0-6e30-499e-855d-d11ec2ad4eec)
+
+Click "Hosts" Tab within the inventory you created
+![image](https://github.com/user-attachments/assets/5e2517ac-c132-4d6b-a650-3d81e594428e)
+
+Find your Lab machine IP address
+![image](https://github.com/user-attachments/assets/a4f246b8-52be-4dac-a782-1fb3d048cce6)
+
+Click "Add" to add a Host(Ansible node connection details)
+![image](https://github.com/user-attachments/assets/9c4e47b5-8f24-49b7-9340-817f54ddc133)
+![image](https://github.com/user-attachments/assets/1f08e35a-24fc-47a1-a3c3-594d7a76f88b)
+Click "Save"
+
+Click "myinventory", "hosts" 
+![image](https://github.com/user-attachments/assets/127a846a-fca6-46a1-8db8-47bdfc9f61e6)
 
