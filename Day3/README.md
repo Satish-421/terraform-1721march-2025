@@ -109,5 +109,15 @@ Click "myinventory", "hosts"
 ![image](https://github.com/user-attachments/assets/7a3f3d56-30d2-432c-b5ef-9bd6e88b1785)
 ![image](https://github.com/user-attachments/assets/b989c1ad-c146-4df4-80e1-53e2c240843a)
 ![image](https://github.com/user-attachments/assets/d7ba0b8d-5800-429b-acf1-eb13b5a283e5)
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/5493ce9a-35d6-420f-8452-7e5240ce7be0)
+
+Click "Run command"
+![image](https://github.com/user-attachments/assets/d2f1c793-0c2e-4a63-b70c-d7ee3ab26c0a)
+![image](https://github.com/user-attachments/assets/e818aa76-00f7-41a0-970a-239d8d7ce54d)
+Choose a module, select ping
+![image](https://github.com/user-attachments/assets/2edbe0ba-e718-4320-b01d-d6da89c7320f)
+![image](https://github.com/user-attachments/assets/8b0683ea-b355-4637-9515-f8b05be84a56)
+Click "Next"
+![image](https://github.com/user-attachments/assets/29f7c5e4-080e-4139-81b0-8f798fcd90c8)
+Click "Next"
 
