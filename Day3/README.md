@@ -686,3 +686,36 @@ go run ./struct.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/b5cef32e-81b2-49b6-9262-6010afd9a687)
+
+
+## Lab - Accepting user inputs from command line
+
+Create a file named userinputs.go
+```
+package main
+
+import "fmt"
+
+func main() {
+
+	var length int
+	var width int
+
+	fmt.Print("\nEnter the length of the rectangle : ")
+	fmt.Scanf("%d\n", &length)
+
+	fmt.Print("\nEnter the width of the rectangle : ")
+	fmt.Scanf("%d\n", &width)
+
+	fmt.Println("Value of length is ", length)
+	fmt.Println("Value of width is ", width)
+}
+```
+
+Run it
+```
+go run userinputs.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6f427437-6257-4a7c-9095-f2e3407d415e)
