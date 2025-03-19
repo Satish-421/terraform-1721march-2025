@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/ea172d00-81ee-4cee-b469-bfc4777dfed4)# Day 3
-
 ## Info - Ansible Automation Platform
 <pre>
 - was also called as Ansible Tower
