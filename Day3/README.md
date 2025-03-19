@@ -544,3 +544,12 @@ go run ./pointers.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/6cdee62c-ec63-4abd-a654-80171b51c458)
+
+## Info - golang slice
+<pre>
+- a dynamic array
+- internally slice uses golang fixed size array
+- when we add a new value beyond the size of slice, it dynamically creates a new array copying the old values into the new array and then it adds the new last element
+- this is how, slice supports dynamic size
+</pre>
+
