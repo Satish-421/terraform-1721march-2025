@@ -102,4 +102,11 @@ Click "Save"
 
 Click "myinventory", "hosts" 
 ![image](https://github.com/user-attachments/assets/127a846a-fca6-46a1-8db8-47bdfc9f61e6)
+![image](https://github.com/user-attachments/assets/a68e73e4-8023-4465-a5f8-0bccc03ae056)
+![image](https://github.com/user-attachments/assets/9919d434-f54d-435b-9631-20500c712663)
+![image](https://github.com/user-attachments/assets/ca5f6d2c-ba8f-46bf-8ae4-bc0a776ecfb2)
+![image](https://github.com/user-attachments/assets/e8abf058-fa5a-4394-92b1-823609d81be8)
+![image](https://github.com/user-attachments/assets/7a3f3d56-30d2-432c-b5ef-9bd6e88b1785)
+![image](https://github.com/user-attachments/assets/b989c1ad-c146-4df4-80e1-53e2c240843a)
+![image](https://github.com/user-attachments/assets/d7ba0b8d-5800-429b-acf1-eb13b5a283e5)
 
