@@ -183,5 +183,25 @@ Click "Launch" to run the playbook
 ![image](https://github.com/user-attachments/assets/f940905f-5bb8-4f3d-868e-fe3d59373adb)
 
 
+## Lab - Create a normal user
+![image](https://github.com/user-attachments/assets/79f13f3a-12ed-4486-a525-1d84243b7d02)
+
+
+## Lab - Installing tower cli
+```
+sudo apt install -y python3-pip
+pip install ansible-tower-cli --break-system-packages
+```
+
+## Lab - Using tower-cli
+```
+export PATH=$PATH:/home/rps/.local/bin
+tower-cli config host https://192.168.49.2/31225
+tower-cli config username admin
+tower-cli config password your-admin-password
+tower-cli config verify_ssl false
+tower-cli project list
+```
+
 
 
