@@ -192,6 +192,10 @@ Click "Launch" to run the playbook
 sudo apt install -y python3-pip
 pip install ansible-tower-cli --break-system-packages
 ```
+![image](https://github.com/user-attachments/assets/d18ad3b7-010a-4762-baed-42ffb4f40c2f)
+![image](https://github.com/user-attachments/assets/1b3a19c8-3b76-47fd-90eb-d34e454c4574)
+![image](https://github.com/user-attachments/assets/0b090ba2-dd13-4f14-b332-9d2bdac2da0c)
+
 
 ## Lab - Using tower-cli
 ```
