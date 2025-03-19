@@ -111,6 +111,26 @@ Click "myinventory", "hosts"
 ![image](https://github.com/user-attachments/assets/d7ba0b8d-5800-429b-acf1-eb13b5a283e5)
 ![image](https://github.com/user-attachments/assets/5493ce9a-35d6-420f-8452-7e5240ce7be0)
 
+
+## Lab - Create Credentials
+Navigate to your Ansible Automation Platform Dashboard page
+![image](https://github.com/user-attachments/assets/23c4d27e-190c-49a5-9b82-29956b572b87)
+
+Under "Resources" menu, select "Credentials"
+![image](https://github.com/user-attachments/assets/9782831f-630c-4796-9402-b83be9cc87ab)
+Click "Add" to create credentials
+![image](https://github.com/user-attachments/assets/e66ba643-569f-4020-9937-1f056a00d5d6)
+![image](https://github.com/user-attachments/assets/6d5e84af-db22-4352-9134-9135efee0051)
+![image](https://github.com/user-attachments/assets/0de5c301-e28c-4453-8710-562cbce95d3a)
+![image](https://github.com/user-attachments/assets/045f6044-589d-49eb-8c62-f2831d6e7085)
+![image](https://github.com/user-attachments/assets/26d32cf0-60bd-403b-8681-bc1552f70796)
+![image](https://github.com/user-attachments/assets/7727ee41-de92-42a0-91d2-69ad8aca42eb)
+![image](https://github.com/user-attachments/assets/eb730661-8bf3-4bf9-80e8-fe8cc10a0445)
+
+
+
+##
+
 Click "Run command"
 ![image](https://github.com/user-attachments/assets/d2f1c793-0c2e-4a63-b70c-d7ee3ab26c0a)
 ![image](https://github.com/user-attachments/assets/e818aa76-00f7-41a0-970a-239d8d7ce54d)
