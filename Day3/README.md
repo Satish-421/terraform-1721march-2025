@@ -448,3 +448,31 @@ go run ./if-else.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/3eb732d3-5a70-4afe-a711-c7e49a0eeeaf)
+
+## Lab - Golang functions with parameters
+
+Create a file named function.go with below code
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	fmt.Println(sayHello("Golang"))
+
+}
+
+// This function accepts a string input and returns a string value
+func sayHello(msg string) string {
+	return "Hello " + msg + " !"
+}	
+</pre>
+
+Run it
+```
+go run ./function.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3560eb04-5485-432c-b4ea-5e338823cdb2)
