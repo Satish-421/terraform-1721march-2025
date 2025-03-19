@@ -383,7 +383,7 @@ func main() {
 
 	//We have declared an array of integers of size 5
 	//So we can store upto 5 integer values into this array
-	//golang array size if fixed
+	//golang array size is fixed
 	//array index starts from 0
 	//array index range is 0 to 4, total 5 values
 	var arr[5] int
@@ -548,8 +548,58 @@ Expected output
 ## Info - golang slice
 <pre>
 - a dynamic array
+- slice can resize itself on demand at runtime to fit the new values
 - internally slice uses golang fixed size array
 - when we add a new value beyond the size of slice, it dynamically creates a new array copying the old values into the new array and then it adds the new last element
 - this is how, slice supports dynamic size
 </pre>
 
+## Lab - Golang slice
+
+Let's create a file called slice.go
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	//shorter syntax to declare and initialize an array of int with 6 values
+    //index            0   1   2 	3  4   5
+	intArray := [6]int{10, 20, 30, 40, 50, 60}
+
+	fmt.Println("Array elements are ...")
+	fmt.Println(intArray)
+
+	//Slice uses an array internally
+	//in this case, the slice is referring to an array from index position 2 to 4
+	var mySlice []int = intArray[2:5] // 2 is lower bound and 5 is the upper bound index, index 5 is not included
+
+	fmt.Println("Slice elements are ...")
+	fmt.Println(mySlice)
+
+	//Let's modify the slice at certain indices
+	//When the slice is modified, it allows affects the original array that is pointed by the slice
+	//myslice index starts from zero just like arrays
+	mySlice[0] = 100
+	mySlice[1] = 200
+	mySlice[2] = 300
+
+	fmt.Println("Slice elements are ...")
+	fmt.Println(mySlice)
+
+	fmt.Println("Array elements are ...")
+	fmt.Println(intArray)
+}
+</pre>
+
+
+Run it
+```
+go run ./slice.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/89ef4601-b314-4f4e-b9b9-4d864c377316)
+![image](https://github.com/user-attachments/assets/d17a0873-2049-4db7-92a2-155d11b9901d)
+![Uploading image.png…]()
