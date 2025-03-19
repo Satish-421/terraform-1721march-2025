@@ -13,3 +13,14 @@
 - the existing Ansible Playbooks we can execute via Ansible Automation Platform
 - can be installed as a stand-alone application on any Linux Distributions or we can install inside Kubernetes or Openshift
 </pre>
+
+## Lab - Starting Minikube to use Ansible Tower
+```
+minikube status
+minikube start
+minikube status
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/310342c7-b2e8-4edd-aa4e-3d5b15fb60ea)
+
