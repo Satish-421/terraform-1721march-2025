@@ -200,7 +200,7 @@ pip install ansible-tower-cli --break-system-packages
 ## Lab - Using tower-cli
 ```
 export PATH=$PATH:/home/rps/.local/bin
-tower-cli config host http://192.168.49.2/31225
+tower-cli config host http://192.168.49.2:31225
 tower-cli config username admin
 tower-cli config password your-admin-password
 tower-cli config verify_ssl false
