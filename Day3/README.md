@@ -476,3 +476,30 @@ go run ./function.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/3560eb04-5485-432c-b4ea-5e338823cdb2)
+
+## Lab - Function with multiple returns
+
+Create a file named function-with-multiple-returns.go
+<pre>
+package main
+
+import "fmt"
+
+func myFunction() (int, int) {
+	return 10, 20
+}
+
+func main() {
+	x, y := myFunction()  //:= is short form of declaring a new variable and initialize some value
+
+	fmt.Println("Value of x is ", x)
+	fmt.Println("Value of y is ", y)
+}	
+</pre>
+
+Run it
+```
+go run ./function-with-multiple-returns.go
+```
+Expected output
+![image](https://github.com/user-attachments/assets/886f2897-9b22-47ef-b048-fe64019d0c40)
