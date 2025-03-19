@@ -503,3 +503,44 @@ go run ./function-with-multiple-returns.go
 ```
 Expected output
 ![image](https://github.com/user-attachments/assets/886f2897-9b22-47ef-b048-fe64019d0c40)
+
+## Lab - Golang pointer - pass by pointer
+
+Create a file named pointers.go
+<pre>
+package main
+
+import "fmt"
+
+// Pass by pointer
+func sayHello(msgPtr *string) {
+	tmp := *msgPtr //The value stored at the address pointed by msgPtr is assigned to tmp string
+
+	//The value stored at address pointed by msgPtr we are changing to "Hello Golang !"
+	*msgPtr = tmp + " Golang " + "!"
+}
+
+func main() {
+
+	msg := "Hello"
+
+	//The below line will print "Hello"
+	fmt.Println("Message before calling sayHello function is ", msg)
+
+	//sayHello function is taking the address of msg string
+	sayHello(&msg)
+
+	//The below line will print "Hello Golang !"
+	fmt.Println("Message after calling sayHello function is ", msg)
+
+}
+	
+</pre>
+
+Run it
+```
+go run ./pointers.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/6cdee62c-ec63-4abd-a654-80171b51c458)
