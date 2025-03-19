@@ -126,6 +126,9 @@ Click "Add" to create credentials
 ![image](https://github.com/user-attachments/assets/26d32cf0-60bd-403b-8681-bc1552f70796)
 ![image](https://github.com/user-attachments/assets/7727ee41-de92-42a0-91d2-69ad8aca42eb)
 ![image](https://github.com/user-attachments/assets/eb730661-8bf3-4bf9-80e8-fe8cc10a0445)
+Click "Save"
+![image](https://github.com/user-attachments/assets/e279adc4-fd37-4a9e-be84-52183cc1b949)
+![image](https://github.com/user-attachments/assets/5e6d4122-da26-4756-a075-de4b58b3444f)
 
 
 
