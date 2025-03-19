@@ -597,6 +597,8 @@ func main() {
 Run it
 ```
 go run ./slice.go
+go build ./slice.go
+./slice
 ```
 
 Expected output
