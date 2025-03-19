@@ -1,4 +1,4 @@
-# Day 3
+![image](https://github.com/user-attachments/assets/ea172d00-81ee-4cee-b469-bfc4777dfed4)# Day 3
 
 ## Info - Ansible Automation Platform
 <pre>
@@ -424,4 +424,29 @@ go run ./arrays.go
 Expected output
 ![image](https://github.com/user-attachments/assets/4563b63f-1e1a-4cff-abd1-4027c44b6bfd)
 
+## Lab - If else
 
+Create a file named if-else.go with the below code
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	if 8%2 == 0 {
+		fmt.Println("8 is even number ")
+	} else {
+		fmt.Println("8 is an odd number")
+	}
+
+}
+</pre>
+
+Run the program
+```
+go run ./if-else.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3eb732d3-5a70-4afe-a711-c7e49a0eeeaf)
