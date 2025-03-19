@@ -267,6 +267,12 @@ func main() {
   fmt.Println ( "Hello World !" )
 }
 </pre>
+Note
+<pre>
+- fmt package has input/output functions like Print, Println, Print, Sprint, Sprintf, Sprintln, Fprint, Fprintf, Fprintln, Scan,Scanf, Scanln, Sscan, Sscanln, Fscan, Fscanf, Fscanln, Errorf, etc.,
+- main is the entry point function, i.e the first function that will be invoked automatically by golang when you run the above program.
+- the begining curly bracket must be in the same line where main() is defined, if you bring it to next line, go compiler will report a compilation error
+</pre>
 
 Run the program
 ```
