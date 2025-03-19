@@ -270,3 +270,45 @@ go run ./hello.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/8fc7d876-2893-45a0-855a-c779c527caeb)
+
+## Lab - Golang loop
+
+Create file named loops.go with the below content
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+
+	count := 5 //Declares a count variable of type int and assigns a value 5
+
+	for count > 0 {
+
+		fmt.Println(count)
+		count-- //equivalent to count = count - 1
+		//--count pre-decrement is not supported in golang
+		//++count pre-increment is not supported in golang
+		//count++ is supported in golang
+	}
+
+	fmt.Println("Value of count is", count, " after for loop")
+
+	count = 0 //Variable is already declared in line no 7, we are reinitializing count with 0
+
+	for count = 1; count < 10; count++ {
+		fmt.Printf("%d\t", count)
+	}
+
+	fmt.Println()
+}  
+</pre>
+
+You can run the application as shown below
+```
+go run ./loops.go
+```
+Expected output
+![image](https://github.com/user-attachments/assets/554f1e7c-072b-4365-98e3-fbf8fc3e2753)
+![image](https://github.com/user-attachments/assets/899c6331-d298-425b-bfad-8619661d3408)
+
