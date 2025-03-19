@@ -52,3 +52,23 @@ password -
 ![image](https://github.com/user-attachments/assets/fb6b39b7-9752-4ce6-83b7-45ba185e7afa)
 ![image](https://github.com/user-attachments/assets/06607ea3-0fbf-4dfa-8cd4-0f4e78af0221)
 
+
+## Lab - Creating a Project in Ansible Automation Platform
+Navigate to your Ansible Automation Platform Dashboard page
+![image](https://github.com/user-attachments/assets/23c4d27e-190c-49a5-9b82-29956b572b87)
+
+Under Resources menu, select "Projects"
+![image](https://github.com/user-attachments/assets/9025034d-15fe-4b68-9e4c-bfe5ffd0b3c7)
+Click "Add" to create a new project
+![image](https://github.com/user-attachments/assets/654db108-2a5e-4d39-a5fc-112fc58c5839)
+Select "Git"
+![image](https://github.com/user-attachments/assets/35e47d0e-05dc-43e0-a1c1-8c2d2c99c829)
+![image](https://github.com/user-attachments/assets/25ce7682-a2f5-4424-96ac-8142a4929bb2)
+![image](https://github.com/user-attachments/assets/8e51cd5c-3360-4fcd-8d41-941018d2cc2e)
+Click "Save"
+![image](https://github.com/user-attachments/assets/8d4c187b-8e21-4502-812b-1280be1cc3de)
+![image](https://github.com/user-attachments/assets/104e7328-4198-4c22-9a9d-1eeb2b4e1b9b)
+![image](https://github.com/user-attachments/assets/705c3006-183a-43dc-a455-1953a159a6fd)
+![image](https://github.com/user-attachments/assets/31880195-ed4a-431a-adce-20d9b2460cae)
+
+
