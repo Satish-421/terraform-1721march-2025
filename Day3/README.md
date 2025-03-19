@@ -369,3 +369,4 @@ go run ./switch-case.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/088a54df-4c31-4bc7-9014-f392bb5a396e)
+![image](https://github.com/user-attachments/assets/987edab4-59bb-4b38-b40b-03abb3d5e4a1)
