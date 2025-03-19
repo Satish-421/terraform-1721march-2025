@@ -249,5 +249,23 @@ go version
 Expected output
 ![image](https://github.com/user-attachments/assets/638a308f-8af1-4697-994f-ecbc03ff46d7)
 
+## Lab - Writing your first Hello World application in Golang
 
+Create a file named hello.go with the below content
 
+<pre>
+package main
+
+import "fmt"
+
+func main() {
+  fmt.Println ( "Hello World !" )
+}
+</pre>
+
+Run the program
+```
+go run ./hello.go
+```
+
+Expected output
