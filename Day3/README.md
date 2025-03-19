@@ -244,6 +244,8 @@ sudo snap install code --classic
 - it is faster than most compiled languages
   - faster than .Net, Java, etc.,
   - equivalent to C/C++ in terms of performance
+- Editor recommended to develop golang is Microsoft's Visual Studio code
+- Vim editor also works fine if you are comfortable 
 </pre>
 
 ## Lab - Checking if go is installed in your lab machine
