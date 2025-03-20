@@ -206,6 +206,7 @@ tree .terraform
 terraform plan
 terraform apply 
 docker images
+terraform destroy
 ```
 
 Expected output
@@ -215,6 +216,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/dff79bf1-cddc-4da4-a4dc-27b240271dff)
 ![image](https://github.com/user-attachments/assets/eec98ed7-fee6-4cc3-9b44-6d1f2fe2c02a)
 ![image](https://github.com/user-attachments/assets/c53ee31a-f3d8-40c0-b018-41c414aaf0c7)
+![image](https://github.com/user-attachments/assets/0fd3f82e-620c-4a05-bf81-6af0c59b9a96)
 
 
 
