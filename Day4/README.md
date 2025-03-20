@@ -150,4 +150,13 @@ Expected output
 - Terraform can also invoke ansible playbooks once the provisioning is completed by Terraform
 - Terraform can invoke any configuration management tool after provisioning, for example it can invoke chef/puppet/saltstack/ansible	
 - In general Terraform and Ansible are used in combination
+- Terraform 
+  - its strength is Provisioning
+  - mainly used for Provisioning Infrastructure i.e Creating a Virtual Machine and installing an Operating into the Virtual Machine
+  - also supports basic configuration management using shell scripts/powershell which is imperative, hence this approach is not recommended for complex configuration management
+- Ansible
+  - its strength is Configuration Management
+  - mainly used to install/uninstall/upgrade softwares on an existing virtual machine/base machine with some OS pre-installed in it
+  - also supports basic provisioning
+
 </pre>
