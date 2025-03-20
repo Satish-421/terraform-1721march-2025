@@ -81,3 +81,4 @@ go run ./main.go
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/783e23c4-cc62-4ef4-9238-0f416ac56206)
