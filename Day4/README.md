@@ -192,7 +192,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/8a6d5153-42d6-45ae-885f-e02d8dac6e25)
 
 
-## Lab - Writing your first Terraform manifest file ( automation script )
+## Demo - Writing your first Terraform manifest file ( automation script )
 We will be using docker provider from registry.terraform.io website
 ![image](https://github.com/user-attachments/assets/08938fce-41f7-47d5-a5ac-198557781ca4)
 
@@ -218,5 +218,26 @@ Expected output
 ![image](https://github.com/user-attachments/assets/c53ee31a-f3d8-40c0-b018-41c414aaf0c7)
 ![image](https://github.com/user-attachments/assets/0fd3f82e-620c-4a05-bf81-6af0c59b9a96)
 
+## Lab - Let's use the ubuntu:latest image that is already there in our lab machine
+```
+terraform init
+ls -lha
+tree .terraform
+terraform plan
+docker ps
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2ae2b464-4aeb-4088-86fd-7bc2e32342fb)
+![image](https://github.com/user-attachments/assets/7b32b05f-57b4-4402-8fae-117a8ef07e19)
+![image](https://github.com/user-attachments/assets/274dbc06-735d-4830-b5b8-429da00f6230)
+![image](https://github.com/user-attachments/assets/0c7b6e8c-9afe-4a21-9d74-3b49e6b1a01e)
+![image](https://github.com/user-attachments/assets/4d6c2941-9bfe-49e4-a0ac-c3391788fadf)
+![image](https://github.com/user-attachments/assets/ba731016-cda3-47d9-b6bb-d495196e23dd)
+![image](https://github.com/user-attachments/assets/8fc5b1d2-df6e-4ec8-9381-9ff155647dbf)
+![image](https://github.com/user-attachments/assets/d58e394e-e434-47b9-b90e-5174c8626153)
+![image](https://github.com/user-attachments/assets/4b203b35-6bc4-4bb2-a177-461b5781f922)
+![image](https://github.com/user-attachments/assets/306d8ed9-1c08-49b2-acae-9c7c455f66f4)
 
 
