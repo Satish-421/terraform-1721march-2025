@@ -240,4 +240,18 @@ Expected output
 ![image](https://github.com/user-attachments/assets/4b203b35-6bc4-4bb2-a177-461b5781f922)
 ![image](https://github.com/user-attachments/assets/306d8ed9-1c08-49b2-acae-9c7c455f66f4)
 
+## Info - Terraform Lifecycle commands
+To get all possible terraform command options
+```
+terraform
+```
+Expected output
+![image](https://github.com/user-attachments/assets/56ae9662-0b22-4dd8-af9f-5a3d4796a591)
 
+```
+terraform init
+terraform plan
+terraform apply
+terraform refresh
+terraform destroy
+```
