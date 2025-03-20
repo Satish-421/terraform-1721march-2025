@@ -144,6 +144,9 @@ Expected output
 - is developed by a company called Hashicorp in Go lang
 - Terraform uses a DSL called HCL(Hashicorp Configuration Language - for automation )
 - is a cloud-newtral provisioning tool, it works locally as well on all the clouds
+- it comes in two flavours
+  1. Terraform Core - opensource and supports only command-line interface
+  2. Terraform Enterprise - requires license, supports web interface
 </pre>
 
 ## Info - Terraform vs Ansible
