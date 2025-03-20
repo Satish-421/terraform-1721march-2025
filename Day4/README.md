@@ -141,6 +141,7 @@ Expected output
 - it is a provisioning tool
 - Alternates to Terraform
   - AWS Cloudformation
+- is developed by a company called Hashicorp in Go lang
 </pre>
 
 ## Info - Terraform vs Ansible
@@ -158,5 +159,4 @@ Expected output
   - its strength is Configuration Management
   - mainly used to install/uninstall/upgrade softwares on an existing virtual machine/base machine with some OS pre-installed in it
   - also supports basic provisioning
-
 </pre>
