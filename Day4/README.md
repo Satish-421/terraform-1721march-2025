@@ -274,3 +274,31 @@ Expected output
 ![image](https://github.com/user-attachments/assets/1c701b39-82f9-4f2a-826b-2c5902150fb8)
 ![image](https://github.com/user-attachments/assets/8332e84a-26a1-4b5a-8dbf-a5aae3713633)
 ![image](https://github.com/user-attachments/assets/5affeccc-5355-4670-8d35-04015d1f3307)
+
+## Lab - Using Terraform count and remote-exec
+```
+cd ~/terraform1721-march-2025
+git pull
+cd Day4/terraform/remote-exec
+terraform init
+terraform apply --auto-approve
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/112b74d7-d17e-47e5-b344-02bd98e53b23)
+![image](https://github.com/user-attachments/assets/1994f620-714b-4a3f-a122-34f7ad80035f)
+![image](https://github.com/user-attachments/assets/9fb555c2-aaf5-4cbf-8826-5cb649866e3a)
+![image](https://github.com/user-attachments/assets/fb1c6a98-d832-4735-999d-3a1fdf70a9fd)
+![image](https://github.com/user-attachments/assets/16e6196b-0654-452d-975d-010434dbe385)
+![image](https://github.com/user-attachments/assets/1dffc92d-09f0-4ee5-b4c6-7caf8dfe8f33)
+![image](https://github.com/user-attachments/assets/10d534df-56c2-41e2-a24a-ef76d705ee8e)
+![image](https://github.com/user-attachments/assets/7c50f083-b30e-4ff4-9f4c-db4a739a386a)
+![image](https://github.com/user-attachments/assets/15951355-b67e-47bb-8efe-383500751fdb)
+![image](https://github.com/user-attachments/assets/a52de9f3-c84f-48ad-a86e-6d0a6f6255f4)
+![image](https://github.com/user-attachments/assets/81b12c0f-dd42-48cb-b22a-57a676cac5e2)
+![image](https://github.com/user-attachments/assets/420912b1-b5c9-4bdf-b05f-bf2662ffce3e)
+![image](https://github.com/user-attachments/assets/6c5f9095-7233-41c2-90f5-ffa2358566de)
+![image](https://github.com/user-attachments/assets/2c67148b-5e8d-4ca1-ab8c-97a9b6499665)
+![image](https://github.com/user-attachments/assets/d2826bdd-23cb-4571-b0e1-95cdad69aaa1)
+![image](https://github.com/user-attachments/assets/cc37e612-6738-4cbb-847c-44a9c792603c)
+![image](https://github.com/user-attachments/assets/dccc6ca7-8351-47d1-a3b7-588db23d727d)
