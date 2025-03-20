@@ -142,6 +142,7 @@ Expected output
 - Alternates to Terraform
   - AWS Cloudformation
 - is developed by a company called Hashicorp in Go lang
+- Terraform uses a DSL called HCL(Hashicorp Configuration Language - for automation )
 </pre>
 
 ## Info - Terraform vs Ansible
