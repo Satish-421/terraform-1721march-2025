@@ -132,11 +132,22 @@ Expected output
 ## Info - Terraform
 <pre>
 - is a Infrastructure as a code tool
-- it is an automation tool
+- it is provisioning tool that helps automating all provisioning activities via decalarative code
 - it is helpful to provision resources in local environment, private cloud, public cloud, hybrid cloud, etc.,
 - it can help automate managing containers/images locally using docker
 - it can help provisioning virtual machines using virtualbox, vmware locally
 - it can help provisioning ec2 instances, storage in AWS public cloud
 - it can help provision virtual machine, storage in azure public cloud
 - it is a provisioning tool
+- Alternates to Terraform
+  - AWS Cloudformation
+</pre>
+
+## Info - Terraform vs Ansible
+<pre>
+- Creating a VM on the local environment, public/private/hybrid cloud with some Operating System can be done via Terraform
+- To install softwares on those VMs, we can Ansible or any configuration management tool
+- Terraform can also invoke ansible playbooks once the provisioning is completed by Terraform
+- Terraform can invoke any configuration management tool after provisioning, for example it can invoke chef/puppet/saltstack/ansible	
+- In general Terraform and Ansible are used in combination
 </pre>
