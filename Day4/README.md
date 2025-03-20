@@ -61,8 +61,8 @@ import (
 )
   
 func main( ) {
-   x := 500.7
-   y := 200.5
+   x := float32(500.7)
+   y := float32(200.5)
    result1 := addition.Add( x, y )
    result2 := subtraction.Subtract( x, y )
 
