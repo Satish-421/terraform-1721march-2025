@@ -255,3 +255,22 @@ terraform apply
 terraform refresh
 terraform destroy
 ```
+
+## Lab - Invoking ansible playbook from Terraform
+```
+cd ~/terraform1721-march-2025
+git pull
+cd Day4/terraform/invoking-ansible-playbook-from-terraform
+terraform init
+terraform apply --auto-approve
+docker ps
+curl http://localhost:8001
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/3658a754-1766-4066-974a-aeefe7d72ed7)
+![image](https://github.com/user-attachments/assets/ce27ed77-6430-4ac7-aaf6-464d6fd11072)
+![image](https://github.com/user-attachments/assets/fd007e89-0bbb-4427-9127-787cf36c6464)
+![image](https://github.com/user-attachments/assets/1c701b39-82f9-4f2a-826b-2c5902150fb8)
+![image](https://github.com/user-attachments/assets/8332e84a-26a1-4b5a-8dbf-a5aae3713633)
+![image](https://github.com/user-attachments/assets/5affeccc-5355-4670-8d35-04015d1f3307)
