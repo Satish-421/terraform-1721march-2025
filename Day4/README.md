@@ -170,4 +170,16 @@ Expected output
 ![terraform](terraform-architecture-diagram.png)
 
 ## Info - Terraform Providers
+<pre>
+- Terraform depends on providers to provision resources
+- Terraform providers are implemented in Golang using Terraform Provider plugin framework
+- Terraform supports two types of resources
+  - Resources
+    - these are resources managed by Terraform
+  - Datasources 
+    - these are existing resources that were either created manually or without using Terraform
+    - these resources will not be deleted by Terraform
+- For instance
+  - to provision resources in AWS, there is an aws provider that supports many aws resources and datasources
 
+</pre>
