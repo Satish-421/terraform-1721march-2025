@@ -82,3 +82,49 @@ go run ./main.go
 
 Expected output
 ![image](https://github.com/user-attachments/assets/783e23c4-cc62-4ef4-9238-0f416ac56206)
+
+## Lab - Golang concurrency to run functions in different threads
+
+Create a file named main.go with the below content
+```
+package main
+
+import (
+  "fmt"
+  "time"
+)
+
+func firstFunction( count int ) {
+   for i := 0; i<count; i++ {
+	fmt.Println ("First function", i )
+	time.Sleep( time.Millisecond * 5 )
+   }
+}
+
+func secondFunction( ) {
+   for i := 0; i<1000; i++ {
+	fmt.Println ("Second function", i )
+	time.Sleep( time.Millisecond * 5 )
+   }
+}
+
+func main() {
+  fmt.Println ( "Press any key to exit ..." )
+
+  go firstFunction( 1000 )
+  go secondFunction( )
+
+  var tmp string
+  fmt.Scanln(&tmp )
+}
+```
+
+Run it
+```
+go run ./main.go
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/549a9a15-6063-41cb-b63e-765dc3352db6)
+![image](https://github.com/user-attachments/assets/53d747ba-328f-42d8-b871-f5f0f73fe90f)
+![image](https://github.com/user-attachments/assets/298e1eab-77b3-4b87-999e-d993baf3b4cb)
