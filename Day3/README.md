@@ -650,7 +650,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/4522a2ab-d99a-407d-860f-28be577351d1)
 
 
-## Lab - Golang struct
+## Lab - Golang struct with method
 
 Create a file named struct.go
 <pre>
