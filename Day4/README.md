@@ -165,3 +165,9 @@ Expected output
   - mainly used to install/uninstall/upgrade softwares on an existing virtual machine/base machine with some OS pre-installed in it
   - also supports basic provisioning
 </pre>
+
+## Info - Terraform High Level Architecture
+![terraform](terraform-architecture-diagram.png)
+
+## Info - Terraform Providers
+
