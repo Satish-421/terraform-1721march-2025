@@ -181,5 +181,40 @@ Expected output
     - these resources will not be deleted by Terraform
 - For instance
   - to provision resources in AWS, there is an aws provider that supports many aws resources and datasources
-
 </pre>
+
+## Lab - Checking Terraform version
+```
+terraform version
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/8a6d5153-42d6-45ae-885f-e02d8dac6e25)
+
+
+## Lab - Writing your first Terraform manifest file ( automation script )
+We will be using docker provider from registry.terraform.io website
+![image](https://github.com/user-attachments/assets/08938fce-41f7-47d5-a5ac-198557781ca4)
+
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day4/terraform/pull-docker-image
+cat main.tf
+terraform init
+tree .terraform
+terraform plan
+terraform apply 
+docker images
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/24002e2b-3731-42c2-9608-c655a182c243)
+![image](https://github.com/user-attachments/assets/1b699998-5658-4f0f-ba29-c716ebc230f2)
+![image](https://github.com/user-attachments/assets/709da4de-9fa8-45b4-8c75-157d8c69055f)
+![image](https://github.com/user-attachments/assets/dff79bf1-cddc-4da4-a4dc-27b240271dff)
+![image](https://github.com/user-attachments/assets/eec98ed7-fee6-4cc3-9b44-6d1f2fe2c02a)
+![image](https://github.com/user-attachments/assets/c53ee31a-f3d8-40c0-b018-41c414aaf0c7)
+
+
+
