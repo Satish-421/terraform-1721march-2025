@@ -128,3 +128,15 @@ Expected output
 ![image](https://github.com/user-attachments/assets/549a9a15-6063-41cb-b63e-765dc3352db6)
 ![image](https://github.com/user-attachments/assets/53d747ba-328f-42d8-b871-f5f0f73fe90f)
 ![image](https://github.com/user-attachments/assets/298e1eab-77b3-4b87-999e-d993baf3b4cb)
+
+## Info - Terraform
+<pre>
+- is a Infrastructure as a code tool
+- it is an automation tool
+- it is helpful to provision resources in local environment, private cloud, public cloud, hybrid cloud, etc.,
+- it can help automate managing containers/images locally using docker
+- it can help provisioning virtual machines using virtualbox, vmware locally
+- it can help provisioning ec2 instances, storage in AWS public cloud
+- it can help provision virtual machine, storage in azure public cloud
+- it is a provisioning tool
+</pre>
