@@ -71,7 +71,7 @@ func main( ) {
 }
 </pre>
 
-Running the above application
+Running the above application, the go mod edit command below helps golang locate the addition and subtraction modules. Otherwise go mod tidy will attempt to download the package from internet and it fail as we haven't published our module.
 ```
 cd ~/main
 go mod edit --replace addition=../addition
