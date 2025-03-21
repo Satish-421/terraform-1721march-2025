@@ -1,5 +1,10 @@
 # Terraform 17th to 21st March 2025
 
+## Training Feedback link
+<pre>
+https://survey.zohopublic.com/zs/8pCKnb
+</pre>  
+
 ## Pre-test
 <pre>
 - Kindly login to your RPS Cloud Lab machine
