@@ -80,7 +80,7 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
-                    sh "ansible-playbook -i hosts install-nginx-playbook.yml"
+                    sh "ansible-playbook install-nginx-playbook.yml"
 		  }
                 }
             }
