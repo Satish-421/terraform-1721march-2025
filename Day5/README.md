@@ -46,6 +46,12 @@ terraform apply --auto-approve
 ls -l
 ```
 
+Once you are done with this exercise, you may dispose the resources provisioned by Terraform
+```
+terraform destroy --auto-approve
+ls -l
+```
+
 Expected output
 ![image](https://github.com/user-attachments/assets/9fb97d74-22e6-4aa1-a62f-9ace1c5182ca)
 ![image](https://github.com/user-attachments/assets/2a0d3791-ab59-4b0e-9f7f-3f90b8fcb977)
