@@ -1,5 +1,42 @@
 # Day 5
 
+## Lab - Developing our own custom Terraform file provider in Golang
+Make sure the below folder is created
+```
+mkdir -p /home/rps/go/bin
+```
+
+Create file name .terraformrc under your home directory /home/rps/.terraformrc with the below content
+<pre>
+provider_installation {
+  dev_overrides {
+      "registry.terraform.io/tektutor/file" = "/home/rps/go/bin",
+  }
+  direct {}
+}  
+</pre>
+
+Now you may build your 
+```
+cd ~\terraform-1721march-2025
+git pull
+cd Day5/DevOpsCICDPipeline/custom-terraform-provider/file
+tree
+go mod init github.com/hashicorp/terraform-provider-file
+go mod tidy
+go build
+go install
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/564594be-5580-493f-9494-31cce3114ef5)
+![image](https://github.com/user-attachments/assets/f54673af-4bee-4902-a507-25abdea6cc17)
+![image](https://github.com/user-attachments/assets/97e393a0-fade-42de-8628-3293560a9742)
+![image](https://github.com/user-attachments/assets/cf4395d1-c186-4e8b-9c24-b125352648f7)
+![image](https://github.com/user-attachments/assets/a6e923ca-7817-4081-aa51-a6056514c866)
+
+
+
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
 
