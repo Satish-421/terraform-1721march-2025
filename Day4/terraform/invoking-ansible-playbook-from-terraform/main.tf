@@ -23,7 +23,7 @@ resource "local_file" "invoke_ansible_playbook" {
    filename = "./test.txt"
 
    provisioner "local-exec" {
-      command = "ansible-playbook -i ./hosts install-nginx-playbook.yml"
+      command = "ansible-playbook install-nginx-playbook.yml"
    }
 
 }

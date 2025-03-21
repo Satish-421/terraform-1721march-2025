@@ -1,0 +1,1000 @@
+ 1006  set -o vi
+ 1007  docker build -t tektutor/ubuntu-ansible-node:latest .
+ 1008  docker images
+ 1009  clear
+ 1010  docker images
+ 1011  clear
+ 1012  docker images | grep tektutor/ubuntu
+ 1013  docker run -d --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ubuntu-ansible-node:latest 
+ 1014  docker run -d --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ubuntu-ansible-node:latest 
+ 1015  docker ps
+ 1016  # Let's ssh into ubuntu1 container
+ 1017  ssh -p 2001 root@localhost
+ 1018  ssh -p 2002 root@localhost
+ 1019  clear
+ 1020  echo "" > ~/.ssh/known_hosts
+ 1021  clear
+ 1022  docker ps
+ 1023  ssh -p 2001 root@localhost
+ 1024  ssh -p 2002 root@localhost
+ 1025  clear
+ 1026  cd ..
+ 1027  ls
+ 1028  cd ansible/
+ 1029  ls
+ 1030  vim inventory 
+ 1031  ls
+ 1032  # Ansible ad-hoc command to ping the ansible nodes
+ 1033  cat inventory 
+ 1034  ansible -i inventory all -m ping
+ 1035  ansible -i inventory ubuntu1 -m ping
+ 1036  ansible -i inventory ubuntu2 -m ping
+ 1037  cd ../..
+ 1038  git add *
+ 1039  git commit -m "Added Day1 lab exercises"
+ 1040  rm Day1/CustomDockerImages/ubuntu/authorized_keys
+ 1041  git add *
+ 1042  git commit -m "added day1 lab exercises"
+ 1043  git pull
+ 1044  git push
+ 1045  clar
+ 1046  clear
+ 1047  ls
+ 1048  cd Day1
+ 1049  ls
+ 1050  ansible -i ansible/inventory all -m ping
+ 1051  cat ansible/inventory 
+ 1052  ansible -i ansible/inventory ubuntu1 -m setup
+ 1053  clear
+ 1054  ansible-doc -l
+ 1055  clear
+ 1056  ansible-doc -l | wc
+ 1057  ansible-doc -l 
+ 1058  ansible-doc win_ping
+ 1059  ansible-doc apt
+ 1060  clear
+ 1061  ansible --version
+ 1062  vim /usr/lib/python3/dist-packages/ansible/modules/ping.py 
+ 1063  vim /usr/lib/python3/dist-packages/ansible/modules/copy.py 
+ 1064  celar
+ 1065  clear
+ 1066  cd ansible/
+ 1067  ls
+ 1068  vim ping-playbook.yml
+ 1069  cat ping-playbook.yml 
+ 1070  clear
+ 1071  ls
+ 1072  cat inventory 
+ 1073  cat ping-playbook.yml 
+ 1074  ansible-playbook -i inventory ping-playbook.yml 
+ 1075  cd ../..
+ 1076  git add *
+ 1077  git commit -m "Added Day1 lab exercises"
+ 1078  git pull
+ 1079  git push
+ 1080  cd Day1/ansible/
+ 1081  ls
+ 1082  ansible-playbook -i inventory ping-playbook.yml -vvvv
+ 1083  clear
+ 1084  cd ../..
+ 1085  ansible-playbook -i Day1/ansible/inventory Day1/ansible/ping-playbook.yml 
+ 1086  cd Day1/ansible/
+ 1087  ls
+ 1088  vim install-visual-studio-code-playbook.yml
+ 1089  cd ..
+ 1090  git add *
+ 1091  git commit -m "Added Day1 lab exercises"
+ 1092  git pull
+ 1093  git push
+ 1094  #Good Morning all !
+ 1095  # Let's wait for sometime while others are joining ...
+ 1096  clear
+ 1097  cd terraform-1721march-2025/
+ 1098  git pull
+ 1099  cd Day2
+ 1100  ls
+ 1101  mkdir ansible
+ 1102  cd ansible/
+ 1103  ls
+ 1104  vim hosts
+ 1105  docker ps
+ 1106  docker ps -a
+ 1107  docker run ubuntu1 ubuntu2
+ 1108  clear
+ 1109  docker ps -a
+ 1110  docker start ubuntu1 ubuntu2
+ 1111  docker ps
+ 1112  ls
+ 1113  ansible -i hosts all -m ping
+ 1114  cat hosts 
+ 1115  cd ../..
+ 1116  git add *
+ 1117  git commit -m "Added day2 lab exercises"
+ 1118  git pull
+ 1119  git push
+ 1120  ls
+ 1121  cd Day1
+ 1122  ls
+ 1123  cd ansible/
+ 1124  ls
+ 1125  vim inventory 
+ 1126  git pull
+ 1127  cd ..
+ 1128  git pull
+ 1129  git status
+ 1130  git restore ansible/inventory 
+ 1131  git status
+ 1132  cd ..
+ 1133  cd Day2
+ 1134  clear
+ 1135  ls
+ 1136  cd ansible/
+ 1137  ls
+ 1138  vim install-nginx-playbook.yml
+ 1139  ansible -i hosts install-nginx-playbook.yml 
+ 1140  clear
+ 1141  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 1142  cat install-nginx-playbook.yml 
+ 1143  docker inspect -f {{.NetworkSettings.IPAddress}} ubuntu1
+ 1144  docker inspect ubuntu2 | grep IPA
+ 1145  curl http://172.17.0.2:80
+ 1146  curl http://172.17.0.3:80
+ 1147  # Let's use ansible ad-hoc command to check if nginx service is running
+ 1148  ansible -i hosts ubuntu1 -m shell -a "nginx service status"
+ 1149  ansible -i hosts ubuntu1 -m shell -a "service status nginx"
+ 1150  ansible -i hosts ubuntu1 -m shell -a "systemctl status nginx"
+ 1151  ansible -i hosts ubuntu1 -m shell -a "service nginx status"
+ 1152  clear
+ 1153  docker inspect -f {{.NetworkSettings.IPAddress}} ubuntu1
+ 1154  docker inspect ubuntu2 | grep IPA
+ 1155  curl http://172.17.0.2:80
+ 1156  curl http://172.17.0.3:80
+ 1157  # Let's use ansible ad-hoc command to check if nginx service is running
+ 1158  ansible -i hosts ubuntu1 -m shell -a "service nginx status"
+ 1159  ls
+ 1160  vim install-nginx-playbook.yml 
+ 1161  cat install-nginx-playbook.yml 
+ 1162  ansible-playbook -i hosts install-nginx-playbook.yml 
+ 1163  curl http://172.17.0.2:80
+ 1164  curl http://172.17.0.3:80
+ 1165  docker images
+ 1166  cd ~
+ 1167  pwd
+ 1168  ls -l .ssh
+ 1169  cd .ssh
+ 1170  ls
+ 1171  cat known_hosts
+ 1172  echo "" > known_hosts
+ 1173  cd terraform-1721march-2025/
+ 1174  git pull
+ 1175  # Good Morning all !
+ 1176  # Let's wait for sometime while others are joining ...
+ 1177  clear
+ 1178  cd Day2
+ 1179  ls
+ 1180  cd ansible/
+ 1181  ls
+ 1182  vim hosts 
+ 1183  clear
+ 1184  cd ~
+ 1185  clar
+ 1186  clear
+ 1187  python3
+ 1188  clear
+ 1189  go version
+ 1190  clear
+ 1191  code .
+ 1192  clear
+ 1193  ls
+ 1194  cd golang-practice/
+ 1195  clear
+ 1196  ls
+ 1197  cd hello/
+ 1198  ls
+ 1199  cat hello.go 
+ 1200  cat go.mod 
+ 1201  go mod tidy
+ 1202  cd ../tektutor/
+ 1203  ls
+ 1204  go mod init tektutor.org/tektutor
+ 1205  ls
+ 1206  cat go.mod 
+ 1207  go mod tidy
+ 1208  vim main.go
+ 1209  clear
+ 1210  ls
+ 1211  go mod edit --replace tektutor.org/hello=../hello
+ 1212  go mod tidy
+ 1213  go run ./main.go 
+ 1214  cat go.mod 
+ 1215  cd ..
+ 1216  cp -R golang-practice ~/terraform-1721march-2025/Day3/
+ 1217  cd ~/terraform-1721march-2025/
+ 1218  ls
+ 1219  cd Day3
+ 1220  ls
+ 1221  cd ..
+ 1222  cd Day3/golang-practice/
+ 1223  ls
+ 1224  rm arrays
+ 1225  ls
+ 1226  cd ..
+ 1227  cd Day3/golang-practice/
+ 1228  ls
+ 1229  cd tektutor/
+ 1230  ls
+ 1231  ls -lha
+ 1232  cd ..
+ 1233  git add *
+ 1234  git status
+ 1235  git commit -m "Added Day3 lab exercises"
+ 1236  git pull
+ 1237  git push
+ 1238  vim ~/git-token
+ 1239  go run ./arrays.go 
+ 1240  clear
+ 1241  go run ./arrays.go 
+ 1242  clear
+ 1243  go run ./arrays.go 
+ 1244  ls
+ 1245  go build ./arrays.go
+ 1246  ls
+ 1247  ./arrays 
+ 1248  clear
+ 1249  ls
+ 1250  go run ./if-else.go 
+ 1251  clear
+ 1252  ls
+ 1253  go run ./function.go 
+ 1254  clear
+ 1255  ls
+ 1256  go run ./function-with-multiple-returns.go 
+ 1257  clear
+ 1258  go run ./function-with-multiple-returns.go 
+ 1259  clear
+ 1260  go run ./pointers.go 
+ 1261  clear
+ 1262  go run ./pointers.go 
+ 1263  clear
+ 1264  go run ./slice.go 
+ 1265  clear
+ 1266  go run ./slice.go 
+ 1267  clear
+ 1268  go run ./map.go 
+ 1269  clear
+ 1270  go run struct.go 
+ 1271  clear
+ 1272  go run struct.go 
+ 1273  clear
+ 1274  go run userinputs.go 
+ 1275  cd hello/
+ 1276  clear
+ 1277  cd ..
+ 1278  clear
+ 1279  cd hello
+ 1280  ls
+ 1281  go mod init tektutor.org/hello
+ 1282  cat go.mod 
+ 1283  go mod tidy
+ 1284  ls
+ 1285  go run ./loops.go 
+ 1286  clear
+ 1287  ls
+ 1288  go run ./hello.go
+ 1289  clear
+ 1290  go run ./switch-case.go 
+ 1291  clear
+ 1292  cd TerraformAutomation/
+ 1293  ls
+ 1294  docker ps
+ 1295  docker ps -a
+ 1296  docker rm -f c1 c2
+ 1297  clear
+ 1298  docker ps
+ 1299  docker start ubuntu1 ubuntu2 rocky1 rocky2
+ 1300  docker ps
+ 1301  clear
+ 1302  ls
+ 1303  mkdir ansible
+ 1304  cd ansible/
+ 1305  ls
+ 1306  vim inventory
+ 1307  cat inventory 
+ 1308  vim ansible.cfg
+ 1309  cat ansible.cfg 
+ 1310  ansible all -m ping
+ 1311  docker rm -f ubuntu1 ubuntu2 rocky1 rocky2
+ 1312  docker ps -a
+ 1313  cd ..
+ 1314  clear
+ 1315  ls
+ 1316  mkdir terraform
+ 1317  cd terraform/
+ 1318  mkdir terraform-provider-docker
+ 1319  cd terraform-provider-docker/
+ 1320  ls
+ 1321  vim main.go
+ 1322  vim go.mod
+ 1323  mkdir -p internal/provider
+ 1324  vim internal/provider/provider.go
+ 1325  vim internal/provider/resource_docker_container.go
+ 1326  cd ~
+ 1327  mkdir sriram
+ 1328  cd sriram/
+ 1329  ls
+ 1330  vim test.py
+ 1331  python3 test.py 
+ 1332  vim test.py
+ 1333  python3 test.py 
+ 1334  vim test.py
+ 1335  python3 test.py 
+ 1336  vim test.py
+ 1337  ls
+ 1338  cd ..
+ 1339  ls
+ 1340  # Good Morning all !
+ 1341  # Let's wait for sometime while others are joining ...
+ 1342  clear
+ 1343  ls
+ 1344  mkdir cpp
+ 1345  cd cpp/
+ 1346  ls
+ 1347  vim main.cpp
+ 1348  g++ main.cpp 
+ 1349  vim main.cpp
+ 1350  g++ main.cpp 
+ 1351  ./a.out 
+ 1352  vim main.cpp
+ 1353  g++ main.cpp 
+ 1354  ./a.out 
+ 1355  cd ..
+ 1356  ls
+ 1357  clear
+ 1358  cd hello
+ 1359  ls
+ 1360  cd v2.0/
+ 1361  ls
+ 1362  vim hello.go 
+ 1363  ls
+ 1364  cd ..
+ 1365  ls
+ 1366  cd ..
+ 1367  cd tektutor/
+ 1368  ls
+ 1369  vim main.go 
+ 1370  go mod tidy
+ 1371  rm app app.exe tektutor 
+ 1372  ls
+ 1373  vim go.mod 
+ 1374  clear
+ 1375  ls
+ 1376  cd ..
+ 1377  rm -rf hello tektutor/
+ 1378  clear
+ 1379  ls
+ 1380  rm '!'
+ 1381  clear
+ 1382  ls
+ 1383  mkdir hello tektutor
+ 1384  cd hello
+ 1385  ls
+ 1386  ls -lha
+ 1387  go mod init tektutor.org/hellov1
+ 1388  ls
+ 1389  cat go.mod 
+ 1390  rm go.mod 
+ 1391  clear
+ 1392  go mod init tektutor.org/hello/v1
+ 1393  lear
+ 1394  clear
+ 1395  ls
+ 1396  go mod init tektutor.org/hello
+ 1397  ls
+ 1398  cat go.mod 
+ 1399  go version
+ 1400  clear
+ 1401  ls
+ 1402  vim hello.go
+ 1403  ls
+ 1404  vim hello.go 
+ 1405  go mod tidy
+ 1406  cd ..
+ 1407  ls
+ 1408  cd tektutor/
+ 1409  go mod init tektutor.org/tektutor
+ 1410  ls
+ 1411  cat go.mod 
+ 1412  vim main.go
+ 1413  cd ..
+ 1414  ls
+ 1415  cd hello
+ 1416  ls
+ 1417  cat go.mod 
+ 1418  cat hello.go 
+ 1419  cd ../tektutor/
+ 1420  ls
+ 1421  cat go.mod 
+ 1422  vim main.go 
+ 1423  clear
+ 1424  ls
+ 1425  cat go.mod 
+ 1426  cat main.go 
+ 1427  go mod tidy
+ 1428  go mod edit --replace tektutor.org/hello=../hello
+ 1429  go mod tidy
+ 1430  go run main.go 
+ 1431  vim main.go 
+ 1432  go run main.go 
+ 1433  go mod edit --replace tektutor.org/hello=../hello
+ 1434  go run main.go 
+ 1435  vim main.go 
+ 1436  go run main.go 
+ 1437  clear
+ 1438  cd ..
+ 1439  cd tekt
+ 1440  cd tektutor/
+ 1441  ls
+ 1442  cat go.mod 
+ 1443  cat main.go 
+ 1444  cd ../hello
+ 1445  ls
+ 1446  cat go.mod 
+ 1447  cd ../tektutor/
+ 1448  ls
+ 1449  vim go.mod 
+ 1450  clear
+ 1451  ls
+ 1452  cd ..
+ 1453  ls
+ 1454  cd hello
+ 1455  ls
+ 1456  mkdir v2
+ 1457  cp * v2
+ 1458  ls
+ 1459  cd v2
+ 1460  ls
+ 1461  vim go.mod 
+ 1462  ls
+ 1463  vim hello.go 
+ 1464  cd ..
+ 1465  ls
+ 1466  vim tektutor/
+ 1467  ls
+ 1468  cd tektutor/
+ 1469  ls
+ 1470  vim main.go 
+ 1471  vi go.mod 
+ 1472  go mod tidy
+ 1473  go mod --replace tektutor.org/hello/v2=../hello/v2
+ 1474  go mod edit --replace tektutor.org/hello/v2=../hello/v2
+ 1475  cat go.mod 
+ 1476  go mod tidy
+ 1477  go run main.go 
+ 1478  cd ../hello
+ 1479  ls
+ 1480  cp -R v2 v3
+ 1481  cd v3
+ 1482  ls
+ 1483  vim go.mod 
+ 1484  vim hello.go 
+ 1485  cd ..
+ 1486  cd tektutor/
+ 1487  ls
+ 1488  vim go.mod 
+ 1489  vim main.go 
+ 1490  go mod tidy
+ 1491  go mod edit --replace tektutor.org/hello/v3=../hello/v3
+ 1492  go mod tidy
+ 1493  go run main.go 
+ 1494  clear
+ 1495  ls
+ 1496  cd ..
+ 1497  clear
+ 1498  ls
+ 1499  mkdir addition subtraction 
+ 1500  cd addition/
+ 1501  ls
+ 1502  go mod init addition
+ 1503  cat go.mod 
+ 1504  vim addition.go
+ 1505  ls
+ 1506  cd ../subtraction/
+ 1507  ls
+ 1508  go mod init subtraction
+ 1509  ls
+ 1510  cat go.mod 
+ 1511  vim subtraction.go
+ 1512  cd ..
+ 1513  ls
+ 1514  mkdir main
+ 1515  cd main/
+ 1516  ls
+ 1517  go mod init main
+ 1518  vim main.go
+ 1519  clear
+ 1520  cat go.mod 
+ 1521  cat main.go 
+ 1522  go mod tidy
+ 1523  ls
+ 1524  go mod main.go 
+ 1525  go run main.go 
+ 1526  vim main.go 
+ 1527  go mod edit --replace addition=../addition
+ 1528  go mod edit --replace subtraction=../subtraction
+ 1529  go mod tidy
+ 1530  go run main.go 
+ 1531  cd ../addition/
+ 1532  vim addition.go 
+ 1533  vim ../subtraction/subtraction.go 
+ 1534  cd ../main/
+ 1535  clear
+ 1536  go run main.go 
+ 1537  go mod tidy
+ 1538  go run main.go 
+ 1539  cd ../addition/
+ 1540  vim addition.go 
+ 1541  cd ../subtraction/
+ 1542  vim subtraction.go 
+ 1543  cd ../main/
+ 1544  vim main.go 
+ 1545  go run main.go 
+ 1546  ls
+ 1547  vim main.go 
+ 1548  clear
+ 1549  pwd
+ 1550  go mod tidy
+ 1551  go run ./main.go 
+ 1552  ls
+ 1553  vim main.go 
+ 1554  go run ./main.go 
+ 1555  clear
+ 1556  vim main.go 
+ 1557  clear
+ 1558  go mod int main
+ 1559  clear
+ 1560  go mod init main
+ 1561  rm go.mod 
+ 1562  clear
+ 1563  go mod init main
+ 1564  cat go.mod 
+ 1565  go mod edit --replace addition=../addition
+ 1566  go mod edit --replace subtraction=../subtraction
+ 1567  cat go.mod 
+ 1568  go mod tidy
+ 1569  go run ./main.go 
+ 1570  clear
+ 1571  cd ..
+ 1572  cp -R main ~/terraform-1721march-2025/Day4
+ 1573  cp -R addition ~/terraform-1721march-2025/Day4
+ 1574  cp -R subtraction ~/terraform-1721march-2025/Day4
+ 1575  cd ~/terraform-1721march-2025/Day4
+ 1576  ls
+ 1577  tree subtraction/
+ 1578  cd ..
+ 1579  cd Day4
+ 1580  ls
+ 1581  mkdir golang-modules
+ 1582  mv addition subtraction main golang-modules/
+ 1583  ls
+ 1584  cd golang-modules/
+ 1585  ls
+ 1586  cd ..
+ 1587  clear
+ 1588  ls
+ 1589  mkdir golang-concurrency
+ 1590  cd golang-concurrency/
+ 1591  vim main.go
+ 1592  go run ./main.go 
+ 1593  vim main.go +9
+ 1594  go run ./main.go 
+ 1595  clear
+ 1596  ls
+ 1597  vim main.go 
+ 1598  go run ./main.go 
+ 1599  vim main.go 
+ 1600  clear
+ 1601  cat main.go 
+ 1602  go run ./main.go 
+ 1603  clear
+ 1604  cd ..
+ 1605  mkdir terraform
+ 1606  terraform version
+ 1607  cd terraform/
+ 1608  ls
+ 1609  mkdir pull-docker-image
+ 1610  cd pull-docker-image/
+ 1611  vim main.tf
+ 1612  clear
+ 1613  docker images
+ 1614  docker rmi ubuntu:latest
+ 1615  clear
+ 1616  ls
+ 1617  docker images | grep ubuntu
+ 1618  cat main.tf 
+ 1619  # To download the terraform provider
+ 1620  terraform init
+ 1621  ls -lha
+ 1622  tree .terraform
+ 1623  terraform plan
+ 1624  terraform apply
+ 1625  docker images | grep ubuntu
+ 1626  terraform destroy
+ 1627  docker images | grep ubuntu
+ 1628  clear
+ 1629  cd ~
+ 1630  clear
+ 1631  docker images
+ 1632  docker pull ubuntu:16.04
+ 1633  docker info
+ 1634  sudo -i
+ 1635  terraform version
+ 1636  clear
+ 1637  ls
+ 1638  cd terraform-1721march-2025/Day4/terraform/pull-docker-image/
+ 1639  ls
+ 1640  vim main.tf 
+ 1641  ls
+ 1642  ls -lha
+ 1643  rm -rf .terraform
+ 1644  ls
+ 1645  rm .terraform.lock.hcl 
+ 1646  clear
+ 1647  ls
+ 1648  rm terraform.tfstate*
+ 1649  ls
+ 1650  cd ..
+ 1651  cd terraform/
+ 1652  ls
+ 1653  mkdir provision-docker-container
+ 1654  cd provision-docker-container/
+ 1655  ls
+ 1656  vim main.tf
+ 1657  ls
+ 1658  ls -lha
+ 1659  cat main.tf 
+ 1660  terraform init
+ 1661  ls -lha
+ 1662  tree .terraform
+ 1663  terraform plan
+ 1664  docker images
+ 1665  vim main.tf 
+ 1666  terraform plan
+ 1667  docker ps
+ 1668  docker ps -a
+ 1669  terraform apply --auto-approve
+ 1670  docker ps -a
+ 1671  vim main.tf +18
+ 1672  terraform apply --auto-approve
+ 1673  docker ps
+ 1674  terraform destroy --auto-approve
+ 1675  docker ps -a
+ 1676  docker images
+ 1677  vim main.tf 
+ 1678  cd ..
+ 1679  cd provision-docker-container/
+ 1680  ls 
+ 1681  ls -lha
+ 1682  rm -rf .terraform
+ 1683  rm terraform.tfstate*
+ 1684  ls
+ 1685  rm .terraform.lock.hcl 
+ 1686  clear
+ 1687  ls
+ 1688  cd ..
+ 1689  git add *
+ 1690  git commit -m "Added Day4 lab exercises"
+ 1691  git pull
+ 1692  git push
+ 1693  cd Day4
+ 1694  ls
+ 1695  cd terraform/
+ 1696  ls
+ 1697  cd provision-docker-container/
+ 1698  ls
+ 1699  vim main.tf 
+ 1700  clear
+ 1701  docker ps 
+ 1702  docker ps -a
+ 1703  docker run -d --name c1 --hostname c1 ubuntu:16.04 
+ 1704  docker ps 
+ 1705  docker ps -a
+ 1706  docker rm -f c1
+ 1707  docker run -dit --name c1 --hostname c1 ubuntu:16.04 ls -l
+ 1708  docker ps -a
+ 1709  ls -l
+ 1710  echo $?
+ 1711  docker rm -f c1
+ 1712  docker run -dit --name c1 --hostname c1 ubuntu:16.04 /bin/bash
+ 1713  docker ps
+ 1714  clear
+ 1715  docker ps
+ 1716  docker rm -f c1
+ 1717  clear
+ 1718  ls
+ 1719  docker images
+ 1720  clear
+ 1721  ls
+ 1722  vim main.tf 
+ 1723  clear
+ 1724  terraform init
+ 1725  cat main.tf 
+ 1726  clear
+ 1727  ls
+ 1728  cp main.tf providers.go
+ 1729  vim providers.go 
+ 1730  vim main.tf 
+ 1731  clear
+ 1732  ls
+ 1733  terraform init
+ 1734  clear
+ 1735  vim providers.go 
+ 1736  terraform init -upgrade
+ 1737  rm -rf .terraform
+ 1738  clar
+ 1739  terraform init -upgrade
+ 1740  terraform init
+ 1741  clear
+ 1742  vim providers.go 
+ 1743  mv providers.go providers.tf
+ 1744  clear
+ 1745  ls
+ 1746  terraform init
+ 1747  vim providers.tf 
+ 1748  terraform apply --auto-approve
+ 1749  docker ps
+ 1750  vim main.tf 
+ 1751  vim providers.tf 
+ 1752  clar
+ 1753  clear
+ 1754  terraform show
+ 1755  docker ps 
+ 1756  docker exec -it ubuntu2_container /bin/bash
+ 1757  clear
+ 1758  ls
+ 1759  cat terraform.tfstate 
+ 1760  ls
+ 1761  ls -lha
+ 1762  docker ps
+ 1763  terraform apply --auto-approve
+ 1764  docker ps
+ 1765  clear
+ 1766  terraform
+ 1767  clear
+ 1768  cd ..
+ 1769  ls
+ 1770  cd provision-docker-container/
+ 1771  ls
+ 1772  terraform show
+ 1773  docker ps
+ 1774  docker rm -f ubuntu1_container
+ 1775  terraform show
+ 1776  terraform refresh
+ 1777  terraform show
+ 1778  clear
+ 1779  ls
+ 1780  vim terraform.tfstate
+ 1781  ls
+ 1782  cat terraform.tfstate.backup 
+ 1783  ls -l
+ 1784  ls -lha
+ 1785  vim .terraform.lock.hcl 
+ 1786  clear
+ 1787  ls
+ 1788  terraform destroy --auto-approve
+ 1789  ls
+ 1790  rm -rf .terraform
+ 1791  ls
+ 1792  rm -rf terraform.tfstate*
+ 1793  ls
+ 1794  cd ..
+ 1795  ls
+ 1796  clear
+ 1797  ls
+ 1798  cd provision-docker-container/
+ 1799  ls
+ 1800  vim main.tf 
+ 1801  cd ..
+ 1802  ls
+ 1803  cp -R provision-docker-container/ containers
+ 1804  cd containers/
+ 1805  ls
+ 1806  celar
+ 1807  vim main.tf 
+ 1808  clear
+ 1809  ls
+ 1810  docker ps
+ 1811  docker ps -a
+ 1812  clear
+ 1813  terraform init
+ 1814  terraform apply --auto-approve
+ 1815  docker ps
+ 1816  clear
+ 1817  ls
+ 1818  vim outputs.tf
+ 1819  vim vars.tf
+ 1820  vim main.tf 
+ 1821  clear
+ 1822  ls
+ 1823  docker ps -a
+ 1824  terraform destroy --auto-approve
+ 1825  clear
+ 1826  ls
+ 1827  terraform plan
+ 1828  terraform apply
+ 1829  vim main.tf 
+ 1830  terraform apply
+ 1831  docker ps
+ 1832  vim main.tf 
+ 1833  terraform apply
+ 1834  docker ps
+ 1835  terraform destroy
+ 1836  clear
+ 1837  ls
+ 1838  vim vars.tf 
+ 1839  dokcer ps -a
+ 1840  clear
+ 1841  docker ps -a
+ 1842  vim vars.tf 
+ 1843  ls
+ 1844  ls -lha
+ 1845  rm -rf .terraform
+ 1846  rm .terraform.lock.hcl 
+ 1847  ls
+ 1848  rm terraform.tfstate*
+ 1849  clar
+ 1850  celar
+ 1851  clear
+ 1852  ls
+ 1853  clear
+ 1854  ls
+ 1855  cd ..
+ 1856  mkdir invoking-ansible-playbook-from-terraform
+ 1857  cd invoking-ansible-playbook-from-terraform/
+ 1858  clear
+ 1859  ls
+ 1860  cp ../containers/providers.tf .
+ 1861  vim main.tf
+ 1862  vim inputs.tf
+ 1863  docker images
+ 1864  vim inputs.tf
+ 1865  docker ps -a
+ 1866  vim hosts
+ 1867  clear
+ 1868  ls
+ 1869  docker ps -a
+ 1870  terraform init
+ 1871  terraform apply --auto-approve
+ 1872  vim install-nginx-playbook.yml
+ 1873  clear
+ 1874  terraform apply --auto-approve
+ 1875  docker ps
+ 1876  curl http://localhost:8001
+ 1877  terraform destroy --auto-approve
+ 1878  rm -rf .terraform
+ 1879  ls
+ 1880  rm terraform.tfstate*
+ 1881  ls -lha
+ 1882  rm .terraform.lock.hcl 
+ 1883  cd ..
+ 1884  ls
+ 1885  cd ..
+ 1886  ls
+ 1887  cd ..
+ 1888  git add *
+ 1889  git commit -m "Added Day4 lab exercises"
+ 1890  git status
+ 1891  git pull
+ 1892  git push
+ 1893  cd Day4
+ 1894  clear
+ 1895  ls
+ 1896  cd terraform/
+ 1897  ls
+ 1898  mkdir remote-exec
+ 1899  cd remote-exec/
+ 1900  ls
+ 1901  cp ../provision-docker-container/providers.tf .
+ 1902  vim main.tf
+ 1903  clear
+ 1904  terraform init
+ 1905  vim main.tf 
+ 1906  terraform init
+ 1907  vim main.tf +16
+ 1908  terraform init
+ 1909  vim main.tf +16
+ 1910  terraform init
+ 1911  vim main.tf +7
+ 1912  terraform init
+ 1913  vim main.tf +7
+ 1914  terraform init
+ 1915  vim main.tf +7
+ 1916  terraform init
+ 1917  terraform apply --auto-approve
+ 1918  vim main.tf +15
+ 1919  terraform apply --auto-approve
+ 1920  docker ps
+ 1921  vim main.tf +15
+ 1922  terraform destroy --auto-approve
+ 1923  vim main.tf +15
+ 1924  terraform destroy --auto-approve
+ 1925  vim main.tf +15
+ 1926  terraform destroy --auto-approve
+ 1927  vim main.tf +7
+ 1928  terraform destroy --auto-approve
+ 1929  vim main.tf +7
+ 1930  terraform destroy --auto-approve
+ 1931  vim main.tf +7
+ 1932  terraform destroy --auto-approve
+ 1933  vim main.tf +7
+ 1934  terraform destroy --auto-approve
+ 1935  clear
+ 1936  terraform apply --auto-approve
+ 1937  docker ps
+ 1938  vim main.tf 
+ 1939  clear
+ 1940  terraform apply --auto-approve
+ 1941  terraform destroy --auto-approve
+ 1942  ls
+ 1943  terraform show
+ 1944  ls -lha
+ 1945  terrform destroy
+ 1946  terraform destroy
+ 1947  terraform init -upgrade
+ 1948  terraform destroy
+ 1949  clear
+ 1950  terraform apply --auto-approve
+ 1951  docker ps
+ 1952  vim main.tf 
+ 1953  terraform destroy --auto-approve
+ 1954  vim intputs.tf +9
+ 1955  terraform destroy --auto-approve
+ 1956  vim intputs.tf +9
+ 1957  terraform destroy --auto-approve
+ 1958  clear
+ 1959  docker ps -a
+ 1960  clear
+ 1961  terraform apply --auto-approve
+ 1962  docker ps
+ 1963  hostname -i
+ 1964  vim main.tf 
+ 1965  terrform destroy
+ 1966  terraform destroy
+ 1967  ls
+ 1968  cd ..
+ 1969  ls
+ 1970  cd invoking-ansible-playbook-from-terraform/
+ 1971  ls
+ 1972  vim hosts 
+ 1973  vim main.tf 
+ 1974  cp ../../../Day2/ansible/dynamic-inventory/inventory.py .
+ 1975  cp ../../../Day2/ansible/dynamic-inventory/ansible.cfg .
+ 1976  ls
+ 1977  rm hosts 
+ 1978  ls
+ 1979  vim main.tf 
+ 1980  clear
+ 1981  terraform apply --auto-approve
+ 1982  terraform init
+ 1983  terraform apply --auto-approve
+ 1984  ls
+ 1985  rm -rf .terraform
+ 1986  ls
+ 1987  rm terraform.tfstate*
+ 1988  ls
+ 1989  ls -lha
+ 1990  rm .terraform.lock.hcl 
+ 1991  ls
+ 1992  ls -lha
+ 1993  rm test.txt 
+ 1994  ls
+ 1995  cd ..
+ 1996  ls
+ 1997  cd ..
+ 1998  git status
+ 1999  # Good Morning all !
+ 2000  # Let's wait for sometime while others are joining ...
+ 2001  clear
+ 2002  cd terraform-1721march-2025/
+ 2003  git status
+ 2004  git add *
+ 2005  history > history.txt
