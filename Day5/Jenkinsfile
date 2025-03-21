@@ -8,7 +8,7 @@ pipeline {
         stage('Build Custom Docker Image') {
             steps {
                 script {
-		    dir("Day5/DevOpsCICDPipeline/CustomDockerAnsibleNodeImages/ubuntu-ansible") {
+		    dir("Day5/DevOpsCICDPipeline/CustomDockerImages/ubuntu") {
 		         sh "cp ~/.ssh/id_ed25519.pub authorized_keys"
 		         sh "docker build -t tektutor/ubuntu-ansible:latest ."
 			 sh "rm authorized_keys"
