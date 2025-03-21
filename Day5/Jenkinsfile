@@ -51,10 +51,22 @@ pipeline {
 		}
 	    }
 	}
-        stage("Invoke Terraform Automation Script") {
+        stage("Invoke Terraform Automation Script - Test File Provider") {
             steps {
                 script {
-		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
+		  dir("Day5/DevOpsCICDPipeline/test-terraform-provider-file-provider") {
+		    sh "terraform destroy --auto-approve"
+                    sh "terraform plan"
+		    sh "terraform apply --auto-approve"
+		    sh "terraform show"
+		  }
+                }
+            }
+        }
+        stage("Invoke Terraform Automation Script - Test Docker Provider") {
+            steps {
+                script {
+		  dir("Day5/DevOpsCICDPipeline/test-terraform-provider-docker-provider") {
 		    sh "terraform destroy --auto-approve"
                     sh "terraform plan"
 		    sh "terraform apply --auto-approve"
