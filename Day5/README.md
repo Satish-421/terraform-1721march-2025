@@ -266,6 +266,6 @@ http://localhost:8080
 </pre>
 
 Expected output
-![image](https://github.com/user-attachments/assets/b21320c8-88c2-4630-a14b-e91dc0d0c45e)
+![image](https://github.com/user-attachments/assets/c500acf9-8e35-4b6c-b758-6e21185f1016)
 
 
