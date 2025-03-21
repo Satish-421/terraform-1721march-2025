@@ -82,12 +82,27 @@ Expected output
 
 ## Lab - Using our custom terraform docker provider plugin in Terraform Project
 ```
+cd ~/terraform-1721march-2025
+git pull
+cd Day5/DevOpsCICDPipeline/test-terraform-provider-docker-provider
+terraform plan
+terraform apply --auto-approve
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2b1bd399-0ffb-411f-87b9-bd07e7a2575d)
 ![image](https://github.com/user-attachments/assets/38d8d55d-de04-4cbf-993d-5bce2e5eab16)
 ![image](https://github.com/user-attachments/assets/46b15d9f-7ebb-45f3-a24b-6ff4a80b7bf8)
+
+Once you are done with this exercise, you may dispose the docker containers provisioned by terraform
+```
+terraform destroy --auto-approve
+```
+Expected output
+![image](https://github.com/user-attachments/assets/f34a1074-bd9e-4ac4-a83d-a51a2b786bfe)
+
+                                                                                                                                  
+                                                                                                                                  
                                                                                                                                   
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
