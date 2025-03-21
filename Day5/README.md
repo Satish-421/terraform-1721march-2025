@@ -35,7 +35,7 @@ Expected output
 ![image](https://github.com/user-attachments/assets/cf4395d1-c186-4e8b-9c24-b125352648f7)
 ![image](https://github.com/user-attachments/assets/a6e923ca-7817-4081-aa51-a6056514c866)
 
-## Lab - Using our custom file provider in a terraform 
+## Lab - Using our custom file provider in a terraform project
 ```
 cd ~\terraform-1721march-2025
 git pull
