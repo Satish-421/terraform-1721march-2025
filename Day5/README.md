@@ -3,6 +3,16 @@
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
 
+## Info - Terraform Module
+<pre>
+- is a collection of many terraform scripts(*.tf) files in a dedicated folder
+- modules encpasulate group of terraform resources related to a single infrastructure/task
+- modules allows us to resue code
+- the terraform scripts kept in the top-level folder is reerred as root module
+- the terraform scripts kept in the top-level sub-folder is referred as child module
+- a root module may have zero to many child modules
+</pre>
+
 ## Info - Terraform Module vs Terraform Provider
 <pre>
 - Terraform Provider is developed by a Terraform Provider developer using golang programming language
@@ -24,7 +34,6 @@ https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
 - Resource names must start with nameoftheprovider-resource i.e docker_container, docker is the provider name while the resource managed is container
 - resource and data source name must be all lowercase separated by underscore, and recommened to restrict to 2 or 3 words at the max
 </pre>
-
 
 ## Info - Commons causes of Configuration Drift
 <pre>
@@ -137,7 +146,6 @@ wget https://get.jenkins.io/war-stable/2.492.1/jenkins.war
 </pre>
 
 Expected output
-
 
 ## Lab - Launching Jenkins from terminal
 ```
