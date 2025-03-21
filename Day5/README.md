@@ -268,5 +268,16 @@ http://localhost:8080
 Expected output
 ![image](https://github.com/user-attachments/assets/c500acf9-8e35-4b6c-b758-6e21185f1016)
 ![image](https://github.com/user-attachments/assets/ca8d24b7-69e6-4d28-8a9d-134529cc64f9)
-
+![image](https://github.com/user-attachments/assets/c70b66fc-eb7f-419b-9348-bcf131abcbd1)
+![image](https://github.com/user-attachments/assets/dcabdd19-ec4a-43ed-88a4-94f98b1147ce)
+Click "Continue"
+![image](https://github.com/user-attachments/assets/333ce131-fd6f-4a55-b704-2b83ebf66df7)
+Select "Install suggested plugins"
+![image](https://github.com/user-attachments/assets/2ddd07b9-1b31-4b5a-8f85-2a50ba213dc2)
+![image](https://github.com/user-attachments/assets/94a319c9-36f4-4faa-b0f6-e5702db636e5)
+![image](https://github.com/user-attachments/assets/7b2858db-8ef1-4e78-88a8-a532840b11e3)
+![image](https://github.com/user-attachments/assets/c13e183d-ed93-45d6-85cc-9a4b3327c6cd)
+![image](https://github.com/user-attachments/assets/a8be3b00-6720-4e86-b7bc-d87e762c052d)
+![image](https://github.com/user-attachments/assets/2b7f7661-c198-48a2-9c23-c8cc0ba4cc7b)
+![image](https://github.com/user-attachments/assets/8f5d4b57-6ec7-41ae-88c6-adfefa54b547)
 
