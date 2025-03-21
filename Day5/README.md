@@ -288,3 +288,4 @@ Click "Save and Finish"
 Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/f3a86e91-1b69-40e8-9c0b-a337ae087f1e)
 
+## Lab - Creating a Jenkins 
