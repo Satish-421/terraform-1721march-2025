@@ -288,4 +288,44 @@ Click "Save and Finish"
 Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/f3a86e91-1b69-40e8-9c0b-a337ae087f1e)
 
-## Lab - Creating a Jenkins 
+## Lab - Creating a Jenkins Job
+Navigate to your Jenkins Dashboard on the RPS Lab Web browser
+![image](https://github.com/user-attachments/assets/7a8edad7-a3b8-4503-adec-e11f072a3a3c)
+
+Click "Create Job"
+![image](https://github.com/user-attachments/assets/5e1a31f0-bef6-4c33-b458-8358f107ac8a)
+
+Select "Pipeline", type "DevOpsCICDPipeline" under "Enter an item name" 
+![image](https://github.com/user-attachments/assets/fad0a2d6-eb7a-4044-aac4-aac44724b465)
+Click "Ok"
+![image](https://github.com/user-attachments/assets/ae71e9b0-7523-4c46-a28e-07842f88ef51)
+
+General Section
+![image](https://github.com/user-attachments/assets/b208a2e0-4ee6-493b-aaa6-7d7cab5af0d5)
+
+Triggers Section
+Select the checkbox "Poll SCM"
+Under the Schedule type "H/02 * * * *" to configure Jenkins to poll GitHub every two minutes
+![image](https://github.com/user-attachments/assets/c90abeab-af4f-479e-9517-e32a687a12a5)
+
+Pipeline Section
+![image](https://github.com/user-attachments/assets/0b5f7b1a-0c59-4469-a713-0ff840c30b77)
+Under Definition, Select "Pipeline script from SCM"
+![image](https://github.com/user-attachments/assets/165d0eb7-f86a-419e-b5de-1dc278fe3d0b)
+![image](https://github.com/user-attachments/assets/9f8efaaf-ea77-4020-8473-cf919b2c70ef)
+Under SCM, select "Git"
+![image](https://github.com/user-attachments/assets/9d49439b-cef0-4d4e-af2b-63560b1ef8d4)
+Under the Repository URL paste "https://github.com/tektutor/terraform-1721march-2025.git"
+![image](https://github.com/user-attachments/assets/3386af0b-e50e-425d-a467-f319dc0fd1b5)
+Under Branch specifier, replace master with main
+![image](https://github.com/user-attachments/assets/5790ef08-afbf-4791-8ec4-30d2a1fad674)
+Under the Script Path update Jenkinsfile to Day5/Jenkinsfile
+![image](https://github.com/user-attachments/assets/59007a2f-c649-46f8-8116-ce0078e1229b)
+Click "Save"
+![image](https://github.com/user-attachments/assets/2dd1054e-3845-42b9-bdb6-87b7587719e0)
+
+Progress
+![image](https://github.com/user-attachments/assets/0261307b-e4fc-4cbc-9e48-e122c16ec855)
+
+Failed
+![image](https://github.com/user-attachments/assets/03b6828a-14ea-4d87-875f-dae9fa258521)

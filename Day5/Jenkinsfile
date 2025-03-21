@@ -8,9 +8,9 @@ pipeline {
         stage('Build Custom Docker Image') {
             steps {
                 script {
-		    dir("Day5/DevOpsCICDPipeline/CustomDockerAnsibleNodeImages/ubuntu-ansible") {
+		    dir("Day5/DevOpsCICDPipeline/CustomDockerImages/ubuntu") {
 		         sh "cp ~/.ssh/id_ed25519.pub authorized_keys"
-		         sh "docker build -t tektutor/ubuntu-ansible:1.0 ."
+		         sh "docker build -t tektutor/ubuntu-ansible:latest ."
 			 sh "rm authorized_keys"
 			 sh "docker images | grep ubuntu-ansible"
 		    }
@@ -29,6 +29,8 @@ pipeline {
 	    steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/custom-terraform-provider/file") {
+	             sh "go mod init github.com/hashicorp/terraform-provider-file"
+		     sh "go mod tidy"
 		     sh "go build"
 		     sh "go install"
 	  	  }
@@ -39,6 +41,8 @@ pipeline {
 	    steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/custom-terraform-provider/docker") {
+	             sh "go mod init github.com/hashicorp/terraform-provider-docker"
+		     sh "go mod tidy"
 		     sh "go build"
 		     sh "go install"
 	  	  }
