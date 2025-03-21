@@ -60,7 +60,35 @@ Expected output
 ![image](https://github.com/user-attachments/assets/f606302a-3597-4032-8763-3fd0e8a32ba8)
 
 
+## Lab - Developing a custom docker container terraform provider in golang
+```
+cd ~\terraform-1721march-2025
+git pull
+cd Day5/DevOpsCICDPipeline/custom-terraform-provider/docker
+tree
+go mod init github.com/hashicorp/terraform-provider-docker
+go mod tidy
+cat ~/.terraformrc
+go build
+go install
+```
 
+Expected output
+![image](https://github.com/user-attachments/assets/f9eaaf77-5cde-4752-8764-25053b55645c)
+![image](https://github.com/user-attachments/assets/ac72e6c8-1b49-4150-938c-4d8b52ec38bb)
+![image](https://github.com/user-attachments/assets/f5825d99-4af4-4672-a42b-ab0ce30487d2)
+![image](https://github.com/user-attachments/assets/5da0d887-1815-498d-910a-6f1b8bfc6c6b)
+
+
+## Lab - Using our custom terraform docker provider plugin in Terraform Project
+```
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/2b1bd399-0ffb-411f-87b9-bd07e7a2575d)
+![image](https://github.com/user-attachments/assets/38d8d55d-de04-4cbf-993d-5bce2e5eab16)
+![image](https://github.com/user-attachments/assets/46b15d9f-7ebb-45f3-a24b-6ff4a80b7bf8)
+                                                                                                                                  
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
 
