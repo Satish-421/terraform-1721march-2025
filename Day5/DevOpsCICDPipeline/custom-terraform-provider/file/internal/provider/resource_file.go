@@ -75,6 +75,20 @@ func resourceReadFile( ctx context.Context, d *schema.ResourceData, meta any ) d
 
 
 func resourceUpdateFile( ctx context.Context, d *schema.ResourceData, meta any ) diag.Diagnostics {
+	fileName := d.Get("file_name").(string)
+	content  := d.Get("file_content").(string)
+	id       := d.Id()
+
+	myfile, err := os.Create( fileName )
+
+	if err != nil {
+		panic(err)
+	}
+
+	myfile.WriteString( content + "\n" )
+	myfile.Sync()
+	d.SetId( id )
+
 	return nil
 }
 
