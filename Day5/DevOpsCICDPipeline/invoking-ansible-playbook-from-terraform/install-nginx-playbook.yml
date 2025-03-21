@@ -1,0 +1,8 @@
+- name: Install nginx 
+  hosts: all
+  tasks:
+  - name: Install nginx in ansible node
+    apt: name=nginx state=latest update_cache=yes
+
+  - name: Start the nginx service
+    service: name=nginx state=started
