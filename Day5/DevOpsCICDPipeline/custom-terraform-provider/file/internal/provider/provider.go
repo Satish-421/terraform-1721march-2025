@@ -26,7 +26,7 @@ func New(version string) func() *schema.Provider {
 
 			},
 			ResourcesMap: map[string]*schema.Resource {
-				"file_localfile": resourceLocalFile(),
+				"localfile": resourceLocalFile(),
 			},
 		}
 
