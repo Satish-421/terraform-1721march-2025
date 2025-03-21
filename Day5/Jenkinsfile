@@ -93,9 +93,9 @@ pipeline {
         stage('Dispose the resource created by Terraform') {
             steps {
                 script {
-		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
+		  dir("Day5/DevOpsCICDPipeline/test-terraform-provider-docker-provider") {
                     sh "terraform destroy --auto-approve"
-		    sh "docker ps"
+		    sh "docker ps -a"
 		  }
                 }
             }
