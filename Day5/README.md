@@ -82,12 +82,27 @@ Expected output
 
 ## Lab - Using our custom terraform docker provider plugin in Terraform Project
 ```
+cd ~/terraform-1721march-2025
+git pull
+cd Day5/DevOpsCICDPipeline/test-terraform-provider-docker-provider
+terraform plan
+terraform apply --auto-approve
 ```
 
 Expected output
 ![image](https://github.com/user-attachments/assets/2b1bd399-0ffb-411f-87b9-bd07e7a2575d)
 ![image](https://github.com/user-attachments/assets/38d8d55d-de04-4cbf-993d-5bce2e5eab16)
 ![image](https://github.com/user-attachments/assets/46b15d9f-7ebb-45f3-a24b-6ff4a80b7bf8)
+
+Once you are done with this exercise, you may dispose the docker containers provisioned by terraform
+```
+terraform destroy --auto-approve
+```
+Expected output
+![image](https://github.com/user-attachments/assets/f34a1074-bd9e-4ac4-a83d-a51a2b786bfe)
+
+                                                                                                                                  
+                                                                                                                                  
                                                                                                                                   
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
 https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
@@ -243,8 +258,33 @@ java -jar ./jenkins.war
 ```
 
 Expected output
+![image](https://github.com/user-attachments/assets/3020ac7f-4302-4a42-b835-cfc1a171428d)
 
 ## Lab - Accessing Jenkins Dashboard from your RPS Cloud machine chrome web browser
 <pre>
 http://localhost:8080  
 </pre>
+
+Expected output
+![image](https://github.com/user-attachments/assets/c500acf9-8e35-4b6c-b758-6e21185f1016)
+![image](https://github.com/user-attachments/assets/ca8d24b7-69e6-4d28-8a9d-134529cc64f9)
+![image](https://github.com/user-attachments/assets/c70b66fc-eb7f-419b-9348-bcf131abcbd1)
+![image](https://github.com/user-attachments/assets/dcabdd19-ec4a-43ed-88a4-94f98b1147ce)
+Click "Continue"
+![image](https://github.com/user-attachments/assets/333ce131-fd6f-4a55-b704-2b83ebf66df7)
+Select "Install suggested plugins"
+![image](https://github.com/user-attachments/assets/2ddd07b9-1b31-4b5a-8f85-2a50ba213dc2)
+![image](https://github.com/user-attachments/assets/94a319c9-36f4-4faa-b0f6-e5702db636e5)
+![image](https://github.com/user-attachments/assets/7b2858db-8ef1-4e78-88a8-a532840b11e3)
+![image](https://github.com/user-attachments/assets/c13e183d-ed93-45d6-85cc-9a4b3327c6cd)
+![image](https://github.com/user-attachments/assets/a8be3b00-6720-4e86-b7bc-d87e762c052d)
+![image](https://github.com/user-attachments/assets/2b7f7661-c198-48a2-9c23-c8cc0ba4cc7b)
+![image](https://github.com/user-attachments/assets/8f5d4b57-6ec7-41ae-88c6-adfefa54b547)
+![image](https://github.com/user-attachments/assets/e68ad809-3535-41a5-8e04-46d5573bd3b5)
+Click "Save and continue"
+![image](https://github.com/user-attachments/assets/50806f3d-08fc-4921-830b-110bf7cf887c)
+Click "Save and Finish"
+![image](https://github.com/user-attachments/assets/3d618bd9-c889-41c7-ab8b-a00c85295bb2)
+Click "Start using Jenkins"
+![image](https://github.com/user-attachments/assets/f3a86e91-1b69-40e8-9c0b-a337ae087f1e)
+
