@@ -286,4 +286,5 @@ Click "Save and continue"
 Click "Save and Finish"
 ![image](https://github.com/user-attachments/assets/3d618bd9-c889-41c7-ab8b-a00c85295bb2)
 Click "Start using Jenkins"
+![image](https://github.com/user-attachments/assets/f3a86e91-1b69-40e8-9c0b-a337ae087f1e)
 
