@@ -288,4 +288,8 @@ Click "Save and Finish"
 Click "Start using Jenkins"
 ![image](https://github.com/user-attachments/assets/f3a86e91-1b69-40e8-9c0b-a337ae087f1e)
 
-## Lab - Creating a Jenkins 
+## Lab - Creating a Jenkins Job
+Navigate to your Jenkins Dashboard on the RPS Lab Web browser
+![image](https://github.com/user-attachments/assets/7a8edad7-a3b8-4503-adec-e11f072a3a3c)
+
+
