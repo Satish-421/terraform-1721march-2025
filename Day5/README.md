@@ -324,4 +324,8 @@ Under the Script Path update Jenkinsfile to Day5/Jenkinsfile
 Click "Save"
 ![image](https://github.com/user-attachments/assets/2dd1054e-3845-42b9-bdb6-87b7587719e0)
 
+Progress
+![image](https://github.com/user-attachments/assets/0261307b-e4fc-4cbc-9e48-e122c16ec855)
 
+Failed
+![image](https://github.com/user-attachments/assets/03b6828a-14ea-4d87-875f-dae9fa258521)
