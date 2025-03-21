@@ -35,6 +35,24 @@ Expected output
 ![image](https://github.com/user-attachments/assets/cf4395d1-c186-4e8b-9c24-b125352648f7)
 ![image](https://github.com/user-attachments/assets/a6e923ca-7817-4081-aa51-a6056514c866)
 
+## Lab - Using our custom file provider in a terraform 
+```
+cd ~\terraform-1721march-2025
+git pull
+cd Day5/DevOpsCICDPipeline/test-terraform-provider-file-provider
+ls -l
+terraform plan
+terraform apply --auto-approve
+ls -l
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/9fb97d74-22e6-4aa1-a62f-9ace1c5182ca)
+![image](https://github.com/user-attachments/assets/2a0d3791-ab59-4b0e-9f7f-3f90b8fcb977)
+![image](https://github.com/user-attachments/assets/d55b6218-dab9-4ae9-83e7-d6079083fb61)
+![image](https://github.com/user-attachments/assets/c0623ebd-d305-4b68-bf58-28e99dc975e9)
+![image](https://github.com/user-attachments/assets/f606302a-3597-4032-8763-3fd0e8a32ba8)
+
 
 
 ## Info - Infrastructure automation test cases ( Sentinel Policy Management )
