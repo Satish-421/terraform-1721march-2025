@@ -29,7 +29,7 @@ pipeline {
 	    steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/custom-terraform-provider/file") {
-		     sh "rm go.mod go.sum"
+		     sh "rm -f go.mod go.sum"
 	             sh "go mod init github.com/hashicorp/terraform-provider-file"
 		     sh "go mod tidy"
 		     sh "go build"
@@ -42,7 +42,7 @@ pipeline {
 	    steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/custom-terraform-provider/docker") {
-		     sh "rm go.mod go.sum"
+		     sh "rm -f go.mod go.sum"
 	             sh "go mod init github.com/hashicorp/terraform-provider-docker"
 		     sh "go mod tidy"
 		     sh "go build"
@@ -55,7 +55,6 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/test-terraform-provider-file-provider") {
-		    sh "terraform destroy --auto-approve"
                     sh "terraform plan"
 		    sh "terraform apply --auto-approve"
 		    sh "terraform show"
@@ -67,7 +66,6 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/test-terraform-provider-docker-provider") {
-		    sh "terraform destroy --auto-approve"
                     sh "terraform plan"
 		    sh "terraform apply --auto-approve"
 		    sh "terraform show"
@@ -80,7 +78,7 @@ pipeline {
             steps {
                 script {
 		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
-                    sh "ansible-playbook -i hosts install-nginx-playbook.yml"
+                    sh "ansible-playbook install-nginx-playbook.yml"
 		  }
                 }
             }
@@ -95,9 +93,9 @@ pipeline {
         stage('Dispose the resource created by Terraform') {
             steps {
                 script {
-		  dir("Day5/DevOpsCICDPipeline/invoking-ansible-playbook-from-terraform") {
+		  dir("Day5/DevOpsCICDPipeline/test-terraform-provider-docker-provider") {
                     sh "terraform destroy --auto-approve"
-		    sh "docker ps"
+		    sh "docker ps -a"
 		  }
                 }
             }

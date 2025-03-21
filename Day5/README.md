@@ -132,6 +132,35 @@ https://developer.hashicorp.com/terraform/tutorials/policy/sentinel-policy
     - Terrafoorm child Module(s) optionally
 </pre>
 
+## Lab - Developing a custom terraform module and invoking it from Terraform root module
+```
+cd ~/terraform-1721march-2025
+git pull
+cd Day5/terraform/modules
+terraform init
+terraform plan
+terraform apply --auto-approve
+terraform show
+docker ps
+```
+
+Expected output
+![image](https://github.com/user-attachments/assets/14431b97-7e6f-4fcc-a8b4-7385131263b0)
+![image](https://github.com/user-attachments/assets/e90de3af-8163-48c2-b1de-4b6ff7552aa1)
+![image](https://github.com/user-attachments/assets/ec32b05d-4e9d-4f38-b817-a85774f46fc3)
+![image](https://github.com/user-attachments/assets/b785eebb-362b-4c93-8a62-715a91c1602a)
+![image](https://github.com/user-attachments/assets/355d25b1-2315-4d29-8aeb-956f8b6e83bf)
+![image](https://github.com/user-attachments/assets/0e6875fa-432d-46df-acda-fd075b2b552d)
+![image](https://github.com/user-attachments/assets/a67f6bff-1a53-4dce-86af-f0d3674d1ecc)
+![image](https://github.com/user-attachments/assets/cd6d0155-1a0b-412e-a05e-427ab9d24f1f)
+![image](https://github.com/user-attachments/assets/ad03276e-ab96-4f1a-b9fd-c74fe60bf4dd)
+![image](https://github.com/user-attachments/assets/1c62c1fb-3842-42f9-8c41-2cf127af45ce)
+![image](https://github.com/user-attachments/assets/c7f9a58e-be27-4ac6-b87b-6a7df59c9a91)
+![image](https://github.com/user-attachments/assets/b7fb6d28-3312-45f5-8df2-adc2e1a149df)
+![image](https://github.com/user-attachments/assets/e626ce52-fc18-4d52-a615-c2a1071788ac)
+
+
+
 ## Info - Terraform Provider Development best practices and recommended naming conventions
 <pre>
 - Provider name must be terraform-provider-nameoftheprovider, must be all lower case
@@ -329,3 +358,10 @@ Progress
 
 Failed
 ![image](https://github.com/user-attachments/assets/03b6828a-14ea-4d87-875f-dae9fa258521)
+
+Success
+![image](https://github.com/user-attachments/assets/f1460e4c-bbd6-4d45-a308-005059f12ccb)
+![image](https://github.com/user-attachments/assets/18c961db-63d1-4f45-af90-2cf8dfdfbc83)
+![image](https://github.com/user-attachments/assets/f573cc62-51b3-42be-a0c7-2a02cabf7f02)
+![image](https://github.com/user-attachments/assets/89e42e47-f163-427f-9c22-8f0dc1d5918a)
+
