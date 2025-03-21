@@ -2,10 +2,11 @@ terraform {
   required_providers {
     docker = {
       source = "tektutor/docker"
-      version = "2.0.0"
+      version = "1.0"
     }
     file = {
       source = "tektutor/file"
+      version = "1.0"
     }
   }
 }
